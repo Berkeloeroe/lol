@@ -250,9 +250,52 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 38px;
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 22px;
+  font-family: "MarkPro";
+  color: var(--donkere-tekst);
+}
+
 p {
   font-size: 18px;
   line-height: 26px;
   max-width: 700px;
   font-family: "Spiegel", sans-serif;
+}
+
+/* nieuws */
+section:nth-of-type(3) {
+  color: var(--donkere-tekst);
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+section li {
+  padding: 1em;
+}
+
+section :nth-last-of-type(3) img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5em;
+}
+
+/* Groot scherm (3 naast elkaar) */
+@media (min-width: 768px) {
+  section ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
