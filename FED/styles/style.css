@@ -1,0 +1,258 @@
+/* fonts */
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/BeaufortforLOL-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Spiegel";
+  src: url("../fonts/Spiegel-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MarkPro";
+  src: url("../fonts/MarkPro-Bold.woff2") format("woff2");
+}
+
+/**************/
+/* CSS REMEDY */
+/**************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  --lichte-tekst: white;
+  --donkere-tekst: rgb(10, 20, 40);
+  --header-bg: #141212;
+  --header-hover: #333333;
+  --gele-button: #c8aa6e;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* dingen verbergen voor toegankelijk */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg);
+  color: var(--lichte-tekst);
+  border: 3px solid #1a1a1a;
+  padding: 1.25rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+/* header riot logo */
+nav > img:first-of-type {
+  width: 5rem;
+}
+
+/* header league logo */
+nav img:nth-of-type(2) {
+  width: 3.5rem;
+}
+
+ul {
+  display: flex;
+  gap: 1.25rem;
+}
+
+/* header list */
+li {
+  list-style: none;
+}
+
+/* header nav links */
+nav li a {
+  font-family: "MarkPro";
+  font-size: 13px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  color: var(--lichte-tekst);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: var(--gele-button);
+  background-color: var(--header-hover);
+}
+
+/* zoeken taal playnow container */
+header div {
+  display: flex;
+}
+
+/* formulier */
+form[role="search"] input {
+  background-color: var(--header-hover);
+  color: var(--lichte-tekst);
+  font-family: "MarkPro";
+  padding: 0.75em;
+  border-radius: 0.75em;
+  border: none;
+  font-size: 16px;
+}
+
+form button {
+  background-color: var(--header-hover);
+  border: none;
+  padding: 0.75em;
+  border-radius: 0.75em;
+  cursor: pointer;
+}
+
+/* header language select button */
+header button:has(img) {
+  padding: 0.75em;
+  border-radius: 0.75em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header button:has(img):hover {
+  background-color: var(--header-hover);
+}
+
+header button img {
+  width: 1rem; /* gewenste breedte */
+  height: auto; /* houdt de verhoudingen goed */
+  display: block; /* voorkomt inline spacing issues */
+}
+
+/* header playnow button */
+header button:nth-of-type(2) {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.75rem;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgb(11, 196, 226);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+header button:nth-of-type(2):hover {
+  color: grey;
+}
+
+/* hero sectie*/
+section:nth-of-type(1) {
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* hero video */
+section > video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* button hero */
+section button:first-of-type {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--gele-button);
+  color: var(--donkere-tekst);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  outline: 1px solid white;
+  outline-offset: 3px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Hover-effect */
+section button:first-of-type:hover {
+  background-color: #eecc87;
+}
+
+/* spirit sectie */
+section:nth-of-type(2) {
+  min-height: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-image: url("../images/spirit.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 0.75rem;
+  padding: 12rem;
+  color: var(--lichte-tekst);
+}
+
+/* link button spirit */
+section a:first-of-type {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--gele-button);
+  color: var(--donkere-tekst);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Spiegel", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  outline-offset: 3px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+/* Hover-effect */
+section a:first-of-type:hover {
+  background-color: #eecc87;
+}
+
+/* typografie */
+h2 {
+  font-size: 48px;
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  line-height: 26px;
+  max-width: 700px;
+  font-family: "Spiegel", sans-serif;
+}

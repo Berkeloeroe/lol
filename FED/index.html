@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Randi Berkelaar" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>League of Legends</title>
+
+    <link href="styles/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- Logo's -->
+        <img src="images/riot.png" alt="League of Legends logo" />
+        <img src="images/lol.webp" alt="Riot Games logo" />
+        <!-- Navigatie links -->
+        <ul>
+          <li><a href="">Game</a></li>
+          <li><a href="">Champions</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Patch Notes</a></li>
+          <li><a href="">Discover</a></li>
+          <li><a href="">Esports</a></li>
+          <li><a href="">Universe</a></li>
+          <li><a href="">Merch</a></li>
+          <li><a href="">Support</a></li>
+        </ul>
+      </nav>
+      <!-- zoek, taal & play button -->
+      <div aria-label="interacties">
+        <!-- Zoekveld -->
+        <form role="search">
+          <label for="search" class="visually-hidden">Search</label>
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search..."
+          />
+          <button type="submit" aria-label="Search">🔍</button>
+        </form>
+        <button aria-label="choose language">
+          <img src="images/internet.png" alt="language select" />
+        </button>
+        <button>play now</button>
+      </div>
+    </header>
+    <main>
+      <!-- hero -->
+      <section>
+        <video autoplay muted loop playsinline aria-hidden="true">
+          <source src="media/hero-video.webm" type="video/mp4" />
+        </video>
+        <h1 class="visually-hidden">League of Legends</h1>
+        <img
+          src="images/logo.avif"
+          alt="League of Legends logo"
+          aria-hidden="true"
+        />
+        <button>play for free</button>
+      </section>
+      <!-- spirit -->
+      <section>
+        <h2>Spirit Blossom Beyond: Act 1</h2>
+        <p>
+          Season 2<br />
+          The path reveals itself to those who seek it. Take your first steps
+          into the mythical new season today.
+        </p>
+        <a href="">watch now</a>
+      </section>
+    </main>
+
+    <script defer src="scripts/script.js"></script>
+  </body>
+</html>
