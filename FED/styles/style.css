@@ -218,7 +218,7 @@ section:nth-of-type(2) {
   background-position: center;
   background-repeat: no-repeat;
   gap: 0.75rem;
-  padding: 12rem;
+  padding: clamp(2rem, 5vw, 12rem);
   color: var(--lichte-tekst);
 }
 
