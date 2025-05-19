@@ -1,4 +1,6 @@
 /* fonts */
+
+/* headings */
 @font-face {
   font-family: "Beaufort";
   src: url("../fonts/BeaufortforLOL-BoldItalic.woff") format("woff");
@@ -6,6 +8,7 @@
   font-style: italic;
 }
 
+/* body */
 @font-face {
   font-family: "Spiegel";
   src: url("../fonts/Spiegel-Regular.woff") format("woff");
@@ -13,6 +16,7 @@
   font-style: normal;
 }
 
+/* nav */
 @font-face {
   font-family: "MarkPro";
   src: url("../fonts/MarkPro-Bold.woff2") format("woff2");
@@ -108,7 +112,7 @@ nav li a:hover {
   background-color: var(--header-hover);
 }
 
-/* zoeken taal playnow container */
+/* zoeken, taal & playnow container */
 header div {
   display: flex;
 }
@@ -187,7 +191,7 @@ section > video {
 }
 
 /* button hero */
-section button:first-of-type {
+section:nth-of-type(1) button {
   padding: 1.25rem 1.5rem;
   background-color: var(--gele-button);
   color: var(--donkere-tekst);
@@ -223,7 +227,7 @@ section:nth-of-type(2) {
 }
 
 /* link button spirit */
-section a:first-of-type {
+section:nth-of-type(2) a{
   margin-top: 2rem;
   padding: 1.25rem 1.5rem;
   background-color: var(--gele-button);
@@ -238,8 +242,7 @@ section a:first-of-type {
   transition: all 0.4s ease;
 }
 
-/* Hover-effect */
-section a:first-of-type:hover {
+section:nth-of-type(2) a:hover {
   background-color: #eecc87;
 }
 
@@ -251,7 +254,7 @@ h2 {
 }
 
 h3 {
-  font-size: 38px;
+  font-size: 32px;
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
@@ -269,9 +272,42 @@ p {
   font-family: "Spiegel", sans-serif;
 }
 
-/* nieuws */
+/* nieuws sectie*/
 section:nth-of-type(3) {
+  min-height: 600px;
   color: var(--donkere-tekst);
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: clamp(2rem, 5vw, 12rem);
+
+}
+
+/* h3 & view all container */
+section:nth-of-type(3) div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* view all */
+section:nth-of-type(3) a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--donkere-tekst);
+  font-family: "Spiegel";
+  transition: 0.2s;
+}
+
+section:nth-of-type(3) a:hover{
+  color: grey;
+}
+
+section:nth-of-type(3) p{
+  font-size: 16px;
 }
 
 section ul {
@@ -279,18 +315,19 @@ section ul {
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 1.5rem;
+  gap: 1.75rem;
   grid-template-columns: 1fr;
 }
 
-section li {
+/* nieuws blokken */
+/* section li {
   padding: 1em;
-}
+} */
 
-section :nth-last-of-type(3) img {
+/* nieuws fotos */
+section:nth-of-type(3) img {
   width: 100%;
-  height: auto;
-  border-radius: 0.5em;
+  object-fit: cover;
 }
 
 /* Groot scherm (3 naast elkaar) */
