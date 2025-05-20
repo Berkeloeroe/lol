@@ -297,7 +297,6 @@ p {
 
 /* nieuws sectie*/
 section:nth-of-type(3) {
-  min-height: 600px;
   color: var(--donkere-tekst);
   display: flex;
   flex-direction: column;
