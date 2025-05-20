@@ -62,16 +62,19 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 100vw;
-  /* box-sizing: border-box;  */
-  background-color: var(--header-bg);
-  color: var(--lichte-tekst);
-  border: 3px solid #1a1a1a;
-  padding: 1.25rem;
+
   position: sticky;
   top: 0;
   z-index: 100;
+
+  width: 100%;
+  max-width: 100vw;
+
+  background-color: var(--header-bg);
+  color: var(--lichte-tekst);
+  border: 3px solid #1a1a1a;
+
+  padding: 1.25rem;
 }
 
 nav {
@@ -105,6 +108,7 @@ nav li a {
   font-size: 13px;
   padding: 0.5rem 0.8rem;
   border-radius: 0.5rem;
+
   color: var(--lichte-tekst);
   text-transform: uppercase;
   text-decoration: none;
@@ -124,18 +128,22 @@ header div {
 form[role="search"] input {
   background-color: var(--header-hover);
   color: var(--lichte-tekst);
+
   font-family: "MarkPro";
+  font-size: 16px;
   padding: 0.75em;
+
   border-radius: 0.75em;
   border: none;
-  font-size: 16px;
 }
 
 form button {
   background-color: var(--header-hover);
+
   border: none;
   padding: 0.75em;
   border-radius: 0.75em;
+
   cursor: pointer;
 }
 
@@ -143,8 +151,10 @@ form button {
 header button:has(img) {
   padding: 0.75em;
   border-radius: 0.75em;
+
   background-color: transparent;
   border: none;
+
   cursor: pointer;
 }
 
@@ -155,6 +165,7 @@ header button:has(img):hover {
 header button img {
   width: 1rem; /* gewenste breedte */
   height: auto; /* houdt de verhoudingen goed */
+
   display: block; /* voorkomt inline spacing issues */
 }
 
@@ -163,9 +174,12 @@ header button:nth-of-type(2) {
   padding: 0.5rem 1.25rem;
   border-radius: 0.75rem;
   border: none;
+
   text-transform: uppercase;
   font-weight: bold;
+
   background-color: rgb(11, 196, 226);
+
   cursor: pointer;
   transition: 0.2s;
 }
@@ -174,13 +188,15 @@ header button:nth-of-type(2):hover {
   color: grey;
 }
 
-/* hero sectie*/
+/* hero sectie */
 section:nth-of-type(1) {
   min-height: 640px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   gap: 3rem;
 }
 
@@ -189,6 +205,7 @@ section > video {
   position: absolute;
   width: 100%;
   height: 100%;
+
   object-fit: cover;
   z-index: -1;
 }
@@ -200,14 +217,18 @@ section:nth-of-type(1) img {
 /* button hero */
 section:nth-of-type(1) button {
   padding: 1.25rem 1.5rem;
+
   background-color: var(--gele-button);
   color: var(--donkere-tekst);
+
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1rem;
+
   border: 1px solid transparent;
   outline: 1px solid white;
   outline-offset: 3px;
+
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -220,16 +241,20 @@ section button:first-of-type:hover {
 /* spirit sectie */
 section:nth-of-type(2) {
   min-height: 640px;
+
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
+
   background-image: url("../images/spirit.avif");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
   gap: 0.75rem;
   padding: clamp(2rem, 10vw, 12rem);
+
   color: var(--lichte-tekst);
 }
 
@@ -252,14 +277,18 @@ section:nth-of-type(2) {
 section:nth-of-type(2) a {
   margin-top: 2rem;
   padding: 1.25rem 1.5rem;
+
   background-color: var(--gele-button);
   color: var(--donkere-tekst);
+
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+
   font-family: "Spiegel", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+
   outline-offset: 3px;
   cursor: pointer;
   transition: all 0.4s ease;
@@ -285,6 +314,7 @@ h3 {
 h4 {
   font-size: 22px;
   font-family: "MarkPro";
+
   color: var(--donkere-tekst);
 }
 
@@ -292,22 +322,26 @@ p {
   font-size: 18px;
   line-height: 26px;
   max-width: 700px;
+
   font-family: "Spiegel", sans-serif;
 }
 
-/* nieuws sectie*/
+/* nieuws sectie */
 section:nth-of-type(3) {
-  color: var(--donkere-tekst);
   display: flex;
   flex-direction: column;
   justify-content: center;
+
   gap: 1.5rem;
   padding: clamp(2rem, 10vw, 12rem);
+
+  color: var(--donkere-tekst);
 }
 
 /* h3 & view all container */
 section:nth-of-type(3) div {
-  width: 100%;
+  /* width: 100%; weg als er niks fout is */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -317,8 +351,10 @@ section:nth-of-type(3) div {
 section:nth-of-type(3) div a {
   text-transform: uppercase;
   text-decoration: none;
+
   color: var(--donkere-tekst);
   font-family: "Spiegel";
+
   transition: 0.2s;
 }
 
@@ -326,7 +362,28 @@ section:nth-of-type(3) div a:hover {
   color: grey;
 }
 
-/* artikel body */
+/* nieuws fotos */
+section:nth-of-type(3) img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* categorie */
+span {
+  font-family: "MarkPro";
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--gele-button);
+}
+
+/* datum */
+time {
+  font-size: 13px;
+  font-family: "Spiegel", sans-serif;
+  /* margin: 100px 0; container laat niet groeien */
+}
+
+/* artikel body tekst */
 section:nth-of-type(3) p {
   font-size: 16px;
 }
@@ -342,6 +399,7 @@ section ul {
   list-style: none;
   padding: 0;
   margin: 0;
+
   display: grid;
   gap: 1.75rem;
   grid-template-columns: repeat(3, 1fr);
@@ -357,10 +415,4 @@ section ul {
   section ul {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-/* nieuws fotos */
-section:nth-of-type(3) img {
-  width: 100%;
-  object-fit: cover;
 }
