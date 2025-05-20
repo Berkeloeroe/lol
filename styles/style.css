@@ -239,7 +239,7 @@ section:nth-of-type(2) {
     align-items: stretch;
   }
 
-  header nav {
+  header nav ul {
     display: none;
   }
 
