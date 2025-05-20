@@ -190,6 +190,11 @@ section > video {
   z-index: -1;
 }
 
+section:nth-of-type(1) img {
+height: 150px;
+}
+
+
 /* button hero */
 section:nth-of-type(1) button {
   padding: 1.25rem 1.5rem;
@@ -226,6 +231,13 @@ section:nth-of-type(2) {
   color: var(--lichte-tekst);
 }
 
+/* mobiel langere button */
+@media (max-width: 600px) {
+  section:nth-of-type(2) {
+    align-items: stretch;
+  }
+}
+
 /* link button spirit */
 section:nth-of-type(2) a{
   margin-top: 2rem;
@@ -234,6 +246,7 @@ section:nth-of-type(2) a{
   color: var(--donkere-tekst);
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-family: "Spiegel", sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -322,18 +335,24 @@ section ul {
   margin: 0;
   display: grid;
   gap: 1.75rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+@media (max-width: 900px) {
+  section ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  section ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* nieuws fotos */
 section:nth-of-type(3) img {
   width: 100%;
   object-fit: cover;
-}
-
-/* Groot scherm (3 naast elkaar) */
-@media (min-width: 768px) {
-  section ul {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
