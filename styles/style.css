@@ -235,6 +235,11 @@ section:nth-of-type(2) {
 @media (max-width: 600px) {
   section:nth-of-type(2) {
     align-items: stretch;
+    
+  }
+
+  header {
+    display: none;
   }
 }
 
