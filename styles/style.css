@@ -328,11 +328,11 @@ p {
 
 /* nieuws sectie */
 section:nth-of-type(3) {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
 
-  gap: 1.5rem;
+  gap: 1.5rem; */
   padding: clamp(2rem, 10vw, 12rem);
 
   color: var(--donkere-tekst);
