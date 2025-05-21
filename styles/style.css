@@ -341,8 +341,7 @@ section:nth-of-type(3) {
   flex-direction: column;
   justify-content: center;
 
-  gap: 1.5rem;
-  /* flex voor gap nu */
+  gap: 1.5rem; /* flex voor gap nu */
   padding: clamp(2rem, 10vw, 12rem);
 
   color: var(--donkere-tekst);
@@ -438,4 +437,27 @@ section ul {
   section ul {
     grid-template-columns: repeat(1, 1fr);
   }
+}
+
+/* choose your champion sectie */
+section:nth-of-type(4) {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  padding: clamp(2rem, 10vw, 12rem);
+}
+
+@media (max-width: 900px) {
+  section:nth-of-type(4) {
+    flex-direction: column;
+  }
+}
+
+/* categorieen champs */
+section:nth-of-type(4) ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
