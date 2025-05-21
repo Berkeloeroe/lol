@@ -258,6 +258,12 @@ section:nth-of-type(2) {
   color: var(--lichte-tekst);
 }
 
+@media (max-width: 900px) {
+  section:nth-of-type(2) {
+    padding: clamp(2rem, 5vw, 12rem);
+  }
+}
+
 /* mobiel langere button */
 @media (max-width: 600px) {
   section:nth-of-type(2) {
@@ -328,20 +334,25 @@ p {
 
 /* nieuws sectie */
 section:nth-of-type(3) {
-  /* display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 
-  gap: 1.5rem; */
+  gap: 1.5rem;
+  /* flex voor gap nu */
   padding: clamp(2rem, 10vw, 12rem);
 
   color: var(--donkere-tekst);
 }
 
+@media (max-width: 900px) {
+  section:nth-of-type(3) {
+    padding: clamp(2rem, 5vw, 12rem);
+  }
+}
+
 /* h3 & view all container */
 section:nth-of-type(3) div {
-  /* width: 100%; weg als er niks fout is */
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -380,7 +391,7 @@ span {
 time {
   font-size: 13px;
   font-family: "Spiegel", sans-serif;
-  /* margin: 100px 0; container laat niet groeien */
+  /* margin: 100px 0; dit werkt niet omdat container laat niet groeien */
 }
 
 /* artikel body tekst */
