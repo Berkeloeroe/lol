@@ -172,7 +172,7 @@ header button img {
 
 /* header playnow button */
 header button:nth-of-type(2) {
-  padding: 0.5rem 1.25rem;
+  padding: 0.25rem 1.25rem;
   border-radius: 0.75rem;
   border: none;
 
@@ -346,6 +346,11 @@ section:nth-of-type(3) {
   padding: clamp(2rem, 10vw, 12rem);
 
   color: var(--donkere-tekst);
+
+  background-image: url("../images/wit-patroon.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 900px) {
