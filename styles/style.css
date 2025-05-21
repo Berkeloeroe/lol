@@ -497,8 +497,10 @@ section:nth-of-type(4) a:last-of-type:hover {
 /* categorieen ikonen champs */
 section:nth-of-type(4) ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
+  max-width: 100%;
 }
 
 /* categorie tekst */
