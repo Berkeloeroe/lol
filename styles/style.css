@@ -40,6 +40,7 @@
   --donkere-tekst: rgb(10, 20, 40);
   --header-bg: #141212;
   --header-hover: #333333;
+  --header-border: #1f1f1f;
   --gele-button: #c8aa6e;
 }
 
@@ -72,7 +73,7 @@ header {
 
   background-color: var(--header-bg);
   color: var(--lichte-tekst);
-  border: 3px solid #1a1a1a;
+  border-bottom: 2px solid var(--header-border);
 
   padding: 1.25rem;
 }
