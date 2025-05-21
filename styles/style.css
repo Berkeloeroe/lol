@@ -306,27 +306,27 @@ section:nth-of-type(2) a:hover {
 
 /* typografie */
 h2 {
-  font-size: 48px;
+  font-size: clamp(2rem, 5vw, 3rem); /* tussen 32px en 48px */
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 4vw, 2rem); /* tussen 24px en 32px */
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: clamp(1.2rem, 2.5vw, 1.375rem); /* tussen ~19px en 22px */
   font-family: "MarkPro";
 
   color: var(--donkere-tekst);
 }
 
 p {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: clamp(1rem, 2vw, 1.125rem); /* tussen 16px en 18px */
+  line-height: 1.6;
   max-width: 700px;
 
   font-family: "Spiegel", sans-serif;
