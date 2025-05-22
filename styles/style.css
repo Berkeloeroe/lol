@@ -91,7 +91,7 @@ nav > img:first-of-type {
 
 /* header league logo */
 nav img:nth-of-type(2) {
-  width: 3.5rem;
+  width: 2rem;
 }
 
 nav ul {
@@ -474,7 +474,7 @@ section:nth-of-type(4) > div:first-of-type > div {
   width: 100%;
 }
 
-/* link buttons  */
+/* 2 link buttons  */
 section:nth-of-type(4) a {
   display: inline-block;
 
@@ -535,6 +535,7 @@ section > figure:last-of-type > figcaption {
   color: grey;
 }
 
+/* champion figure */
 @media (max-width: 900px) {
   section > figure:last-of-type > img {
     width: 100%;
