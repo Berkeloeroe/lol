@@ -541,3 +541,60 @@ section > figure:last-of-type > figcaption {
     width: 100%;
   }
 }
+
+/* slay with style sectie */
+section:nth-of-type(5) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  padding: clamp(2rem, 10vw, 12rem);
+
+  background-image: url("../images/bos.avif");
+  background-size: cover;
+
+  color: var(--lichte-tekst);
+}
+
+@media (max-width: 900px) {
+  section:nth-of-type(5) {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ginger foto */
+section:nth-of-type(5) img {
+  width: 40vw; /* schaalt mee met het scherm */
+}
+
+/* slay with style sectie */
+section:nth-of-type(5) div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* link buttons  */
+section:nth-of-type(5) a {
+  display: inline-block;
+
+  padding: 1.25rem 1.5rem;
+  background-color: var(--gele-button);
+  color: var(--donkere-tekst);
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-family: "Spiegel", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+section:nth-of-type(5) a:hover {
+  background-color: #eecc87;
+}
