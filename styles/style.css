@@ -725,6 +725,10 @@ section:nth-of-type(6) video {
   border-radius: 50%;
   overflow: hidden;
   display: block;
+
+  border: 1px solid transparent;
+  outline: 1px solid white;
+  outline-offset: 2em;
 }
 
 /* foto tekst beschrijving */
@@ -737,9 +741,9 @@ section:nth-of-type(6) > figure:last-of-type > figcaption {
   color: var(--lichte-tekst);
 }
 
-/* champion figure */
-/* @media (max-width: 900px) {
-  section > figure:last-of-type > img {
-    width: 100%;
+/* gamemode video */
+@media (max-width: 900px) {
+  section:nth-of-type(6) video {
+    width: 85%;
   }
-} */
+}
