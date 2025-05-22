@@ -552,6 +552,7 @@ section:nth-of-type(5) {
 
   background-image: url("../images/bos.avif");
   background-size: cover;
+  background-position: center;
 
   color: var(--lichte-tekst);
 }
