@@ -545,9 +545,8 @@ section > figure:last-of-type > figcaption {
 /* slay with style sectie */
 section:nth-of-type(5) {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  gap: 3rem;
 
   padding: clamp(2rem, 10vw, 12rem);
 
@@ -568,14 +567,14 @@ section:nth-of-type(5) img {
   width: 40vw; /* schaalt mee met het scherm */
 }
 
-/* slay with style sectie */
+/* tekst blok */
 section:nth-of-type(5) div {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-/* link buttons  */
+/* link button  */
 section:nth-of-type(5) a {
   display: inline-block;
 
