@@ -537,6 +537,6 @@ section > figure:last-of-type > figcaption {
 
 @media (max-width: 900px) {
   section > figure:last-of-type > img {
-    width: 95%;
+    width: 100%;
   }
 }
