@@ -330,6 +330,14 @@ h4 {
   color: var(--donkere-tekst);
 }
 
+h5 {
+  font-size: clamp(1.2rem, 2.5vw, 1.375rem); /* tussen ~19px en 22px */
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
+
+  color: var(--donkere-tekst);
+}
+
 p {
   font-size: clamp(1rem, 2vw, 1.125rem); /* tussen 16px en 18px */
   line-height: 1.6;
@@ -618,3 +626,120 @@ section:nth-of-type(5) a {
 section:nth-of-type(5) a:hover {
   background-color: #eecc87;
 }
+
+/* multiple ways to play*/
+section:nth-of-type(6) {
+  display: flex;
+  align-items: center;
+
+  color: var(--lichte-tekst);
+  text-align: center;
+
+  padding: clamp(2rem, 10vw, 12rem);
+
+  background-image: url(../images/onduidelijke-bg.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1300px) {
+  section:nth-of-type(6) {
+    flex-direction: column;
+  }
+}
+
+/* tekst container */
+section:nth-of-type(6) > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  max-width: 100%; /* nooit breder dan de viewport/sectie */
+}
+
+/* link buttons container */
+section:nth-of-type(6) > div:first-of-type > div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  width: 100%;
+}
+
+/* link button  */
+section:nth-of-type(6) a {
+  display: inline-block;
+
+  padding: 1.25rem 1.5rem;
+  background-color: var(--gele-button);
+  color: var(--donkere-tekst);
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-family: "Spiegel", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+@media (max-width: 900px) {
+  section:nth-of-type(6) > div:first-of-type > div {
+    flex-direction: column;
+  }
+}
+
+section:nth-of-type(6) a:hover {
+  background-color: #eecc87;
+}
+
+/* 3 spel ikonen */
+section:nth-of-type(6) ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  max-width: 100%;
+}
+
+/* categorie tekst */
+li figure figcaption {
+  font-family: "Spiegel";
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+section:nth-of-type(6) figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section:nth-of-type(6) video {
+  width: 65%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  display: block;
+}
+
+/* foto tekst beschrijving */
+section:nth-of-type(6) h5 {
+  color: var(--lichte-tekst);
+}
+
+section:nth-of-type(6) > figure:last-of-type > figcaption {
+  font-family: "Spiegel";
+  color: var(--lichte-tekst);
+}
+
+/* champion figure */
+/* @media (max-width: 900px) {
+  section > figure:last-of-type > img {
+    width: 100%;
+  }
+} */
