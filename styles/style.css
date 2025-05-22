@@ -450,6 +450,10 @@ section:nth-of-type(4) {
   text-align: center;
 
   padding: clamp(2rem, 10vw, 12rem);
+
+  background-image: url(../images/assasin-icon.avif);
+  background-size: cover;
+  background-position: center;
 }
 
 @media (max-width: 1300px) {
