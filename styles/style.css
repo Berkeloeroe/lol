@@ -450,7 +450,7 @@ section:nth-of-type(4) {
   padding: clamp(2rem, 10vw, 12rem);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
   section:nth-of-type(4) {
     flex-direction: column;
   }
