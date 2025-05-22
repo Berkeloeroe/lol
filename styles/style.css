@@ -567,11 +567,18 @@ section:nth-of-type(5) img {
   width: 40vw; /* schaalt mee met het scherm */
 }
 
+@media (max-width: 900px) {
+  section:nth-of-type(5) img {
+    width: 90vw; /* schaalt mee met het scherm */
+  }
+}
+
 /* tekst blok */
 section:nth-of-type(5) div {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 /* link button  */
