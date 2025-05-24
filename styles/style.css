@@ -716,19 +716,21 @@ section:nth-of-type(6) figure {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 
 section:nth-of-type(6) video {
-  width: 65%;
+  width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
   display: block;
 
-  border: 1px solid transparent;
-  outline: 1px solid white;
-  outline-offset: 2em;
+  outline: 1px solid var(--gele-button);
+  outline-offset: 1.5rem;
+
+  margin-bottom: 5rem;
 }
 
 /* foto tekst beschrijving */
@@ -739,6 +741,8 @@ section:nth-of-type(6) h5 {
 section:nth-of-type(6) > figure:last-of-type > figcaption {
   font-family: "Spiegel";
   color: var(--lichte-tekst);
+
+  margin-top: 1rem;
 }
 
 /* gamemode video */
