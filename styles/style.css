@@ -802,22 +802,21 @@ section:nth-of-type(6) > figure:last-of-type > figcaption {
 
 /* laatste sectie */
 section:nth-of-type(7) {
+  position: relative; /* ✅ belangrijk! */
   min-height: 640px;
-
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-
-  gap: 3rem;
+  align-items: center;
+  overflow: hidden;
 }
 
 /* laatste sectie video */
-section > video {
+section:nth-of-type(7) > video {
   position: absolute;
+  top: 0; /* ✅ zorg dat video van boven begint */
+  left: 0; /* ✅ en links */
   width: 100%;
   height: 100%;
-
   object-fit: cover;
   z-index: -1;
 }
@@ -826,7 +825,7 @@ section:nth-of-type(1) img {
   height: 150px;
 }
 
-/* button hero */
+/* button */
 section:nth-of-type(7) button {
   padding: 1.25rem 1.5rem;
 
