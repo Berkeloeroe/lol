@@ -883,7 +883,6 @@ footer nav ul {
 @media (max-width: 1300px) {
   footer nav ul {
     flex-direction: column;
-    gap: 2.5rem;
   }
 }
 
