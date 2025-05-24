@@ -527,6 +527,15 @@ section:nth-of-type(4) a:last-of-type:hover {
   background-color: rgb(93, 233, 255);
 }
 
+section:nth-of-type(4) div figure {
+  cursor: pointer;
+  transition: transform 0.3s ease; /* vloeiende overgang */
+}
+
+section:nth-of-type(4) div figure:hover {
+  transform: scale(1.1); /* vergroot het element met 5% */
+}
+
 /* categorieen ikonen champs */
 section:nth-of-type(4) ul {
   display: flex;
@@ -719,12 +728,21 @@ li figure figcaption {
   text-transform: uppercase;
 }
 
+/* alle figures */
 section:nth-of-type(6) figure {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 50%;
   gap: 1rem;
+  transition: transform 0.3s ease; /* vloeiende overgang */
+}
+
+/* hover effect */
+section:nth-of-type(6) div figure:hover {
+  cursor: pointer;
+
+  transform: scale(1.1); /* vergroot het element met 5% */
 }
 
 @media (max-width: 900px) {
@@ -733,8 +751,9 @@ section:nth-of-type(6) figure {
   }
 }
 
+/* ronde video */
 section:nth-of-type(6) video {
-  width: 100%;
+  width: 90%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
