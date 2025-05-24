@@ -41,6 +41,8 @@
   --header-bg: #141212;
   --header-hover: #333333;
   --header-border: #1f1f1f;
+  --footer-licht: #292929;
+  --footer-border: #363636;
   --gele-button: #c8aa6e;
   --blauwe-button: rgb(11, 196, 226);
 }
@@ -80,34 +82,34 @@ header {
   padding: 1.25rem;
 }
 
-nav {
+header nav {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
 /* header riot logo */
-nav > img:first-of-type {
+header nav > img:first-of-type {
   width: 5rem;
 }
 
 /* header league logo */
-nav img:nth-of-type(2) {
+header nav img:nth-of-type(2) {
   width: 2rem;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   gap: 1.25rem;
 }
 
 /* header list */
-nav li {
+header nav li {
   list-style: none;
 }
 
 /* header nav links */
-nav li a {
+header nav li a {
   font-family: "MarkPro";
   font-size: 13px;
   padding: 0.5rem 0.8rem;
@@ -118,7 +120,7 @@ nav li a {
   text-decoration: none;
 }
 
-nav li a:hover {
+header nav li a:hover {
   color: var(--gele-button);
   background-color: var(--header-hover);
 }
@@ -845,4 +847,74 @@ section:nth-of-type(7) button {
 /* Hover-effect */
 section button:first-of-type:hover {
   background-color: #eecc87;
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 100vw;
+
+  background-color: var(--header-bg);
+  color: var(--lichte-tekst);
+  gap: 2rem;
+}
+
+footer nav:first-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--footer-licht);
+  border-top: 2px solid var(--footer-border);
+}
+
+footer nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0;
+}
+
+@media (max-width: 1300px) {
+  footer nav ul {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+}
+
+/* header list */
+footer nav li {
+  list-style: none;
+}
+
+/* footer nav links */
+footer nav li a {
+  font-family: "MarkPro";
+  font-size: 13px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+
+  color: var(--lichte-tekst);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer nav li a:hover {
+  background-color: var(--header-hover);
+}
+
+footer p {
+  font-size: 0.75rem;
+  text-align: center;
+  color: grey;
+}
+
+footer div {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
