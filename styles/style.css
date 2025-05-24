@@ -703,6 +703,13 @@ section:nth-of-type(6) ul {
   justify-content: center;
   text-align: center;
   max-width: 100%;
+  margin-top: 2rem;
+}
+
+/* 3 spel ikonen */
+section:nth-of-type(6) li {
+  display: flex;
+  justify-content: center;
 }
 
 /* categorie tekst */
@@ -719,6 +726,12 @@ section:nth-of-type(6) figure {
   width: 50%;
 }
 
+@media (max-width: 900px) {
+  section:nth-of-type(6) figure {
+    width: 100%;
+  }
+}
+
 section:nth-of-type(6) video {
   width: 100%;
   aspect-ratio: 1 / 1;
@@ -730,6 +743,7 @@ section:nth-of-type(6) video {
   outline: 1px solid var(--gele-button);
   outline-offset: 1.5rem;
 
+  margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
