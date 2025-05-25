@@ -896,6 +896,23 @@ footer nav ul {
   padding: 0;
 }
 
+/* social media ul */
+footer > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+footer ul svg {
+  width: 1.25rem;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
 @media (max-width: 1300px) {
   footer nav ul {
     flex-direction: column;
