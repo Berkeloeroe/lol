@@ -372,10 +372,11 @@ section:nth-of-type(3) {
 }
 
 /* h3 & view all container */
-section:nth-of-type(3) div {
+section:nth-of-type(3) > div:first-of-type {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 /* view all link */
@@ -384,6 +385,8 @@ section:nth-of-type(3) div a {
   text-decoration: none;
 
   color: var(--donkere-tekst);
+  font-size: clamp(1rem, 2vw, 1.125rem); /* tussen 16px en 18px */
+
   font-family: "Spiegel";
 
   transition: 0.2s;
@@ -392,6 +395,18 @@ section:nth-of-type(3) div a {
 /* hover view all */
 section:nth-of-type(3) div a:hover {
   color: grey;
+}
+
+section:nth-of-type(3) div span {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* svg link naast view all */
+section:nth-of-type(3) svg {
+  color: var(--gele-button);
+  cursor: pointer;
+  width: 1rem;
 }
 
 /* container artiekls */
@@ -426,6 +441,7 @@ span {
 time {
   font-size: 13px;
   font-family: "Spiegel", sans-serif;
+  margin-left: 0.75rem;
 }
 
 /* artikel body tekst */
@@ -915,6 +931,7 @@ footer a {
   gap: 1rem;
 }
 
+/* kopieriht */
 footer p {
   font-size: 0.75rem;
   text-align: center;
@@ -926,11 +943,11 @@ footer div {
   margin-bottom: 2rem;
 }
 
-svg {
+footer svg {
   fill: grey;
   cursor: pointer;
 }
 
-svg:hover {
+footer svg:hover {
   fill: white;
 }
