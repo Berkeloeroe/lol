@@ -955,6 +955,8 @@ footer p {
   font-size: 0.75rem;
   text-align: center;
   color: grey;
+  margin: 0 3rem;
+
 }
 
 footer div {
