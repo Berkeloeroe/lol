@@ -966,14 +966,28 @@ footer p {
 
 }
 
+/* pegi logo's */
 footer div {
+  display: flex;
+  gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 /* social media icons */
-footer svg {
+footer ul svg {
   fill: white;
   cursor: pointer;
 }
+
+/* riot logo */
+footer > a svg {
+  fill: grey;
+  cursor: pointer;
+}
+
+footer > a svg:last-of-type:hover {
+  fill: white;
+}
+
 
