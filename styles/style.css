@@ -915,6 +915,13 @@ footer ul li {
   align-items: center;
 }
 
+/* social media icon padding */
+footer > ul li {
+padding: 0.5rem;
+border-radius: 35%;
+background-color: var(--header-hover);
+}
+
 @media (max-width: 1300px) {
   footer nav ul {
     flex-direction: column;
@@ -964,11 +971,9 @@ footer div {
   margin-bottom: 2rem;
 }
 
+/* social media icons */
 footer svg {
-  fill: grey;
+  fill: white;
   cursor: pointer;
 }
 
-footer svg:hover {
-  fill: white;
-}
