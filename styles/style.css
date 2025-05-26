@@ -430,7 +430,7 @@ article > * {
 }
 
 /* categorie */
-span {
+section:nth-of-type(3) article span {
   font-family: "MarkPro";
   font-size: 13px;
   text-transform: uppercase;
