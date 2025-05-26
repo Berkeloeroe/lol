@@ -911,6 +911,8 @@ footer ul svg {
 
 footer ul li {
   list-style-type: none;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 1300px) {
@@ -919,7 +921,7 @@ footer ul li {
   }
 }
 
-/* header list */
+/* footer list */
 footer nav li {
   list-style: none;
 }
