@@ -82,6 +82,16 @@ header {
   padding: 1.25rem;
 }
 
+/* riot logo */
+header svg {
+  fill: white;
+}
+
+/* lol logo */
+header img {
+  width: 2rem;
+}
+
 header nav {
   display: flex;
   align-items: center;
@@ -127,7 +137,16 @@ header nav li a:hover {
 
 /* zoeken, taal & playnow container */
 header div {
-  display: flex;
+  display: flex; /* nodig voor geen stretch op button */
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* verbergen voor mobiel */
+@media (max-width: 1300px) {
+  header div {
+    display: none;
+  }
 }
 
 /* formulier */
@@ -154,7 +173,7 @@ form button {
 }
 
 /* header language select button */
-header button:has(img) {
+/* header button:has(img) {
   padding: 0.75em;
   border-radius: 0.75em;
 
@@ -162,22 +181,43 @@ header button:has(img) {
   border: none;
 
   cursor: pointer;
-}
+} */
 
-header button:has(img):hover {
+/* header button:has(img):hover {
   background-color: var(--header-hover);
+} */
+
+/* header button img {
+  width: 1rem; 
+  height: auto; 
+
+  display: block; 
+} */
+
+/* taal knop */
+header div button:first-of-type {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 25%;
 }
 
-header button img {
-  width: 1rem; /* gewenste breedte */
-  height: auto; /* houdt de verhoudingen goed */
+header div button:first-of-type:hover {
+  background: var(--header-hover);
+}
 
-  display: block; /* voorkomt inline spacing issues */
+/* taal knop svg icon */
+header div button svg {
+  fill: white;
+  width: 1.5rem;
+  height: 1.5em;
+  vertical-align: middle;
 }
 
 /* header playnow button */
 header button:nth-of-type(2) {
-  padding: 0.25rem 1.25rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.75rem;
   border: none;
 
