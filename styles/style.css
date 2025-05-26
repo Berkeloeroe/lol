@@ -207,14 +207,19 @@ section:nth-of-type(1) {
 }
 
 /* overlay */
-section:nth-of-type(1) > div{
+section:nth-of-type(1) > div {
   position: absolute;
 
   width: 100%;
   height: 100%;
   z-index: -1;
 
-  background: linear-gradient(0deg, rgba(24, 31, 49, 1) 0%, rgba(24, 31, 49, 0.25) 50%);
+  background: #121824;
+  background: linear-gradient(
+    359deg,
+    rgba(18, 24, 36, 1) 20%,
+    rgba(15, 18, 31, 0.15) 100%
+  );
 }
 
 /* hero video */
@@ -421,8 +426,8 @@ section:nth-of-type(3) svg {
 }
 
 /* nieuws foto img container */
-section:nth-of-type(3) div{
-  overflow: hidden;  
+section:nth-of-type(3) div {
+  overflow: hidden;
 }
 
 /* nieuws fotos */
@@ -930,9 +935,9 @@ footer ul li {
 
 /* social media icon padding */
 footer > ul li {
-padding: 0.5rem;
-border-radius: 35%;
-background-color: var(--header-hover);
+  padding: 0.5rem;
+  border-radius: 35%;
+  background-color: var(--header-hover);
 }
 
 @media (max-width: 1300px) {
@@ -976,7 +981,6 @@ footer p {
   text-align: center;
   color: grey;
   margin: 0 3rem;
-
 }
 
 /* pegi logo's */
@@ -1002,5 +1006,3 @@ footer > a svg {
 footer > a svg:last-of-type:hover {
   fill: white;
 }
-
-
