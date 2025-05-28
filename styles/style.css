@@ -160,6 +160,7 @@ form[role="search"] input {
 
   border-radius: 0.75em;
   border: none;
+  height: 100%;
 }
 
 form button {
