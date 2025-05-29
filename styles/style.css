@@ -61,73 +61,98 @@
   overflow: hidden;
 }
 
-/* header */
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-
+  padding: 1.2rem;
+  border-bottom: var(--header-border);
+  background-color: var(--header-bg);
+  color: var(--lichte-tekst);
+  gap: 2rem;
+  overflow: hidden;
   position: sticky;
   top: 0;
   z-index: 100;
-
-  width: 100%;
-  max-width: 100vw;
-
-  background-color: var(--header-bg);
-  color: var(--lichte-tekst);
-  border-bottom: 2px solid var(--header-border);
-
-  padding: 1.25rem;
 }
 
 /* riot logo */
-header svg {
-  fill: white;
+header > button svg {
+  fill: var(--lichte-tekst);
+  cursor: pointer;
 }
 
-/* lol logo */
-header img {
+header > button svg:hover {
+  fill: red;
+}
+
+/* riot logo button styling weg */
+header > button:first-child {
+  background: none;
+  border: none;
+}
+
+header > a img {
   width: 2rem;
 }
 
-header nav {
+/* hamburger */
+header section img:last-of-type {
+  display: none;
+  width: 2rem;
+}
+
+/* voor kleine schermem */
+@media (max-width: 1465px) {
+  header nav {
+    display: none;
+  }
+
+  /* playnow */
+  header section button:nth-of-type(2) {
+    display: none;
+  }
+  /* hamburger */
+  header section img:last-of-type {
+    display: inline;
+  }
+}
+
+@media (max-width: 800px) {
+  header section form {
+    display: none;
+  }
+}
+
+/* league logo */
+header > a {
+  font-size: 1.2rem;
+  color: var(--primary);
+  text-decoration: none;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
-/* header riot logo */
-header nav > img:first-of-type {
-  width: 5rem;
-}
-
-/* header league logo */
-header nav img:nth-of-type(2) {
-  width: 2rem;
-}
-
-header nav ul {
+nav ul {
   display: flex;
-  gap: 1.25rem;
-}
-
-/* header list */
-header nav li {
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: center;
+  flex-wrap: wrap;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-/* header nav links */
+/* navigatie tekst */
 header nav li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--lichte-tekst);
+  font-weight: 500;
+  font-size: 0.8rem;
   font-family: "MarkPro";
-  font-size: 13px;
   padding: 0.5rem 0.8rem;
   border-radius: 0.5rem;
-
-  color: var(--lichte-tekst);
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 header nav li a:hover {
@@ -135,108 +160,91 @@ header nav li a:hover {
   background-color: var(--header-hover);
 }
 
-/* zoeken, taal & playnow container */
-header div {
-  display: flex; /* nodig voor geen stretch op button */
+/* container search, taal & playnow */
+header section {
+  display: flex;
+  gap: 0.5rem;
   align-items: center;
-  gap: 0.35rem;
+  margin-left: auto;
+  height: 2.6rem;
 }
 
-/* verbergen voor mobiel */
-@media (max-width: 1300px) {
-  header div {
-    display: none;
-  }
-}
-
-/* formulier */
-form[role="search"] input {
-  background-color: var(--header-hover);
-  color: var(--lichte-tekst);
-
-  font-family: "MarkPro";
-  font-size: 16px;
-  padding: 0.75em;
-
-  border-radius: 0.75em;
-  border: none;
+/* search */
+form {
+  display: flex;
   height: 100%;
 }
 
-form button {
-  background-color: var(--header-hover);
-
+form input {
+  padding: 0.55rem;
   border: none;
-  padding: 0.75em;
-  border-radius: 0.75em;
-
-  cursor: pointer;
+  border-radius: 0.65rem;
+  background-color: var(--header-hover);
+  text-transform: uppercase;
+  font-family: "MarkPro";
+  caret-color: var(--lichte-tekst);
 }
 
-/* header language select button */
-/* header button:has(img) {
-  padding: 0.75em;
-  border-radius: 0.75em;
-
-  background-color: transparent;
-  border: none;
-
-  cursor: pointer;
-} */
-
-/* header button:has(img):hover {
-  background-color: var(--header-hover);
-} */
-
-/* header button img {
-  width: 1rem; 
-  height: auto; 
-
-  display: block; 
-} */
-
-/* taal knop */
-header div button:first-of-type {
+/* taal kiezen button */
+header section button:first-of-type {
   background: none;
   border: none;
   cursor: pointer;
   padding: 0.5rem;
-  border-radius: 25%;
+  border-radius: 0.65rem;
 }
 
-header div button:first-of-type:hover {
+header section button:first-of-type:hover {
   background: var(--header-hover);
 }
 
-/* taal knop svg icon */
-header div button svg {
+header section button:first-of-type svg {
   fill: white;
   width: 1.5rem;
   height: 1.5em;
   vertical-align: middle;
 }
 
-/* header playnow button */
-header button:nth-of-type(2) {
-  padding: 0.5rem 1rem;
-  border-radius: 0.75rem;
+/* play now button */
+header section button:nth-of-type(2) {
+  padding: 0.5rem 0.9rem;
+  background: var(--blauwe-button);
   border: none;
-
+  color: var(--donkere-tekst);
   text-transform: uppercase;
-  font-weight: bold;
-
-  background-color: var(--blauwe-button);
-
+  border-radius: 0.65rem;
   cursor: pointer;
-  transition: 0.2s;
+  font-weight: bold;
 }
 
-header button:nth-of-type(2):hover {
+header section button:nth-of-type(2):hover {
   color: grey;
 }
 
+menu {
+  position: absolute;
+  width: 100%;
+  background: var(--lichte-tekst);
+  display: none;
+  color: var(--donkere-tekst);
+}
+
+menu li {
+  list-style: none;
+}
+
+menu li a {
+  padding: 0.3rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.show {
+  display: flex !important;
+}
+
 /* hero sectie */
-section:nth-of-type(1) {
+main section:nth-of-type(1) {
   min-height: 640px;
 
   display: flex;
@@ -273,12 +281,12 @@ section > video {
   z-index: -1;
 }
 
-section:nth-of-type(1) img {
+main section:nth-of-type(1) img {
   height: 150px;
 }
 
 /* button hero */
-section:nth-of-type(1) button {
+main section:nth-of-type(1) button {
   padding: 1.25rem 1.5rem;
 
   background-color: var(--gele-button);
@@ -896,10 +904,6 @@ section:nth-of-type(7) > video {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-section:nth-of-type(1) img {
-  height: 150px;
 }
 
 /* button */
