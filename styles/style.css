@@ -95,14 +95,21 @@ header > a img {
   width: 2rem;
 }
 
-/* hamburger */
-header section img:last-of-type {
+/* hamburger button */
+header section button:nth-of-type(3) {
   display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* hamburger image */
+header section button img {
   width: 2rem;
 }
 
 /* voor kleine schermem */
-@media (max-width: 1465px) {
+@media (max-width: 1485px) {
   header nav {
     display: none;
   }
@@ -119,7 +126,7 @@ header section img:last-of-type {
   }
 
   /* hamburger */
-  header section img:last-of-type {
+  header section button:nth-of-type(3) {
     display: inline;
   }
 }
