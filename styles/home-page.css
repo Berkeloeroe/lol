@@ -510,7 +510,7 @@ section:nth-of-type(6) a:hover {
   background-color: #eecc87;
 }
 
-/* 3 spel ikonen */
+/* container lijst */
 section:nth-of-type(6) ul {
   display: flex;
   flex-wrap: wrap;
@@ -524,6 +524,11 @@ section:nth-of-type(6) ul {
 section:nth-of-type(6) li {
   display: flex;
   justify-content: center;
+}
+
+/* inactive */
+section:nth-of-type(6) li:not(:first-child) {
+  opacity: 50%;
 }
 
 /* game mode tekst */
