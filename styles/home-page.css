@@ -383,6 +383,10 @@ section:nth-of-type(5) {
   }
 }
 
+h2 span {
+  font-size: 1.25rem;
+}
+
 /* akali skin img */
 section:nth-of-type(5) img {
   width: 40vw; /* schaalt mee met het scherm */
