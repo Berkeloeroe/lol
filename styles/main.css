@@ -301,7 +301,7 @@ footer nav:first-of-type {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 2rem;
+  padding: 1.2rem;
   background-color: var(--footer-licht);
   border-top: 2px solid var(--footer-border);
 }
