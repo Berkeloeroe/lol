@@ -85,6 +85,10 @@ section:nth-of-type(2) {
   color: var(--lichte-tekst);
 }
 
+section:nth-of-type(2) h2 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
 /* mobiel langere button */
 @media (max-width: 600px) {
   section:nth-of-type(2) {
