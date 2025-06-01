@@ -5,22 +5,15 @@
     <meta name="author" content="Randi Berkelaar" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#181F31" />
-
     <title>League of Legends</title>
-
+    <link href="styles/main.css" rel="stylesheet" />
     <link href="styles/style.css" rel="stylesheet" />
     <link rel="icon" type="image/webp" href="images/website-icon.webp" />
   </head>
-
   <body>
    <header>
       <!-- riot logo dropdown -->
-      <button
-        onclick="toggleMenu()"
-        aria-label="Menu tonen of verbergen"
-        aria-controls="gebruikersmenu"
-        aria-expanded="false"
-        type="button"
+      <button type="button"
       >
         <svg width="90" height="32" viewBox="0 0 587.93 165">
           <title>Riot Games</title>
@@ -33,22 +26,6 @@
       <a href="#" aria-label="Homepage">
         <img src="images/website-icon.webp" alt="lol icon" />
       </a>
-
-      <menu id="gebruikersmenu">
-        <ul>
-          <li><h2>games</h2></li>
-          <li><a href="#">Profiel</a></li>
-          <li><a href="#">Instellingen</a></li>
-          <li><a href="#">Uitloggen</a></li>
-        </ul>
-        <ul>
-          <li><h2>forge</h2></li>
-          <li><a href="#">Profiel</a></li>
-          <li><a href="#">Instellingen</a></li>
-          <li><a href="#">Uitloggen</a></li>
-        </ul>
-      </menu>
-
       <nav aria-label="Hoofdmenu">
         <ul>
           <li><a href="https://www.leagueoflegends.com/en-gb/how-to-play/">Game</a></li>
@@ -62,7 +39,6 @@
           <li><a href="https://support.riotgames.com/hc/en-us">Support</a></li>
         </ul>
       </nav>
-
       <section>
         <form role="search">
           <input type="text" placeholder="Search" aria-label="Search input" />
@@ -80,10 +56,9 @@
           </svg>
         </button>
         <button type="button">play now</button>
-        <button type="button"><img src="hamburger.png" alt="hamburger icon" /></button>
+        <button id="menuButton" type="button">☰</button>
       </section>
     </header>
-
     <main>
       <!-- hero sectie -->
       <section>
@@ -101,7 +76,7 @@
         />
         <button>play for free</button>
       </section>
-      <!-- spirit sectie -->
+      <!-- seizoenen sectie -->
       <section>
         <h2>Spirit Blossom Beyond: Act 1</h2>
         <p>
@@ -111,7 +86,7 @@
         </p>
         <a href="">watch now</a>
       </section>
-      <!-- news sectie-->
+      <!-- nieuws items sectie-->
       <section aria-labelledby="featured-news">
         <div>
           <h3>Featured News</h3>
@@ -140,6 +115,7 @@
           <li>
             <a href="https://www.leagueoflegends.com/en-gb/news/media/download-the-spirit-blossom-streaming-kit-for-free/">
               <article>
+                <!-- div als image wrapper is voor styling van img -->
                 <div>
                 <img src="images/wit-paars.avif" alt="news article 2"/>
                 </div>
@@ -157,6 +133,7 @@
           <li>
             <a href="https://teamfighttactics.leagueoflegends.com/en-gb/news/game-updates/teamfight-tactics-patch-14-4-notes-2025/">
               <article>
+                <!-- div als image wrapper is voor styling van img -->
                 <div>
                 <img src="images/roze-man.avif" alt="news article 3" />
                 </div>
@@ -226,9 +203,8 @@
             </li>
           </ul>
         </div>
-
         <figure>
-          <img src="images/akali.avif" alt="Akali champion" />
+          <img src="images/akali.avif" alt="akali champion" />
           <h5>Akali</h5>
           <figcaption>The Rogue Assassin</figcaption>
         </figure>
@@ -248,7 +224,6 @@
           <a href="">play now</a>
         </div>
       </section>
-
       <!-- multiple ways to play video sectie -->
       <section>
         <div>
@@ -284,7 +259,6 @@
             </li>
           </ul>
         </div>
-
         <figure>
           <video autoplay muted loop playsinline aria-hidden="true">
             <source src="media/rift-video.mp4" type="video/mp4" />
@@ -296,7 +270,6 @@
           </figcaption>
         </figure>
       </section>
-
       <!-- laatse sectie met bg video -->
       <section>
         <video autoplay muted loop playsinline aria-hidden="true">
@@ -344,7 +317,6 @@
         <a href="https://usk.de/en/"><img src="images/12-groen.png" alt="12 green icon"></a>
       </div>
     </footer>
-
     <script defer src="scripts/script.js"></script>
   </body>
 </html>
