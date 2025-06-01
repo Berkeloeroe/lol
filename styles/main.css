@@ -170,8 +170,8 @@ header section button img {
     font-size: 1.1rem;
     color: white;
 
-    padding: 0.8rem;
-    border-radius: 1.2rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 1rem;
 
     background-color: var(--header-hover);
   }
