@@ -8,6 +8,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: "Beaufort2";
+  src: url("../fonts/BeaufortforLOL-HeavyItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* body */
 @font-face {
   font-family: "Spiegel";
@@ -54,7 +61,7 @@
 /* typografie */
 h2 {
   font-size: clamp(2rem, 5vw, 3rem); /* tussen 32px en 48px */
-  font-family: "Beaufort", serif;
+  font-family: "Beaufort2", serif;
   text-transform: uppercase;
 }
 
