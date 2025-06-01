@@ -257,6 +257,13 @@ header section button:first-of-type svg {
   vertical-align: middle;
 }
 
+@media (max-width: 1485px) {
+  header section button:first-of-type svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
 /* play now button */
 header section button:nth-of-type(2) {
   padding: 0.5rem 0.9rem;

@@ -1,3 +1,7 @@
+main section {
+  padding: clamp(2rem, 10vw, 12rem);
+}
+
 /* hero sectie */
 main section:nth-of-type(1) {
   min-height: 640px;
@@ -79,7 +83,7 @@ section:nth-of-type(2) {
   background-repeat: no-repeat;
 
   gap: 0.75rem;
-  padding: clamp(2rem, 10vw, 12rem);
+  /* padding: clamp(2rem, 10vw, 12rem); */
 
   color: var(--lichte-tekst);
 }
@@ -129,7 +133,7 @@ section:nth-of-type(3) {
   justify-content: center;
 
   gap: 1.5rem; /* flex voor gap nu */
-  padding: clamp(2rem, 10vw, 12rem);
+  /* padding: clamp(2rem, 10vw, 12rem); */
 
   color: var(--donkere-tekst);
 
@@ -261,7 +265,7 @@ section:nth-of-type(4) {
 
   text-align: center;
 
-  padding: clamp(2rem, 10vw, 12rem);
+  /* padding: clamp(2rem, 10vw, 12rem); */
 
   background-image: url(../images/assasin-bg-grijs.png);
   background-size: cover;
@@ -375,7 +379,7 @@ section:nth-of-type(5) {
   align-items: center;
   gap: 3rem;
 
-  padding: clamp(2rem, 10vw, 12rem);
+  /* padding: clamp(2rem, 10vw, 12rem); */
 
   background-image: url("../images/bos.avif");
   background-size: cover;
@@ -448,7 +452,7 @@ section:nth-of-type(6) {
   color: var(--lichte-tekst);
   text-align: center;
 
-  padding: clamp(2rem, 10vw, 12rem);
+  /* padding: clamp(2rem, 10vw, 12rem); */
 
   background-image: url(../images/onduidelijke-bg.avif);
   background-size: cover;
