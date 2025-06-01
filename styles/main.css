@@ -3,7 +3,9 @@
 /* headings */
 @font-face {
   font-family: "Beaufort";
-  src: url("../fonts/BeaufortforLOL-BoldItalic.woff") format("woff");
+  src: url("../fonts/BeaufortforLOL-BoldItalic.woff2") format("woff2"),
+    url("../fonts/BeaufortforLOL-BoldItalic.woff") format("woff"),
+    url("../fonts/BeaufortforLOL-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
 }
