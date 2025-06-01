@@ -36,8 +36,9 @@ section > video {
   z-index: -1;
 }
 
+/* logo  */
 main section:nth-of-type(1) img {
-  height: 150px;
+  height: 8em;
 }
 
 /* button hero */

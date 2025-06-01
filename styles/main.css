@@ -55,7 +55,7 @@
 
 /* typografie */
 h2 {
-  font-size: clamp(2rem, 5vw, 3rem); /* tussen 32px en 48px */
+  font-size: clamp(2rem, 5vw, 4rem); /* tussen 32px en 48px */
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
