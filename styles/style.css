@@ -84,12 +84,6 @@ section:nth-of-type(2) {
   color: var(--lichte-tekst);
 }
 
-@media (max-width: 900px) {
-  section:nth-of-type(2) {
-    /* padding: clamp(2rem, 5vw, 12rem); */
-  }
-}
-
 /* mobiel langere button */
 @media (max-width: 600px) {
   section:nth-of-type(2) {
@@ -129,7 +123,6 @@ section:nth-of-type(3) {
   justify-content: center;
 
   gap: 1.5rem; /* flex voor gap nu */
-  /* padding: clamp(2rem, 10vw, 12rem); */
 
   color: var(--donkere-tekst);
 
@@ -137,12 +130,6 @@ section:nth-of-type(3) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-@media (max-width: 900px) {
-  section:nth-of-type(3) {
-    /* padding: clamp(2rem, 5vw, 12rem); */
-  }
 }
 
 /* h3 & view all container */
@@ -281,6 +268,12 @@ section:nth-of-type(4) > div:first-of-type {
   align-items: center;
   gap: 1rem;
   max-width: 100%; /* nooit breder dan de viewport/sectie */
+}
+
+@media (max-width: 1300px) {
+  section:nth-of-type(4) > div:first-of-type {
+    align-items: stretch;
+  }
 }
 
 /* link buttons container */
@@ -641,6 +634,12 @@ section button:first-of-type:hover {
 
 main section {
   padding: clamp(2rem, 10vw, 12rem);
+}
+
+@media (max-width: 1300px) {
+  main section {
+    padding: clamp(2rem, 5vw, 12rem);
+  }
 }
 
 @media (max-width: 900px) {
