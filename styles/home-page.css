@@ -520,13 +520,13 @@ section:nth-of-type(6) ul {
   margin-top: 2rem;
 }
 
-/* 3 spel ikonen */
+/* 3 gamemode ikonen */
 section:nth-of-type(6) li {
   display: flex;
   justify-content: center;
 }
 
-/* categorie tekst */
+/* game mode tekst */
 li figure figcaption {
   font-family: "Spiegel";
   font-size: 14px;
@@ -541,6 +541,11 @@ section:nth-of-type(6) figure {
   width: 50%;
   gap: 1rem;
   transition: transform 0.3s ease; /* vloeiende overgang */
+}
+
+/* video figure */
+section:nth-of-type(6) > figure {
+  gap: 0;
 }
 
 /* hover effect */
