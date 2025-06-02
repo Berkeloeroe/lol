@@ -1,26 +1,27 @@
 /* fonts */
 
-/* headings */
+/* Beaufort: Gebruikt voor headings */
+@font-face {
+  font-family: "Beaufort";
+  src: url("../fonts/beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf")
+    format("truetype");
+  font-display: swap;
+}
 
-/* body */
+/* Spiegel: Gebruikt voor body tekst */
 @font-face {
   font-family: "Spiegel";
   src: url("../fonts/Spiegel-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
-/* nav */
+/* MarkPro: Gebruikt voor navigatie en knoppen */
 @font-face {
   font-family: "MarkPro";
   src: url("../fonts/MarkPro-Bold.woff2") format("woff2");
-}
-
-/* headings */
-@font-face {
-  font-family: "Beaufort";
-  src: url("../fonts/beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf")
-    format("truetype");
+  font-display: swap;
 }
 
 /**************/
@@ -54,41 +55,35 @@
 
 /* typografie */
 h2 {
-  font-size: clamp(3rem, 5vw, 4rem); /* tussen 32px en 48px */
+  font-size: clamp(3rem, 5vw, 4rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
 
 h3 {
-  font-size: clamp(1.5rem, 4vw, 2rem); /* tussen 24px en 32px */
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
 
 h4 {
-  font-size: clamp(1.2rem, 2.5vw, 1.375rem); /* tussen ~19px en 22px */
+  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
   font-family: "MarkPro";
-
-  /* margin-top: 10px;  */
-  /* zelfde margin als bij article */
-
   color: var(--donkere-tekst);
 }
 
 h5 {
-  font-size: clamp(1.2rem, 2.5vw, 1.375rem); /* tussen ~19px en 22px */
+  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
-
   color: var(--donkere-tekst);
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.125rem); /* tussen 16px en 18px */
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-family: "Spiegel", sans-serif;
   line-height: 1.6;
   max-width: 700px;
-
-  font-family: "Spiegel", sans-serif;
 }
 
 /* dingen verbergen voor toegankelijk */
