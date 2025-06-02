@@ -83,7 +83,7 @@ p {
   font-size: clamp(1rem, 2vw, 1.125rem);
   font-family: "Spiegel", sans-serif;
   line-height: 1.6;
-  max-width: 700px;
+  max-width: 45rem;
 }
 
 /* dingen verbergen voor toegankelijk */

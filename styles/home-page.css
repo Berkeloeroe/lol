@@ -143,7 +143,7 @@ section:nth-of-type(3) {
   flex-direction: column;
   justify-content: center;
 
-  gap: 1.5rem; /* flex voor gap nu */
+  gap: 1.5rem;
 
   color: var(--donkere-tekst);
 
@@ -227,7 +227,7 @@ section:nth-of-type(3) .nieuws-foto:hover {
 /* categorie */
 section:nth-of-type(3) article span {
   font-family: "MarkPro";
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   color: var(--gele-button);
 }
@@ -235,14 +235,14 @@ section:nth-of-type(3) article span {
 /* datum */
 time {
   font-family: "Spiegel", sans-serif;
+  font-size: 0.75rem;
   margin-left: 0.75rem;
   color: var(--donkere-tekst);
-  font-size: 0.8rem;
 }
 
 /* artikel body tekst */
 section:nth-of-type(3) p {
-  font-size: clamp(0.9rem, 2vw, 1rem);
+  font-size: clamp(0.9rem, 2vw, 0.9rem);
 }
 
 /* artikel body dat eig een link is */
