@@ -408,8 +408,6 @@ section:nth-of-type(5) {
 
   gap: 3rem;
 
-  /* padding: clamp(2rem, 10vw, 12rem); */
-
   background-image: url("../images/bos.avif");
   background-size: cover;
   background-position: center;
@@ -443,8 +441,7 @@ section:nth-of-type(5) div {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 2rem;
-  /* width: 100%; */
+  gap: 0.6rem;
 }
 
 /* lange button voor mobiel */
@@ -468,6 +465,8 @@ section:nth-of-type(5) a {
   font-family: "Spiegel", sans-serif;
   font-weight: 400;
   font-size: 1rem;
+
+  margin-top: 1rem;
 
   cursor: pointer;
   transition: all 0.4s ease;
@@ -674,6 +673,6 @@ section:nth-of-type(7) button {
 }
 
 /* Hover-effect */
-section button:first-of-type:hover {
+section:nth-of-type(7) button:hover {
   background-color: #eecc87;
 }
