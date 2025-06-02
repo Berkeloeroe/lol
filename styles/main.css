@@ -24,6 +24,12 @@
   src: url("../fonts/MarkPro-Bold.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: "yo";
+  src: url("../beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf")
+    format("truetype");
+}
+
 /**************/
 /* CSS REMEDY */
 /**************/
@@ -56,7 +62,7 @@
 /* typografie */
 h2 {
   font-size: clamp(3rem, 5vw, 4rem); /* tussen 32px en 48px */
-  font-family: "Beaufort", serif;
+  font-family: "yo", serif;
   text-transform: uppercase;
 }
 
