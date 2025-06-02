@@ -382,14 +382,15 @@ section:nth-of-type(4) li:nth-of-type(n + 2) img {
 /* categorie tekst */
 li figure figcaption {
   font-family: "Spiegel";
-  font-size: 14px;
+  font-size: clamp(0.8rem, 2vw, 0.8rem);
   text-transform: uppercase;
 }
 
 section > figure:last-of-type > figcaption {
   font-family: "Spiegel";
-
-  color: grey;
+  font-size: clamp(0.9rem, 2vw, 0.9rem);
+  color: rgb(82, 82, 82);
+  margin-top: 1rem;
 }
 
 /* champion figure */
@@ -567,13 +568,6 @@ section:nth-of-type(6) li {
 /* inactive */
 section:nth-of-type(6) li:not(:first-child) {
   opacity: 50%;
-}
-
-/* game mode tekst */
-li figure figcaption {
-  font-family: "Spiegel";
-  font-size: 14px;
-  text-transform: uppercase;
 }
 
 /* alle figures */

@@ -80,7 +80,7 @@ h5 {
 }
 
 p {
-  font-size: clamp(1rem, 2vw, 1.125rem);
+  font-size: clamp(1rem, 2vw, 1rem);
   font-family: "Spiegel", sans-serif;
   line-height: 1.6;
   max-width: 45rem;
