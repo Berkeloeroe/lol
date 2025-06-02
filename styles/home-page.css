@@ -1,3 +1,21 @@
+main section {
+  padding: clamp(2rem, 10vw, 12rem);
+}
+
+@media (max-width: 1300px) {
+  main section {
+    /* padding: clamp(2rem, 5vw, 12rem); */
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 900px) {
+  main section {
+    /* padding: clamp(1.2rem, 5vw, 12rem); */
+    padding: 1.2rem;
+  }
+}
+
 /* hero sectie */
 main section:nth-of-type(1) {
   min-height: 640px;
@@ -665,20 +683,4 @@ section:nth-of-type(7) button {
 /* Hover-effect */
 section button:first-of-type:hover {
   background-color: #eecc87;
-}
-
-main section {
-  padding: clamp(2rem, 10vw, 12rem);
-}
-
-@media (max-width: 1300px) {
-  main section {
-    padding: clamp(2rem, 5vw, 12rem);
-  }
-}
-
-@media (max-width: 900px) {
-  main section {
-    padding: clamp(2rem, 5vw, 12rem);
-  }
 }
