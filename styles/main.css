@@ -99,7 +99,7 @@ p {
 header {
   display: flex;
   align-items: center;
-  padding: 1.2rem;
+  padding: 1rem 1.2rem;
   border-bottom: var(--header-border);
   background-color: var(--header-bg);
   color: var(--lichte-tekst);
@@ -399,4 +399,14 @@ footer > a svg {
 
 footer > a svg:last-of-type:hover {
   fill: white;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 5px solid red;
+  outline-offset: 3px;
+  background-color: rgba(255, 0, 0, 0.068);
 }

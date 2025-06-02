@@ -129,7 +129,6 @@ section:nth-of-type(2) a {
   font-weight: 400;
   font-size: 1rem;
 
-  outline-offset: 3px;
   cursor: pointer;
   transition: all 0.4s ease;
 }
