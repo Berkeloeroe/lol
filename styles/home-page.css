@@ -39,7 +39,6 @@ section > video {
 /* logo  */
 main section:nth-of-type(1) img {
   height: 8em;
-  filter: grayscale(1) sepia(1) hue-rotate(180deg) saturate(3);
 }
 
 /* button hero */
