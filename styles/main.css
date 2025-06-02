@@ -69,7 +69,8 @@ h4 {
   font-size: clamp(1.2rem, 2.5vw, 1.375rem); /* tussen ~19px en 22px */
   font-family: "MarkPro";
 
-  margin-top: 10px; /* zelfde margin als bij article */
+  /* margin-top: 10px;  */
+  /* zelfde margin als bij article */
 
   color: var(--donkere-tekst);
 }

@@ -40,7 +40,7 @@ https://www.leagueoflegends.com/en-gb/
 #### Screenshot(s) van de eerste pagina (small screen):
 
 hier de naam van de pagina  
- <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+ <img src="readme-images/eerste pagina.png" width="375px" alt="home-page-small-screen">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 

@@ -174,6 +174,12 @@ section:nth-of-type(3) svg {
   width: 1rem;
 }
 
+section:nth-of-type(3) article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
 /* nieuws foto img container */
 section:nth-of-type(3) div {
   position: relative;
@@ -201,11 +207,6 @@ section:nth-of-type(3) .nieuws-foto:hover {
   transform: scale(1.1);
 }
 
-/* ruimte tussen elementen */
-article > * {
-  margin-bottom: 10px;
-}
-
 /* categorie */
 section:nth-of-type(3) article span {
   font-family: "MarkPro";
@@ -216,9 +217,10 @@ section:nth-of-type(3) article span {
 
 /* datum */
 time {
-  font-size: 13px;
   font-family: "Spiegel", sans-serif;
   margin-left: 0.75rem;
+  color: var(--donkere-tekst);
+  font-size: 0.9rem;
 }
 
 /* artikel body tekst */
