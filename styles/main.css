@@ -1,14 +1,6 @@
 /* fonts */
 
 /* headings */
-@font-face {
-  font-family: "Beaufort";
-  src: url("../fonts/BeaufortforLOL-BoldItalic.woff2") format("woff2"),
-    url("../fonts/BeaufortforLOL-BoldItalic.woff") format("woff"),
-    url("../fonts/BeaufortforLOL-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
 
 /* body */
 @font-face {
@@ -24,9 +16,10 @@
   src: url("../fonts/MarkPro-Bold.woff2") format("woff2");
 }
 
+/* headings */
 @font-face {
-  font-family: "yo";
-  src: url("../beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf")
+  font-family: "Beaufort";
+  src: url("../fonts/beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf")
     format("truetype");
 }
 
@@ -62,7 +55,7 @@
 /* typografie */
 h2 {
   font-size: clamp(3rem, 5vw, 4rem); /* tussen 32px en 48px */
-  font-family: "yo", serif;
+  font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
 
@@ -118,7 +111,7 @@ header {
   overflow: hidden;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 /* riot logo */

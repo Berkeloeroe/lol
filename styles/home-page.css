@@ -85,7 +85,7 @@ section:nth-of-type(2) {
 }
 
 section:nth-of-type(2) h2 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(3rem, 5vw, 3rem);
 }
 
 /* mobiel langere button */
@@ -194,7 +194,7 @@ section:nth-of-type(3) .nieuws-foto {
   bottom: 0;
   height: 3rem;
   border: 1px solid var(--lichte-tekst);
-  z-index: 1000000;
+  z-index: 100;
 }
 
 section:nth-of-type(3) .nieuws-foto:hover {
