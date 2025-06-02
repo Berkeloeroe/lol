@@ -11,14 +11,13 @@ main section {
 
 @media (max-width: 900px) {
   main section {
-    /* padding: clamp(1.2rem, 5vw, 12rem); */
     padding: 1.5rem;
   }
 }
 
 /* hero sectie */
 main section:nth-of-type(1) {
-  min-height: 640px;
+  min-height: 40rem;
 
   display: flex;
   flex-direction: column;
@@ -293,6 +292,10 @@ section:nth-of-type(4) {
   }
 }
 
+section:nth-of-type(4) img {
+  max-width: 100%;
+}
+
 /* tekst container */
 section:nth-of-type(4) > div:first-of-type {
   display: flex;
@@ -314,6 +317,7 @@ section:nth-of-type(4) > div:first-of-type > div {
   justify-content: center;
   gap: 1rem;
 
+  margin-top: 2rem;
   width: 100%;
 }
 
@@ -362,7 +366,7 @@ section:nth-of-type(4) div figure {
 }
 
 section:nth-of-type(4) div figure:hover {
-  transform: scale(1.1); /* vergroot het element met 5% */
+  transform: scale(1.1);
 }
 
 /* categorieen ikonen champs */
@@ -370,8 +374,10 @@ section:nth-of-type(4) ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 3rem;
   text-align: center;
   max-width: 100%;
+  margin-top: 2rem;
 }
 
 /* li:nth-of-type(n+2) selecteert alle <li> vanaf de tweede. */
