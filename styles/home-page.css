@@ -1,5 +1,5 @@
 main section {
-  padding: clamp(2rem, 10vw, 12rem);
+  padding: clamp(1.2rem, 10vw, 12rem);
 }
 
 @media (max-width: 1300px) {
@@ -12,7 +12,7 @@ main section {
 @media (max-width: 900px) {
   main section {
     /* padding: clamp(1.2rem, 5vw, 12rem); */
-    padding: 1.2rem;
+    padding: 1.5rem;
   }
 }
 
