@@ -1,0 +1,59 @@
+h1 {
+  font-size: clamp(3rem, 5vw, 4rem);
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
+}
+
+main section:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: var(--lichte-tekst);
+  background-color: var(--donker-blauw);
+}
+
+main section:nth-of-type(1) p:first-of-type {
+  font-size: clamp(1.3rem, 1vw, 4rem);
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
+
+  color: var(--gele-button);
+}
+
+main section:nth-of-type(1) svg {
+  fill: var(--gele-button);
+}
+
+main section:nth-of-type(1) div {
+  display: flex;
+  gap: 1rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 8rem;
+  height: 8rem;
+
+  text-align: center;
+  border: 1px solid var(--gele-button);
+}
+
+figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+figure figcaption span {
+  font-family: "Spiegel", sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+figure figcaption span:nth-last-of-type(1) {
+  color: var(--gele-button);
+}

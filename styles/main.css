@@ -47,6 +47,7 @@
   --footer-border: #363636;
   --gele-button: #c8aa6e;
   --blauwe-button: rgb(11, 196, 226);
+  --donker-blauw: rgb(10, 20, 40);
 }
 
 /****************/
@@ -84,6 +85,22 @@ p {
   font-family: "Spiegel", sans-serif;
   line-height: 1.6;
   max-width: 45rem;
+}
+
+main section {
+  padding: clamp(1.2rem, 10vw, 12rem);
+}
+
+@media (max-width: 1300px) {
+  main section {
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 900px) {
+  main section {
+    padding: 1.5rem;
+  }
 }
 
 /* dingen verbergen voor toegankelijk */
