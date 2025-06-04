@@ -5,29 +5,42 @@ h1 {
 }
 
 main section:nth-of-type(1) {
-  padding: 0;
+  position: relative;
+  height: 100vh;
+  padding: 0; /* padding weg die ik overal gebruik */
   color: var(--lichte-tekst);
   background-color: var(--donker-blauw);
 }
 
+/* achtergrond afbeelding */
 main section:nth-of-type(1) div:first-child {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   background-image: url("../images/AurelionSol_0.jpg");
   background-position: center;
   background-size: cover;
-  height: 600px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 30vh;
+}
+
+/* bij groter scherm komt de afbeelding achter de tekst */
+@media (min-width: 1000px) {
+  main section:nth-of-type(1) div:first-child {
+    position: absolute;
+    height: 100vh;
+  }
 }
 
 /* content */
 main section:nth-of-type(1) > div:nth-child(2) {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
   padding: clamp(1.2rem, 10vw, 12rem);
+  z-index: 100;
 }
 
 @media (max-width: 1300px) {
