@@ -18,7 +18,12 @@ main section:nth-of-type(1) div:first-child {
   left: 0;
   width: 100%;
   z-index: 10;
-  background-image: url("../images/AurelionSol_0.jpg");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/AurelionSol_0.jpg");
   background-position: center;
   background-size: cover;
   height: 30vh;
@@ -35,7 +40,6 @@ main section:nth-of-type(1) div:first-child {
 /* content */
 main section:nth-of-type(1) > div:nth-child(2) {
   position: relative;
-
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
@@ -43,6 +47,7 @@ main section:nth-of-type(1) > div:nth-child(2) {
   z-index: 100;
 }
 
+/* padding voor verschillende grotes */
 @media (max-width: 1300px) {
   main section:nth-of-type(1) > div:nth-child(2) {
     padding: 4vw;
@@ -55,6 +60,7 @@ main section:nth-of-type(1) > div:nth-child(2) {
   }
 }
 
+/* the star forger tekst boven de h1*/
 main section:nth-of-type(1) p:first-of-type {
   font-size: clamp(1.3rem, 2vw, 4rem);
   font-family: "Beaufort", serif;
