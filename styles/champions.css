@@ -5,24 +5,41 @@ h1 {
 }
 
 main section:nth-of-type(1) {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
+  padding: 0;
   color: var(--lichte-tekst);
   background-color: var(--donker-blauw);
 }
 
-main section:nth-of-type(1) div:first-of-type {
-  /* position: absolute; */
+main section:nth-of-type(1) div:first-child {
   background-image: url("../images/AurelionSol_0.jpg");
   background-position: center;
   background-size: cover;
-  padding: 10rem;
+  height: 600px;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+/* content */
+main section:nth-of-type(1) > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  padding: clamp(1.2rem, 10vw, 12rem);
+}
+
+@media (max-width: 1300px) {
+  main section:nth-of-type(1) > div:nth-child(2) {
+    padding: 4vw;
+  }
+}
+
+@media (max-width: 900px) {
+  main section:nth-of-type(1) > div:nth-child(2) {
+    padding: 1.5rem;
+  }
 }
 
 main section:nth-of-type(1) p:first-of-type {
@@ -37,7 +54,7 @@ main section:nth-of-type(1) svg {
   fill: var(--gele-button);
 }
 
-main section:nth-of-type(1) div:nth-of-type(2) {
+main section:nth-of-type(1) div div {
   display: flex;
   gap: 1rem;
 }
