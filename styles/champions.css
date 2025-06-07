@@ -4,6 +4,7 @@ h1 {
   text-transform: uppercase;
 }
 
+/* eerste sectie */
 main section:nth-of-type(1) {
   position: relative;
   height: 100%; /* ios browser doet gek */
@@ -28,7 +29,7 @@ main section:nth-of-type(1) div:first-child {
 @media (min-width: 1000px) {
   main section:nth-of-type(1) div:first-child {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     /* voor grote schermen komt een gradient voor styling en leesbaarheid */
     background-image: linear-gradient(
         to bottom,
@@ -58,11 +59,11 @@ main section:nth-of-type(1) > div:nth-child(2) {
 }
 
 /* padding voor verschillende grotes */
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
   main section:nth-of-type(1) > div:nth-child(2) {
     padding: 4vw;
   }
-}
+} */
 
 @media (max-width: 900px) {
   main section:nth-of-type(1) > div:nth-child(2) {
@@ -96,7 +97,36 @@ main section:nth-of-type(1) div div {
   }
 }
 
-figure {
+main section:nth-of-type(1) ul {
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 0;
+  margin-top: 9rem;
+  font-family: "Spiegel", sans-serif;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  border-top: 1px solid var(--gele-button);
+}
+
+main section:nth-of-type(1) ul span {
+  text-transform: uppercase;
+  color: grey;
+}
+
+main section:nth-of-type(1) ul li {
+  list-style: none;
+}
+
+main section:nth-of-type(1) ul li a {
+  color: var(--lichte-tekst);
+  text-decoration: none;
+}
+
+main section:nth-of-type(1) ul li a:hover {
+  text-decoration: underline;
+}
+
+main section:nth-of-type(1) figure {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,47 +144,30 @@ figure {
   margin: 0.6rem;
 }
 
-figcaption {
+main section:nth-of-type(1) figcaption {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-figure figcaption span {
+main section:nth-of-type(1) figure figcaption span {
   font-family: "Spiegel", sans-serif;
   font-size: 0.75rem;
   text-transform: uppercase;
 }
 
-figure figcaption span:nth-last-of-type(1) {
+main section:nth-of-type(1) figure figcaption span:nth-last-of-type(1) {
   color: var(--gele-button);
 }
 
-main ul {
+/* tweede sectie */
+ol {
   display: flex;
   gap: 1rem;
-  padding: 0.5rem 0;
-  margin-top: 9rem;
-  font-family: "Spiegel", sans-serif;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  border-top: 1px solid var(--gele-button);
+  padding: 0;
 }
 
-main ul span {
-  text-transform: uppercase;
-  color: grey;
-}
-
-main ul li {
+ol li {
   list-style: none;
-}
-
-main ul li a {
-  color: var(--lichte-tekst);
-  text-decoration: none;
-}
-
-main ul li a:hover {
-  text-decoration: underline;
+  text-align: center;
 }
