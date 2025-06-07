@@ -6,7 +6,7 @@ h1 {
 
 main section:nth-of-type(1) {
   position: relative;
-  height: 100vh; /* ios browser doet gek */
+  height: 100%; /* ios browser doet gek */
   padding: 0; /* padding weg die ik overal gebruik */
   color: var(--lichte-tekst);
   background-color: var(--donker-blauw);
@@ -132,7 +132,7 @@ main ul {
   display: flex;
   gap: 1rem;
   padding: 0.5rem 0;
-  margin-top: 7rem;
+  margin-top: 9rem;
   font-family: "Spiegel", sans-serif;
   font-size: 0.7rem;
   text-transform: uppercase;
