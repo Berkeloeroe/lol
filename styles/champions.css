@@ -18,12 +18,7 @@ main section:nth-of-type(1) div:first-child {
   left: 0;
   width: 100%;
   z-index: 10;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(49, 36, 36, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("../images/AurelionSol_0.jpg");
+  background-image: url("../images/AurelionSol_0.jpg");
   background-position: center;
   background-size: cover;
   height: 30vh;
@@ -34,6 +29,13 @@ main section:nth-of-type(1) div:first-child {
   main section:nth-of-type(1) div:first-child {
     position: absolute;
     height: 100vh;
+    /* voor grote schermen komt een gradient voor styling en leesbaarheid */
+    background-image: linear-gradient(
+        to bottom,
+        rgba(49, 36, 36, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("../images/AurelionSol_0.jpg");
   }
 }
 
