@@ -215,7 +215,7 @@ ol li {
 }
 
 /* alles behalve de eerste list item */
-ol li:not(:first-child) {
+main section:nth-of-type(2) ol li:not(:first-child) {
   opacity: 50%;
 }
 
@@ -319,9 +319,10 @@ section:nth-of-type(3) > div span {
   gap: 0.8rem;
 }
 
-main section:nth-of-type(3) ol figure img {
-  height: 3.5rem;
-  width: 6rem;
+main section:nth-of-type(3) ol figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main section:nth-of-type(3) ol figure img {
