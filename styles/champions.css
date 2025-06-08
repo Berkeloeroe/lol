@@ -325,11 +325,18 @@ section:nth-of-type(3) > img {
   object-fit: cover;
 }
 
+/* container */
 section:nth-of-type(3) > div {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
+/* @media (min-width: 1000px) {
+  section:nth-of-type(3) > div {
+    width: 80%;
+  }
+} */
 
 /* progress balk */
 section:nth-of-type(3) > div div {
@@ -353,6 +360,13 @@ main section:nth-of-type(3) ol figure {
 main section:nth-of-type(3) ol figure img {
   height: 2.5rem;
   width: 4.5rem;
+}
+
+@media (min-width: 1000px) {
+  main section:nth-of-type(3) ol figure img {
+    height: 7rem;
+    width: 13rem;
+  }
 }
 
 main section:nth-of-type(3) figcaption {
