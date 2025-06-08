@@ -190,6 +190,7 @@ ol li:not(:first-child) {
 
 ol figure img {
   height: 3rem;
+  width: 3rem;
 }
 
 ol figure figcaption {
@@ -218,9 +219,10 @@ span svg {
   fill: var(--gele-button);
 }
 
-section:nth-of-type(2) figure {
+section:nth-of-type(2) > figure {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -232,7 +234,6 @@ section:nth-of-type(2) > figure figcaption {
 
 section:nth-of-type(2) video {
   width: 100%;
-  aspect-ratio: 1 / 1;
   object-fit: cover;
 
   outline: 1px solid var(--gele-button);
