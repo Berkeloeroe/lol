@@ -224,6 +224,7 @@ section:nth-of-type(2) > figure {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin: 0.5rem;
 }
 
 section:nth-of-type(2) > figure figcaption {
@@ -238,8 +239,6 @@ section:nth-of-type(2) video {
 
   outline: 1px solid var(--gele-button);
   outline-offset: 0.5rem;
-
-  margin: 0.5rem;
 }
 
 h5 {
