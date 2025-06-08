@@ -332,4 +332,13 @@ main section:nth-of-type(3) ol figure img {
 
 figcaption {
   text-align: center;
+  color: grey;
+}
+
+main section:nth-of-type(3) ol li:first-of-type figcaption {
+  color: var(--gele-button);
+}
+
+main section:nth-of-type(3) ol li:first-of-type img {
+  outline: 2px var(--gele-button);
 }
