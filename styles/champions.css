@@ -219,7 +219,7 @@ ol li:not(:first-child) {
   opacity: 50%;
 }
 
-ol figure img {
+main section:nth-of-type(2) ol figure img {
   height: 3rem;
   width: 3rem;
 }
@@ -295,7 +295,7 @@ section:nth-of-type(3) {
   gap: 1rem;
 }
 
-section:nth-of-type(3) img {
+section:nth-of-type(3) > img {
   width: 100%;
   object-fit: cover;
 }
@@ -317,4 +317,14 @@ section:nth-of-type(3) > div div {
 section:nth-of-type(3) > div span {
   display: flex;
   gap: 0.8rem;
+}
+
+main section:nth-of-type(3) ol figure img {
+  height: 3.5rem;
+  width: 6rem;
+}
+
+main section:nth-of-type(3) ol figure img {
+  height: 3.5rem;
+  width: 6rem;
 }
