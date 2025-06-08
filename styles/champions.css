@@ -198,6 +198,16 @@ ol {
   padding: 0;
 }
 
+@media (min-width: 1000px) {
+  ol {
+    justify-content: center;
+    gap: 3rem;
+  }
+  main section:nth-of-type(2) > div div {
+    display: none;
+  }
+}
+
 ol li {
   list-style: none;
   font-family: "Spiegel";
@@ -216,6 +226,7 @@ ol figure img {
 
 ol figure figcaption {
   font-size: 0.6rem;
+  margin-top: 0.5rem;
 }
 
 /* container */
@@ -223,6 +234,12 @@ main section:nth-of-type(2) > div div {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+@media (min-width: 1000px) {
+  main section:nth-of-type(2) > div div {
+    display: none;
+  }
 }
 
 /* progress bar */
@@ -250,7 +267,7 @@ section:nth-of-type(2) > figure {
 
 section:nth-of-type(2) > figure figcaption {
   font-family: "Spiegel";
-  font-size: 0.9rem;
+  font-size: clamp(1rem, 2vw, 1rem);
   color: var(--lichte-tekst);
 }
 
@@ -264,4 +281,40 @@ section:nth-of-type(2) video {
 
 h5 {
   color: var(--lichte-tekst);
+}
+
+section:nth-of-type(2) p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: grey;
+}
+
+section:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section:nth-of-type(3) img {
+  width: 100%;
+  object-fit: cover;
+}
+
+section:nth-of-type(3) > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* progress balk */
+section:nth-of-type(3) > div div {
+  height: 2px;
+  width: 100%;
+  background-color: gray;
+}
+
+/* pijlen knoppen */
+section:nth-of-type(3) > div span {
+  display: flex;
+  gap: 0.8rem;
 }
