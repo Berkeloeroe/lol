@@ -212,16 +212,30 @@ ol li {
   list-style: none;
   font-family: "Spiegel";
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 /* alles behalve de eerste list item */
 main section:nth-of-type(2) ol li:not(:first-child) {
   opacity: 50%;
+  transition: 0.2s;
+}
+
+/* alles behalve de eerste list item */
+main section:nth-of-type(2) ol li:not(:first-child):hover {
+  transform: scale(1.1);
 }
 
 main section:nth-of-type(2) ol figure img {
   height: 3rem;
   width: 3rem;
+}
+
+@media (min-width: 1000px) {
+  main section:nth-of-type(2) ol figure img {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 ol figure figcaption {
@@ -283,6 +297,12 @@ h5 {
   color: var(--lichte-tekst);
 }
 
+@media (min-width: 1000px) {
+  h5 {
+    margin-top: 2rem;
+  }
+}
+
 section:nth-of-type(2) p {
   font-size: 0.8rem;
   text-transform: uppercase;
@@ -330,7 +350,7 @@ main section:nth-of-type(3) ol figure img {
   width: 4.5rem;
 }
 
-figcaption {
+main section:nth-of-type(3) figcaption {
   text-align: center;
   color: grey;
 }
@@ -340,5 +360,5 @@ main section:nth-of-type(3) ol li:first-of-type figcaption {
 }
 
 main section:nth-of-type(3) ol li:first-of-type img {
-  outline: 2px var(--gele-button);
+  border: 2px var(--gele-button);
 }
