@@ -44,8 +44,8 @@ League of Legends home
 
 #### Screenshot(s) van de tweede pagina (small screen):
 
-hier de naam van de pagina  
- <img src="readme-images/tweede-pagina.png" width="375px" alt="champions-aurelionSol-small-screen">
+Champions | Aurelion Sol pagina
+<img src="readme-images/tweede-pagina.png" width="375px" alt="champions-aurelionSol-small-screen">
 
 </details>
 
