@@ -101,9 +101,7 @@ main section:nth-of-type(1) ul {
   border-top: 1px solid var(--gele-button);
 }
 
-main section:nth-of-type(1) ul p {
-  font-size: 0.7rem;
-  text-transform: uppercase;
+main section:nth-of-type(1) ul li:first-child {
   color: grey;
 }
 
