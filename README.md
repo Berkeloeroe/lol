@@ -213,6 +213,6 @@ Nb. Vermeld de bronnen ook in je code.
 
 1. https://dlo.mijnhva.nl/d2l/le/content/609314/Home
 2. https://chatgpt.com/
-3. ...
+3. https://www.youtube.com/watch?v=wh1FKjZt_H8
 
 </details>

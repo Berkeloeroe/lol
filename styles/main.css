@@ -46,7 +46,7 @@
   --footer-licht: #292929;
   --footer-border: #363636;
   --gele-button: #c8aa6e;
-  --blauwe-button: rgb(11, 196, 226);
+  --blauwe-button: #59c1de;
   --donker-blauw: rgb(10, 20, 40);
 }
 
@@ -116,7 +116,7 @@ main section {
 header {
   display: flex;
   align-items: center;
-  padding: 1rem 1.2rem;
+  padding: 0.4rem 1.2rem;
   border-bottom: 2px solid rgba(51, 51, 51, 0.25);
   background-color: var(--header-bg);
   color: var(--lichte-tekst);
@@ -125,6 +125,12 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+@media (max-width: 1485px) {
+  header {
+    padding: 1rem 1.2rem;
+  }
 }
 
 /* riot logo */
@@ -209,8 +215,16 @@ nav ul {
   margin: 0;
 }
 
+/* relative belangrijk voor underline effect  */
+header nav li {
+  position: relative;
+  padding: 1.5rem 0 1.5rem 0;
+  cursor: pointer;
+}
+
 /* navigatie tekst */
 header nav li a {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--lichte-tekst);
@@ -221,9 +235,26 @@ header nav li a {
   border-radius: 0.5rem;
 }
 
-header nav li a:hover {
+header nav li:hover a {
   color: var(--gele-button);
   background-color: var(--header-hover);
+}
+
+/* https://www.youtube.com/watch?v=wh1FKjZt_H8 */
+/* underline affect */
+header nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  border-radius: 1rem;
+  width: 0;
+  background-color: var(--blauwe-button);
+}
+
+header nav ul li:hover::after {
+  width: 100%;
 }
 
 /* container search, taal & playnow */

@@ -340,7 +340,7 @@ section:nth-of-type(4) a:last-of-type {
 }
 
 section:nth-of-type(4) a:last-of-type:hover {
-  background-color: rgb(93, 233, 255);
+  background-color: rgb(85, 201, 219);
 }
 
 section:nth-of-type(4) div figure {
