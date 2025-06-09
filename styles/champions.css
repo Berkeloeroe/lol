@@ -58,13 +58,6 @@ main section:nth-of-type(1) > div:nth-child(2) {
   }
 }
 
-/* padding voor verschillende grotes */
-/* @media (max-width: 1300px) {
-  main section:nth-of-type(1) > div:nth-child(2) {
-    padding: 4vw;
-  }
-} */
-
 @media (max-width: 900px) {
   main section:nth-of-type(1) > div:nth-child(2) {
     padding: 1.5rem;
@@ -72,7 +65,7 @@ main section:nth-of-type(1) > div:nth-child(2) {
 }
 
 /* the star forger tekst boven de h1*/
-main section:nth-of-type(1) p:first-of-type {
+main section:nth-of-type(1) > div > p:first-child {
   font-size: clamp(1.3rem, 2vw, 4rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
@@ -108,7 +101,8 @@ main section:nth-of-type(1) ul {
   border-top: 1px solid var(--gele-button);
 }
 
-main section:nth-of-type(1) ul span {
+main section:nth-of-type(1) ul p {
+  font-size: 0.7rem;
   text-transform: uppercase;
   color: grey;
 }
