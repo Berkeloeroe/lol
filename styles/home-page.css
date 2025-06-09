@@ -551,6 +551,7 @@ section:nth-of-type(6) ul {
 section:nth-of-type(6) li {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 /* inactive */
@@ -574,9 +575,7 @@ section:nth-of-type(6) > figure {
 }
 
 /* hover effect */
-section:nth-of-type(6) div figure:hover {
-  cursor: pointer;
-
+section:nth-of-type(6) li:not(:first-child) figure:hover {
   transform: scale(1.1); /* vergroot het element met 5% */
 }
 
