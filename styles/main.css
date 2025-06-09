@@ -227,7 +227,7 @@ header nav li a:hover {
 }
 
 /* container search, taal & playnow */
-header section {
+header div {
   display: flex;
   gap: 0.5rem;
   align-items: center;
@@ -252,7 +252,7 @@ form input {
 }
 
 /* taal kiezen button */
-header section button:first-of-type {
+header div button:first-of-type {
   background: none;
   border: none;
   cursor: pointer;
@@ -260,11 +260,11 @@ header section button:first-of-type {
   border-radius: 0.65rem;
 }
 
-header section button:first-of-type:hover {
+header div button:first-of-type:hover {
   background: var(--header-hover);
 }
 
-header section button:first-of-type svg {
+header div button:first-of-type svg {
   fill: white;
   width: 1.5rem;
   height: 1.5em;
@@ -279,7 +279,7 @@ header section button:first-of-type svg {
 }
 
 /* play now button */
-header section button:nth-of-type(2) {
+header div button:nth-of-type(2) {
   padding: 0.5rem 0.9rem;
   background: var(--blauwe-button);
   border: none;
@@ -290,7 +290,7 @@ header section button:nth-of-type(2) {
   font-weight: bold;
 }
 
-header section button:nth-of-type(2):hover {
+header div button:nth-of-type(2):hover {
   color: grey;
 }
 
