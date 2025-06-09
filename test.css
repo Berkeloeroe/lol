@@ -1,0 +1,289 @@
+/* scroll naar beneden om de uitwerking te bekijken */
+
+/* Simpele CSS Remedy */
+/* naar een idee van Jen Simmons */
+/* https://github.com/jensimmons/cssremedy */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button:not(disabled) {
+  cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+  --general-color: #012;
+  --general-background: #fff;
+
+  --header-gradient: linear-gradient(#f8a, #fbd);
+
+  --menu-gradient: linear-gradient(#8af, #bdf);
+  --menu-border: #46f;
+
+  --button-color: #fff;
+  --button-background: #f46;
+
+  --title-gradient: linear-gradient(#f46 40%, #f8a 80%);
+}
+
+/********************/
+/* ALGEMENE STIJLEN */
+/********************/
+body {
+  margin: 0;
+  background-color: var(--general-background);
+  color: var(--general-color);
+}
+
+/******************************************************/
+/* styling voor de small-screen versie van de website */
+/******************************************************/
+
+/*************/
+/* DE HEADER */
+/*************/
+header {
+  min-height: 4em;
+  padding: 0 1em;
+  background-image: var(--header-gradient);
+  line-height: 1;
+
+  /* JOUW CODE HIER - stap 3 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* JOUW CODE HIER - stap 3 */
+  position: sticky;
+  top: 0;
+}
+
+/* alle links in de header */
+header a {
+  padding: 0.5em 0;
+  color: var(--general-color);
+  text-decoration: none;
+}
+
+/********/
+/* LOGO */
+/********/
+header > a:first-of-type {
+  /* om het boek en de titel te positioneren */
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: 0.25em;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+header > a:first-of-type img {
+  height: 3em;
+}
+
+/**********/
+/* FAVO's */
+/**********/
+header > a:last-of-type {
+  /* icon en tekst met gap-je naast elkaar */
+  display: flex;
+  align-items: center;
+  column-gap: 0.25em;
+}
+
+/* link icon */
+header > a:last-of-type img {
+  width: auto;
+  height: 2em;
+}
+
+/************/
+/* HET MENU */
+/************/
+nav {
+  /* JOUW CODE HIER - stap 3 */
+  order: -1;
+}
+
+/***************/
+/* MENU BUTTON */
+/***************/
+nav button {
+  padding: 0.5em;
+
+  /* icon en tekst met gap-je naast elkaar */
+  display: flex;
+  align-items: center;
+  gap: 0.25em;
+
+  /* standaard styling aanpassen */
+  appearance: none;
+  background-color: var(--button-background);
+  border: none;
+  border-radius: 0.25em;
+  font: inherit;
+  text-align: center;
+  color: var(--button-color);
+
+  /* JOUW CODE HIER - stap 5 */
+  position: relative;
+  z-index: 100000;
+}
+
+nav button img {
+  height: 1em;
+}
+
+/* als menu open is */
+nav.toonMenu button img {
+  /* JOUW CODE HIER - stap 5 */
+  /* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
+  content: url("https://assets.codepen.io/274456/ui-icon-cross.svg");
+}
+
+/*******************/
+/* LIJST MET LINKS */
+/*******************/
+nav ul {
+  margin: 0;
+  padding: 4em 1em 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-content: start;
+
+  background: var(--menu-gradient);
+
+  /* JOUW CODE HIER - stap 1 */
+  position: fixed;
+  /*   top:0;
+  bottom:0;
+  left:0;
+  right:0; */
+
+  inset: 0;
+
+  /* JOUW CODE HIER - stap 2 */
+  translate: -100%;
+  /*   translate: -0 60%;
+ */
+
+  /* JOUW CODE HIER - stap 4 */
+  transition: 1s;
+}
+
+/* als menu open is */
+nav.toonMenu ul {
+  /* JOUW CODE HIER - stap 4 */
+  translate: 0%;
+}
+
+nav li {
+  flex-basis: 9em;
+  flex-grow: 1;
+}
+
+/************************/
+/* EEN LINK IN DE LIJST */
+/************************/
+nav a {
+  /* icon en tekst met gap-je naast elkaar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.25em;
+
+  border: solid 1px var(--menu-border);
+}
+
+nav a img {
+  width: auto;
+  height: 2em;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+@media (min-width: 38em) {
+  nav {
+    /* JOUW CODE HIER - stap 8 */
+    order: 0;
+  }
+
+  nav button {
+    /* JOUW CODE HIER - stap 6 */
+    display: none;
+  }
+
+  nav ul {
+    /* JOUW CODE HIER - stap 7 */
+    position: static;
+    translate: none;
+    background: none;
+    padding: 0;
+  }
+
+  nav li {
+    /* JOUW CODE HIER - stap 9 */
+    flex-basis: 0;
+    flex-grow: 0;
+  }
+
+  nav a {
+    /* JOUW CODE HIER - stap 10 */
+    flex-direction: column;
+    border: none;
+  }
+
+  header > a:last-of-type {
+    /* JOUW CODE HIER - stap 10 */
+    flex-direction: column;
+  }
+}
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width: 54em) {
+  header > a:last-of-type,
+  nav a {
+    /* JOUW CODE HIER - stap 11 */
+    flex-direction: row;
+  }
+}
+
+/***********/
+/* CONTENT */
+/***********/
+
+main h1,
+main p {
+  max-width: 40rem;
+  margin: 0 auto;
+  line-height: 1.75;
+}
+
+main h1 {
+  padding: 5vw 2.5vw 0;
+
+  background-image: var(--title-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+main p {
+  padding: 0 2.5vw 2.5vw;
+}
