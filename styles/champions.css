@@ -81,12 +81,12 @@ main section:nth-of-type(1) svg {
 main section:nth-of-type(1) div div {
   display: flex;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
 /* grotere schermen meer margin voor de container */
 @media (min-width: 1300px) {
   main section:nth-of-type(1) div div {
-    margin-top: 2rem;
   }
 }
 
