@@ -70,11 +70,11 @@ main section:nth-of-type(1) > div > p:first-child {
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 
-  color: var(--gele-button);
+  color: var(--goud);
 }
 
 main section:nth-of-type(1) svg {
-  fill: var(--gele-button);
+  fill: var(--goud);
 }
 
 /* figures container */
@@ -99,7 +99,7 @@ main section:nth-of-type(1) ul {
   font-family: "Spiegel", sans-serif;
   font-size: 0.7rem;
   text-transform: uppercase;
-  border-top: 1px solid var(--gele-button);
+  border-top: 1px solid var(--goud);
 }
 
 main section:nth-of-type(1) ul li:first-child {
@@ -133,7 +133,7 @@ main section:nth-of-type(1) figure {
   text-align: center;
 
   outline-offset: 10px;
-  outline: 1px solid var(--gele-button);
+  outline: 1px solid var(--goud);
   margin: 0.6rem;
 }
 
@@ -150,7 +150,7 @@ main section:nth-of-type(1) figure figcaption span {
 }
 
 main section:nth-of-type(1) figure figcaption span:nth-last-of-type(1) {
-  color: var(--gele-button);
+  color: var(--goud);
 }
 
 /* tweede sectie */
@@ -261,7 +261,7 @@ main section:nth-of-type(2) > div div span {
 }
 
 span svg {
-  fill: var(--gele-button);
+  fill: var(--goud);
 }
 
 section:nth-of-type(2) > figure {
@@ -311,6 +311,13 @@ section:nth-of-type(3) {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  color: var(--donker-blauw);
+}
+
+@media (prefers-color-scheme: dark) {
+  section:nth-of-type(3) {
+    background-color: var(--donker-blauw);
+  }
 }
 
 section:nth-of-type(3) > img {
@@ -325,11 +332,9 @@ section:nth-of-type(3) > div {
   gap: 1rem;
 }
 
-/* @media (min-width: 1000px) {
-  section:nth-of-type(3) > div {
-    width: 80%;
-  }
-} */
+h3 {
+  color: var(--donkere-tekst);
+}
 
 /* progress balk */
 section:nth-of-type(3) > div div {
@@ -368,11 +373,11 @@ main section:nth-of-type(3) figcaption {
 }
 
 main section:nth-of-type(3) ol li:first-of-type figcaption {
-  color: var(--gele-button);
+  color: var(--goud);
 }
 
 main section:nth-of-type(3) ol li:first-of-type figure img {
-  outline: 1px solid var(--gele-button);
+  outline: 1px solid var(--goud);
   outline-offset: 4px;
   margin: 4px;
 }

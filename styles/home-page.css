@@ -45,7 +45,7 @@ main section:nth-of-type(1) img {
 main section:nth-of-type(1) button {
   padding: 1.25rem 1.5rem;
 
-  background-color: var(--gele-button);
+  background-color: var(--goud);
   color: var(--donkere-tekst);
 
   text-transform: uppercase;
@@ -100,7 +100,7 @@ section:nth-of-type(2) a {
   margin-top: 2rem;
   padding: 1.25rem 1.5rem;
 
-  background-color: var(--gele-button);
+  background-color: var(--goud);
   color: var(--donkere-tekst);
 
   text-decoration: none;
@@ -133,6 +133,13 @@ section:nth-of-type(3) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (prefers-color-scheme: dark) {
+  section:nth-of-type(3) {
+    background: none;
+    background-color: var(--donker-blauw);
+  }
 }
 
 /* h3 & view all container */
@@ -168,7 +175,7 @@ section:nth-of-type(3) div span {
 
 /* svg link naast view all */
 section:nth-of-type(3) svg {
-  color: var(--gele-button);
+  color: var(--goud);
   cursor: pointer;
   width: 1rem;
 }
@@ -211,7 +218,7 @@ section:nth-of-type(3) article span {
   font-family: "MarkPro";
   font-size: 0.75rem;
   text-transform: uppercase;
-  color: var(--gele-button);
+  color: var(--goud);
 }
 
 /* datum */
@@ -269,6 +276,14 @@ section:nth-of-type(4) {
   background-position: center;
 }
 
+@media (prefers-color-scheme: dark) {
+  section:nth-of-type(4) {
+    color: white;
+    background: none;
+    background-color: var(--donker-blauw);
+  }
+}
+
 @media (max-width: 1300px) {
   section:nth-of-type(4) {
     flex-direction: column;
@@ -309,7 +324,7 @@ section:nth-of-type(4) a {
   display: inline-block;
 
   padding: 1.25rem 1.5rem;
-  background-color: var(--gele-button);
+  background-color: var(--goud);
   color: var(--donkere-tekst);
 
   text-decoration: none;
@@ -336,7 +351,7 @@ section:nth-of-type(4) a:hover {
 
 /* tweede blauwe button */
 section:nth-of-type(4) a:last-of-type {
-  background-color: var(--blauwe-button);
+  background-color: var(--licht-blauw);
 }
 
 section:nth-of-type(4) a:last-of-type:hover {
@@ -377,7 +392,7 @@ li figure figcaption {
 
 section > figure:last-of-type > figcaption {
   font-family: "Spiegel";
-  font-size: clamp(0.9rem, 2vw, 0.9rem);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: rgb(82, 82, 82);
   margin-top: 1rem;
 }
@@ -444,7 +459,7 @@ section:nth-of-type(5) div {
 section:nth-of-type(5) a {
   display: inline-block;
   padding: 1.25rem 1.5rem;
-  background-color: var(--gele-button);
+  background-color: var(--goud);
   color: var(--donkere-tekst);
 
   text-decoration: none;
@@ -512,7 +527,7 @@ section:nth-of-type(6) a {
   display: inline-block;
 
   padding: 1.25rem 1.5rem;
-  background-color: var(--gele-button);
+  background-color: var(--goud);
   color: var(--donkere-tekst);
 
   text-decoration: none;
@@ -594,7 +609,7 @@ section:nth-of-type(6) video {
   overflow: hidden;
   display: block;
 
-  outline: 1px solid var(--gele-button);
+  outline: 1px solid var(--goud);
   outline-offset: 1.5rem;
 
   margin-top: 5rem;
@@ -622,7 +637,7 @@ section:nth-of-type(6) > figure:last-of-type > figcaption {
 
 /* laatste sectie */
 section:nth-of-type(7) {
-  position: relative; /* ✅ belangrijk! */
+  position: relative;
   min-height: 640px;
   display: flex;
   justify-content: center;
@@ -633,8 +648,8 @@ section:nth-of-type(7) {
 /* laatste sectie video */
 section:nth-of-type(7) > video {
   position: absolute;
-  top: 0; /* ✅ zorg dat video van boven begint */
-  left: 0; /* ✅ en links */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -644,7 +659,7 @@ section:nth-of-type(7) > video {
 /* button */
 section:nth-of-type(7) button {
   padding: 1.25rem 1.5rem;
-  background-color: var(--gele-button);
+  background-color: var(--goud);
   color: var(--donkere-tekst);
   border: none;
 
