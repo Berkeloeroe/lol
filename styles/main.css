@@ -51,6 +51,7 @@
   --header-border: 2px solid rgba(51, 51, 51, 0.25);
 
   --footer-licht: #292929;
+  --footer-hover: #444444;
   --footer-border: #363636;
 
   --goud: #c8aa6e;
@@ -333,6 +334,8 @@ header div button:nth-of-type(2) {
   border-radius: 0.65rem;
   cursor: pointer;
   font-weight: bold;
+
+  transition: 0.2s;
 }
 
 header div button:nth-of-type(2):hover {
@@ -414,10 +417,12 @@ footer nav li a {
   color: var(--lichte-tekst);
   text-transform: uppercase;
   text-decoration: none;
+
+  transition: 0.2s;
 }
 
 footer nav li a:hover {
-  background-color: var(--header-hover);
+  background-color: var(--footer-hover);
 }
 
 footer a {
