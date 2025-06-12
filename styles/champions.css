@@ -15,8 +15,6 @@ main section:nth-of-type(1) {
 
 /* achtergrond afbeelding */
 main section:nth-of-type(1) div:first-child {
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 10;
   background-image: url("../images/AurelionSol_0.jpg");
@@ -29,6 +27,7 @@ main section:nth-of-type(1) div:first-child {
 @media (min-width: 1000px) {
   main section:nth-of-type(1) div:first-child {
     position: absolute;
+    top: 0;
     height: 100%;
     /* voor grote schermen komt een gradient voor styling en leesbaarheid */
     background-image: linear-gradient(

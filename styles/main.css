@@ -436,12 +436,17 @@ footer p {
   margin: 0 3rem;
 }
 
-/* pegi logo's */
+/* container pegi logo's  */
 footer div {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+footer div img {
+  border-radius: 1rem;
+  border: 0.5rem solid var(--header-hover);
 }
 
 /* social media icons */

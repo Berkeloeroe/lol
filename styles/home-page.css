@@ -363,6 +363,16 @@ section:nth-of-type(4) div figure {
   transition: transform 0.3s ease; /* vloeiende overgang */
 }
 
+/* alles behalve de eerste figure muted maken */
+section:nth-of-type(4) ul li:not(:first-child) figure {
+  filter: brightness(50%);
+}
+
+/* deze code laat het meer lijken op de originele maar ik vond mijn ding beter */
+/* section:nth-of-type(4) li:nth-of-type(n + 2) img {
+  filter: brightness(50%);
+} */
+
 section:nth-of-type(4) ul li:not(:first-child) figure:hover {
   transform: scale(1.1);
 }
@@ -376,11 +386,6 @@ section:nth-of-type(4) ul {
   text-align: center;
   max-width: 100%;
   margin-top: 2rem;
-}
-
-/* li:nth-of-type(n+2) selecteert alle <li> vanaf de tweede. */
-section:nth-of-type(4) li:nth-of-type(n + 2) img {
-  filter: brightness(50%);
 }
 
 /* categorie tekst */
