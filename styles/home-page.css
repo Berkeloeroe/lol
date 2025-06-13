@@ -216,7 +216,7 @@ section:nth-of-type(3) .nieuws-foto:hover {
 /* categorie */
 section:nth-of-type(3) article span {
   font-family: "MarkPro";
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   color: var(--goud);
 
@@ -226,7 +226,6 @@ section:nth-of-type(3) article span {
 /* datum */
 time {
   font-family: "Spiegel", sans-serif;
-  font-size: 0.75rem;
   margin-left: 0.75rem;
   color: var(--donkere-tekst);
 }
