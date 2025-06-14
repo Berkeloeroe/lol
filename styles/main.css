@@ -374,6 +374,11 @@ header div button:nth-of-type(2):hover {
   color: var(--lichte-tekst);
 }
 
+.t h3 {
+  flex-grow: 1;
+  width: 100%;
+}
+
 @media (max-width: 900px) {
   .modal-content {
     width: 20em;
