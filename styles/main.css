@@ -342,6 +342,106 @@ header div button:nth-of-type(2):hover {
   color: grey;
 }
 
+/* popup */
+#modal {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(255, 255, 255, 0.5);
+  z-index: 1000000;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  text-align: center;
+
+  height: 25rem;
+  width: 50rem;
+
+  background: var(--donker-blauw);
+  color: var(--lichte-tekst);
+}
+
+@media (max-width: 900px) {
+  .modal-content {
+    width: 20em;
+  }
+
+  /* container */
+  .t {
+    flex-direction: column;
+  }
+}
+
+/* container */
+.t {
+  display: flex;
+  gap: 2rem;
+}
+
+/* buttons */
+#modal a {
+  display: block;
+  background-color: var(--licht-blauw);
+  color: var(--donkere-tekst);
+  margin-top: 1rem;
+  padding: 1.25rem 1.5rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-family: "Spiegel", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+  color: var(--donker-blauw);
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+#modal a:hover {
+  filter: brightness(1.15); /* maakt hem 15% lichter */
+}
+
+/* 2e button andere kleur */
+.t div:last-of-type a {
+  background-color: var(--goud) !important;
+}
+
+/* close knop */
+#closeModal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.5rem 0.75rem;
+
+  border: none;
+
+  background-color: var(--goud);
+
+  margin: 1rem 1rem 0 0;
+  cursor: pointer;
+}
+
+/* class om te verbergen en showen voor js */
+.hidden {
+  display: none;
+}
+
 /* footer */
 footer {
   display: flex;
