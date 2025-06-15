@@ -261,6 +261,12 @@ header div div button svg {
   color: white;
 }
 
+.hamburger {
+  background: var(--header-hover);
+  padding: 0.5rem 0.8rem;
+  border-radius: 1.1rem;
+}
+
 .overlay {
   position: fixed;
   inset: 0;
