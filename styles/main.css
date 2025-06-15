@@ -50,6 +50,8 @@
   --header-hover: #333333;
   --header-border: 2px solid rgba(51, 51, 51, 0.25);
 
+  --mobile-header-bg: #1f1f1f;
+
   --footer-licht: #292929;
   --footer-hover: #444444;
   --footer-border: #363636;
@@ -173,7 +175,7 @@ header div div button svg {
   width: 100%;
   height: 100%;
   background-color: var(--header-bg);
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 0 10px var(--mobile-header-bg);
   transition: right 0.3s ease-in-out;
   z-index: 1001;
   display: flex;
@@ -199,7 +201,7 @@ header div div button svg {
   width: 100%;
   padding: 0.5rem;
   font-size: 1rem;
-  background-color: var(--footer-border);
+  background-color: var(--header-hover);
   border: none;
   border-radius: 0.75rem;
 }
@@ -210,7 +212,6 @@ header div div button svg {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
 }
 
 .main-nav a {
@@ -234,6 +235,7 @@ header div div button svg {
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-decoration: none;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
