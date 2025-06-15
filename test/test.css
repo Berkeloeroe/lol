@@ -50,7 +50,7 @@ body {
 header {
   min-height: 4em;
   padding: 0 1em;
-  background-image: var(--header-gradient);
+  background-color: black;
   line-height: 1;
 
   /* JOUW CODE HIER - stap 3 */
@@ -66,7 +66,7 @@ header {
 /* alle links in de header */
 header a {
   padding: 0.5em 0;
-  color: var(--general-color);
+  color: white;
   text-decoration: none;
 }
 
@@ -95,6 +95,8 @@ header > a:last-of-type {
   display: flex;
   align-items: center;
   column-gap: 0.25em;
+  margin-right: auto;
+  z-index: 100000000;
 }
 
 /* link icon */
@@ -108,7 +110,7 @@ header > a:last-of-type img {
 /************/
 nav {
   /* JOUW CODE HIER - stap 3 */
-  order: -1;
+  order: 1;
 }
 
 /***************/
@@ -124,7 +126,7 @@ nav button {
 
   /* standaard styling aanpassen */
   appearance: none;
-  background-color: var(--button-background);
+  background-color: grey;
   border: none;
   border-radius: 0.25em;
   font: inherit;
@@ -155,12 +157,12 @@ nav ul {
   padding: 4em 1em 0;
   list-style: none;
 
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
   gap: 1em;
   align-content: start;
 
-  background: var(--menu-gradient);
+  background: black;
 
   /* JOUW CODE HIER - stap 1 */
   position: fixed;
@@ -172,12 +174,12 @@ nav ul {
   inset: 0;
 
   /* JOUW CODE HIER - stap 2 */
-  translate: -100%;
+  translate: 100%;
   /*   translate: -0 60%;
  */
 
   /* JOUW CODE HIER - stap 4 */
-  transition: 1s;
+  transition: 0.25s;
 }
 
 /* als menu open is */
@@ -229,6 +231,7 @@ nav a.active {
 
   nav ul {
     /* JOUW CODE HIER - stap 7 */
+    display: flex;
     position: static;
     translate: none;
     background: none;
@@ -268,22 +271,47 @@ nav a.active {
 /* CONTENT */
 /***********/
 
-main h1,
-main p {
-  max-width: 40rem;
-  margin: 0 auto;
-  line-height: 1.75;
+/* riot logo */
+header > button svg {
+  /* fill: var(--lichte-tekst); */
+  fill: white;
+  cursor: pointer;
 }
 
-main h1 {
-  padding: 5vw 2.5vw 0;
-
-  background-image: var(--title-gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+header > button svg:hover {
+  fill: red;
 }
 
-main p {
-  padding: 0 2.5vw 2.5vw;
+/* riot logo button styling weg */
+header > button:first-child {
+  background: none;
+  border: none;
 }
+
+/* taal kiezen button */
+header > button:last-of-type {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.65rem;
+}
+
+header > button:last-of-type:hover {
+  background: var(--header-hover);
+}
+
+header > button:last-of-type svg {
+  fill: white;
+  width: 1.5rem;
+  height: 1.5em;
+  vertical-align: middle;
+}
+
+/* header > button:first-child {
+  order: 1;
+}
+
+nav {
+  order: 2;
+} */

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsieve Header</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .site-header {
+            background: white;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            z-index: 999;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-left,
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo-main img,
+        .logo-partner img {
+            height: 32px;
+        }
+
+        .logo-partner {
+            display: none;
+        }
+
+        .main-nav {
+            display: none;
+        }
+
+        .main-nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .cta-btn {
+            background: #007bff;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .search-btn,
+        .lang-btn,
+        .hamburger {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+
+        /* Slide-menu basis */
+        .slide-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 300px;
+            height: 100%;
+            background: white;
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+            transition: right 0.3s ease-in-out;
+            z-index: 1001;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+        }
+
+        .slide-menu.open {
+            right: 0;
+        }
+
+        .mobile-menu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .mobile-search {
+            margin: 1rem 0;
+        }
+
+        .mobile-search input {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .cta-btn.mobile {
+            margin-top: 2rem;
+            align-self: flex-start;
+        }
+
+        .overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1000;
+            display: none;
+        }
+
+        .overlay.show {
+            display: block;
+        }
+
+        /* Desktop layout */
+        @media (min-width: 768px) {
+            .main-nav {
+                display: block;
+            }
+
+            .hamburger {
+                display: none;
+            }
+
+            .logo-partner {
+                display: inline-block;
+            }
+
+            .slide-menu,
+            .overlay {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="header-left">
+                <a href="/" class="logo-main" aria-label="Home">
+                    <img src="logo1.svg" alt="Hoofdlogo" />
+                </a>
+                <a href="/" class="logo-partner" aria-label="Partner">
+                    <img src="logo2.svg" alt="Partnerlogo" />
+                </a>
+            </div>
+
+            <nav class="main-nav" aria-label="Hoofdmenu">
+                <ul>
+                    <li><a href="https://www.leagueoflegends.com/en-gb/how-to-play/">Game</a></li>
+                    <li><a href="champions-aurelionSol.html">Champions</a></li>
+                    <li><a href="https://www.leagueoflegends.com/en-gb/news/">News</a></li>
+                    <li><a href="https://www.leagueoflegends.com/en-gb/news/tags/patch-notes/">Patch Notes</a></li>
+                    <li><a href="https://displays.riotgames.com/en-gb/">Discover</a></li>
+                    <li><a href="https://lolesports.com/en-GB/">Esports</a></li>
+                    <li><a href="https://universe.leagueoflegends.com/en_GB/">Universe</a></li>
+                    <li><a href="https://merch.riotgames.com/en-gb/">Merch</a></li>
+                    <li><a href="https://support.riotgames.com/hc/en-us">Support</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-right">
+                <button class="search-btn" aria-label="Zoeken">🔍</button>
+                <button class="lang-btn" aria-label="Taalkeuze">NL</button>
+                <a href="#" class="cta-btn">Aanmelden</a>
+                <button class="hamburger open-menu" aria-label="Menu openen">☰</button>
+            </div>
+        </div>
+
+        <div class="mobile-menu slide-menu" aria-hidden="true">
+            <div class="mobile-menu-header">
+                <a href="/" class="logo-main">
+                    <img src="logo1.svg" alt="Hoofdlogo" />
+                </a>
+                <button class="hamburger close-menu" aria-label="Menu sluiten">✕</button>
+            </div>
+
+            <form class="mobile-search" role="search">
+                <input type="text" placeholder="Zoek..." />
+            </form>
+
+            <nav class="mobile-nav" aria-label="Mobiel menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Over</a></li>
+                    <li><a href="#">Diensten</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="#" class="cta-btn mobile">Aanmelden</a>
+        </div>
+
+        <div class="overlay"></div>
+    </header>
+
+    <script>
+        const openBtn = document.querySelector('.open-menu');
+        const closeBtn = document.querySelector('.close-menu');
+        const menu = document.querySelector('.slide-menu');
+        const overlay = document.querySelector('.overlay');
+
+        openBtn.addEventListener('click', () => {
+            menu.classList.add('open');
+            overlay.classList.add('show');
+            menu.setAttribute('aria-hidden', 'false');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            menu.classList.remove('open');
+            overlay.classList.remove('show');
+            menu.setAttribute('aria-hidden', 'true');
+        });
+
+        overlay.addEventListener('click', () => {
+            menu.classList.remove('open');
+            overlay.classList.remove('show');
+            menu.setAttribute('aria-hidden', 'true');
+        });
+    </script>
+
+</body>
+
+</html>

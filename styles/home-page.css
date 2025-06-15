@@ -630,8 +630,8 @@ section:nth-of-type(6) h5 {
 section:nth-of-type(6) > figure:last-of-type > figcaption {
   font-family: "Spiegel";
   color: var(--lichte-tekst);
-
   margin-top: 1rem;
+  opacity: 90%;
 }
 
 /* gamemode video */
