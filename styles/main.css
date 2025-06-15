@@ -128,218 +128,229 @@ main section {
   overflow: hidden;
 }
 
-header {
-  display: flex;
-  align-items: center;
-  padding: 0.4rem 1.2rem;
-  border-bottom: 2px solid rgba(51, 51, 51, 0.25);
-  background-color: var(--header-bg);
-  color: var(--lichte-tekst);
-  gap: 2rem;
-  overflow: hidden;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+/* Beaufort: Gebruikt voor headings */
+@font-face {
+  font-family: "Beaufort";
+  src: url("fonts/beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf")
+    format("truetype");
+  font-display: swap;
 }
 
-@media (max-width: 1500px) {
-  header {
-    padding: 1rem 1.2rem;
-  }
+/* Spiegel: Gebruikt voor body tekst */
+@font-face {
+  font-family: "Spiegel";
+  src: url("fonts/Spiegel-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-/* riot logo */
-header > button svg {
-  fill: var(--lichte-tekst);
-  cursor: pointer;
+/* MarkPro: Gebruikt voor navigatie en knoppen */
+@font-face {
+  font-family: "MarkPro";
+  src: url("fonts/MarkPro-Bold.woff2") format("woff2");
+  font-display: swap;
 }
 
-header > button svg:hover {
-  fill: red;
+* {
+  box-sizing: border-box;
 }
 
-/* riot logo button styling weg */
-header > button:first-child {
-  background: none;
-  border: none;
-}
-
-header > a img {
-  width: 2rem;
-}
-
-/* hamburger button */
-header div button:nth-of-type(3) {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* hamburger image */
-header div button img {
-  width: 2rem;
-}
-
-/* voor kleine schermem */
-@media (max-width: 1500px) {
-  header nav {
-    display: none;
-  }
-
-  header div form {
-    display: none;
-  }
-
-  /* playnow */
-  header div button:nth-of-type(2) {
-    display: none;
-  }
-
-  /* hamburger */
-  header div button:nth-of-type(3) {
-    display: inline;
-
-    font-size: 1.1rem;
-    color: white;
-
-    padding: 0.6rem 0.8rem;
-    border-radius: 1rem;
-
-    background-color: var(--header-hover);
-  }
-}
-
-/* league logo */
-header > a {
-  font-size: 1.2rem;
-  color: var(--primary);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-  gap: 0.6rem;
-  flex: 1;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+body {
   margin: 0;
 }
 
-/* relative belangrijk voor underline effect  */
-header nav li {
+:root {
+  --headings-tekst: white;
+  --body-tekst: rgba(10, 20, 40, 0.9);
+
+  --lichte-tekst: white;
+  --donkere-tekst: rgb(10, 20, 40);
+
+  --header-bg: #141212;
+  --header-hover: #333333;
+  --header-border: 2px solid rgba(51, 51, 51, 0.25);
+
+  --footer-licht: #292929;
+  --footer-hover: #444444;
+  --footer-border: #363636;
+
+  --goud: #c8aa6e;
+  --licht-blauw: #59c1de;
+  --donker-blauw: rgb(10, 20, 40);
+}
+
+.site-header {
+  background: var(--header-bg);
+  border-bottom: 1px solid #ddd;
   position: relative;
-  padding: 1.5rem 0 1.5rem 0;
-  cursor: pointer;
+  z-index: 999;
 }
 
-/* navigatie tekst */
-header nav li a {
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--lichte-tekst);
-  font-weight: 500;
-  font-size: 0.8rem;
-  font-family: "MarkPro";
-  padding: 0.5rem 0.8rem;
-  border-radius: 0.5rem;
-}
-
-header nav li:hover a {
-  color: var(--goud);
-  background-color: var(--header-hover);
-}
-
-/* https://www.youtube.com/watch?v=wh1FKjZt_H8 */
-/* underline affect */
-header nav ul li::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  border-radius: 1rem;
-  width: 0;
-  background-color: var(--licht-blauw);
-}
-
-header nav ul li:hover::after {
-  width: 100%;
-}
-
-/* container search, taal & playnow */
-header div {
+.header-inner {
   display: flex;
-  gap: 0.5rem;
+  justify-content: space-between;
   align-items: center;
-  margin-left: auto;
-  height: 2.6rem;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
-/* search */
-form {
+.header-left,
+.header-right {
   display: flex;
-  height: 100%;
+  align-items: center;
+  gap: 1rem;
 }
 
-form input {
-  padding: 0.55rem;
-  border: none;
-  border-radius: 0.65rem;
-  background-color: var(--header-hover);
-  text-transform: uppercase;
-  font-family: "MarkPro";
-  caret-color: var(--lichte-tekst);
+.logo-main img,
+.logo-partner img {
+  height: 32px;
 }
 
-/* taal kiezen button */
-header div button:first-of-type {
+header div div button {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+header div div button svg {
+  fill: var(--lichte-tekst);
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--header-bg);
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.main-nav.open {
+  right: 0;
+}
+
+.main-nav .nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav .mobile-search {
+  margin: 1rem 0;
+}
+
+.main-nav .mobile-search input {
+  width: 100%;
   padding: 0.5rem;
-  border-radius: 0.65rem;
+  font-size: 1rem;
+  background-color: var(--footer-border);
+  border: none;
+  border-radius: 0.75rem;
 }
 
-header div button:first-of-type:hover {
-  background: var(--header-hover);
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-header div button:first-of-type svg {
-  fill: white;
-  width: 1.5rem;
-  height: 1.5em;
-  vertical-align: middle;
+.main-nav a {
+  display: block;
+  font-family: "MarkPro";
+  padding: 1rem 0 1rem 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--lichte-tekst);
 }
 
-@media (max-width: 1485px) {
-  header section button:first-of-type svg {
-    width: 2rem;
-    height: 2rem;
+.cta-btn.mobile {
+  margin-top: 2rem;
+  text-align: center;
+  border-radius: 0.85rem;
+}
+
+.cta-btn {
+  background: var(--licht-blauw);
+  color: var(--donkere-tekst) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cta-btn,
+  .search-btn {
+    display: none;
   }
 }
 
-/* play now button */
-header div button:nth-of-type(2) {
-  padding: 0.5rem 0.9rem;
-  background: var(--licht-blauw);
+.search-btn,
+.lang-btn,
+.hamburger {
+  background: none;
   border: none;
-  color: var(--donkere-tekst);
-  text-transform: uppercase;
-  border-radius: 0.65rem;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-weight: bold;
-
-  transition: 0.2s;
+  color: white;
 }
 
-header div button:nth-of-type(2):hover {
-  color: grey;
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  display: none;
+}
+
+.overlay.show {
+  display: block;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .main-nav {
+    position: static;
+    height: auto;
+    width: auto;
+    background: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    box-shadow: none;
+    right: auto;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .main-nav .nav-header,
+  .main-nav .mobile-search,
+  .main-nav .cta-btn.mobile {
+    display: none;
+  }
+
+  .main-nav ul {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .logo-partner {
+    display: inline-block;
+  }
 }
 
 /* popup */
