@@ -180,7 +180,7 @@ header div div button svg {
   z-index: 1001;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .main-nav.open {
