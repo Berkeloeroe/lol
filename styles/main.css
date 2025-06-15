@@ -436,6 +436,8 @@ footer {
 }
 
 footer nav:first-of-type {
+  display: flex;
+  justify-content: center;
   width: 100%;
   padding: 1.2rem;
   background-color: var(--footer-licht);
