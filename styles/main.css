@@ -132,7 +132,7 @@ main section {
 
 .site-header {
   background: var(--header-bg);
-  border-bottom: 1px solid #ddd;
+  border-bottom: 2px var(--header-border);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -142,15 +142,15 @@ main section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  margin: 0 auto;
+  padding: 1.1rem;
+  /* margin: 0 auto; */
 }
 
 .header-left,
 .header-right {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .logo-main img,
@@ -166,6 +166,11 @@ header div div button {
 
 header div div button svg {
   fill: var(--lichte-tekst);
+}
+
+.header-right button svg {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .main-nav {
@@ -251,7 +256,7 @@ header div div button svg {
 .hamburger {
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: white;
 }
