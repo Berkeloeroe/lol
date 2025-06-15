@@ -185,7 +185,7 @@ header div div button svg {
   z-index: 1001;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 1.1rem 2rem;
 }
 
 .main-nav.open {
@@ -204,11 +204,11 @@ header div div button svg {
 
 .main-nav .mobile-search input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.8rem;
   font-size: 1rem;
   background-color: var(--header-hover);
   border: none;
-  border-radius: 0.75rem;
+  border-radius: 0.85rem;
 }
 
 .main-nav ul {
