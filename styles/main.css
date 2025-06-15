@@ -128,62 +128,11 @@ main section {
   overflow: hidden;
 }
 
-/* Beaufort: Gebruikt voor headings */
-@font-face {
-  font-family: "Beaufort";
-  src: url("fonts/beaufort-for-lol/BeaufortforLOL-BoldItalic.ttf")
-    format("truetype");
-  font-display: swap;
-}
-
-/* Spiegel: Gebruikt voor body tekst */
-@font-face {
-  font-family: "Spiegel";
-  src: url("fonts/Spiegel-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-/* MarkPro: Gebruikt voor navigatie en knoppen */
-@font-face {
-  font-family: "MarkPro";
-  src: url("fonts/MarkPro-Bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-:root {
-  --headings-tekst: white;
-  --body-tekst: rgba(10, 20, 40, 0.9);
-
-  --lichte-tekst: white;
-  --donkere-tekst: rgb(10, 20, 40);
-
-  --header-bg: #141212;
-  --header-hover: #333333;
-  --header-border: 2px solid rgba(51, 51, 51, 0.25);
-
-  --footer-licht: #292929;
-  --footer-hover: #444444;
-  --footer-border: #363636;
-
-  --goud: #c8aa6e;
-  --licht-blauw: #59c1de;
-  --donker-blauw: rgb(10, 20, 40);
-}
-
 .site-header {
   background: var(--header-bg);
   border-bottom: 1px solid #ddd;
-  position: relative;
+  position: sticky;
+  top: 0;
   z-index: 999;
 }
 
