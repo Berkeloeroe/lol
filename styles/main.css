@@ -241,6 +241,11 @@ header div div button svg {
   color: var(--lichte-tekst);
 }
 
+/* logo geen padding */
+.main-nav a:first-child {
+  padding: 0;
+}
+
 .cta-btn.mobile {
   padding: 1rem;
   margin-top: 2rem;
