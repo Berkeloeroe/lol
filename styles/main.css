@@ -167,6 +167,7 @@ main section {
   height: 32px;
 }
 
+/* riot logo */
 header div div:first-of-type button {
   background: none;
   border: none;
@@ -175,6 +176,10 @@ header div div:first-of-type button {
 
 header div div button svg {
   fill: var(--lichte-tekst);
+}
+
+header div div button svg:hover {
+  fill: red;
 }
 
 .header-right button svg {
