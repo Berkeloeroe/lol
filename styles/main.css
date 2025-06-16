@@ -176,6 +176,13 @@ header div div button svg {
   height: 1.5rem;
 }
 
+@media (min-width: 1300px) {
+  .header-right button svg {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+}
+
 .main-nav {
   position: fixed;
   top: 0;
@@ -294,13 +301,18 @@ header div div button svg {
 
 .cta-btn {
   background: var(--licht-blauw);
-  color: var(--donker-blauw) !important;
+  color: var(--donker-blauw);
   padding: 0.5rem 1rem;
   border-radius: 0.75rem;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "MarkPro";
   font-size: 0.8rem;
+  transition: 0.2s;
+}
+
+.cta-btn:hover {
+  color: gray;
 }
 
 @media (max-width: 768px) {
@@ -315,7 +327,6 @@ header div div button svg {
 .hamburger {
   background: none;
   border: none;
-  font-size: 1.25rem;
   cursor: pointer;
   color: white;
 }
