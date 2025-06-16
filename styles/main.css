@@ -227,6 +227,10 @@ header div div button svg {
   background: var(--header-hover);
 }
 
+.main-nav ul li a {
+  padding: 0 1rem;
+}
+
 .main-nav li a:hover {
   color: var(--goud);
 }
@@ -236,7 +240,6 @@ header div div button svg {
   font-family: "MarkPro";
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 1rem;
   border-radius: 0.5rem;
   color: var(--lichte-tekst);
 }
