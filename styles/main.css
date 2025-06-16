@@ -167,7 +167,7 @@ main section {
   height: 32px;
 }
 
-header div div button {
+header div div:first-of-type button {
   background: none;
   border: none;
   cursor: pointer;
@@ -335,12 +335,16 @@ header div div button svg {
   border: none;
   cursor: pointer;
   color: white;
+  padding: 0.8rem 0.9rem;
+  border-radius: 1rem;
+}
+
+.lang-btn:hover {
+  background: var(--header-hover);
 }
 
 .hamburger {
   background: var(--header-hover);
-  padding: 0.5rem 0.8rem;
-  border-radius: 1.1rem;
 }
 
 .overlay {
