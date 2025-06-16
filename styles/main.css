@@ -143,6 +143,7 @@ main section {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  gap: 2rem;
 }
 
 @media (max-width: 1300px) {
@@ -374,10 +375,10 @@ header div div button svg:hover {
     flex-direction: row;
     align-items: center;
     padding: 0;
-    box-shadow: none;
     right: auto;
     display: flex;
     gap: 2rem;
+    margin-right: auto;
   }
 
   .main-nav .nav-header,
