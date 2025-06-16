@@ -327,7 +327,7 @@ header div div button svg:hover {
   color: gray;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1410px) {
   .cta-btn,
   .search-btn {
     display: none;
@@ -370,7 +370,7 @@ header div div button svg:hover {
 }
 
 /* Desktop layout */
-@media (min-width: 768px) {
+@media (min-width: 1410px) {
   .main-nav {
     position: static;
     height: auto;
