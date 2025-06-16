@@ -241,7 +241,7 @@ header div div button svg {
 }
 
 /* logo geen padding */
-.main-nav a:first-child {
+.main-nav > a:first-child {
   padding: 0;
 }
 
