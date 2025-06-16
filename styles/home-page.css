@@ -46,7 +46,7 @@ main section:nth-of-type(1) button {
   padding: 1.25rem 1.5rem;
 
   background-color: var(--goud);
-  color: var(--donkere-tekst);
+  color: var(--donker-blauw);
 
   text-transform: uppercase;
   font-weight: 400;
@@ -101,7 +101,7 @@ section:nth-of-type(2) a {
   padding: 1.25rem 1.5rem;
 
   background-color: var(--goud);
-  color: var(--donkere-tekst);
+  color: var(--donker-blauw);
 
   text-decoration: none;
   text-transform: uppercase;
@@ -326,7 +326,7 @@ section:nth-of-type(4) a {
 
   padding: 1.25rem 1.5rem;
   background-color: var(--goud);
-  color: var(--donkere-tekst);
+  color: var(--donker-blauw);
 
   text-decoration: none;
   text-transform: uppercase;
@@ -466,7 +466,7 @@ section:nth-of-type(5) a {
   display: inline-block;
   padding: 1.25rem 1.5rem;
   background-color: var(--goud);
-  color: var(--donkere-tekst);
+  color: var(--donker-blauw);
 
   text-decoration: none;
   text-transform: uppercase;
@@ -534,7 +534,7 @@ section:nth-of-type(6) a {
 
   padding: 1.25rem 1.5rem;
   background-color: var(--goud);
-  color: var(--donkere-tekst);
+  color: var(--donker-blauw);
 
   text-decoration: none;
   text-transform: uppercase;
@@ -666,7 +666,7 @@ section:nth-of-type(7) > video {
 section:nth-of-type(7) button {
   padding: 1.25rem 1.5rem;
   background-color: var(--goud);
-  color: var(--donkere-tekst);
+  color: var(--donker-blauw);
   border: none;
 
   text-decoration: none;

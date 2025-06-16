@@ -143,14 +143,13 @@ main section {
   justify-content: space-between;
   align-items: center;
   padding: 1.1rem;
-  /* margin: 0 auto; */
 }
 
 .header-left,
 .header-right {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 0.5rem;
 }
 
 .logo-main img,
@@ -223,12 +222,24 @@ header div div button svg {
   border-radius: 0.5rem;
 }
 
+@media (min-width: 1300px) {
+  .main-nav ul li {
+    padding: 0;
+  }
+}
+
 .main-nav li:hover {
   background: var(--header-hover);
 }
 
 .main-nav ul li a {
   padding: 0 1rem;
+}
+
+@media (min-width: 1300px) {
+  .main-nav ul li a {
+    font-size: 0.8rem;
+  }
 }
 
 .main-nav li a:hover {
@@ -259,12 +270,13 @@ header div div button svg {
 
 .cta-btn {
   background: var(--licht-blauw);
-  color: var(--donkere-tekst) !important;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
+  color: var(--donker-blauw) !important;
+  padding: 0.5rem;
+  border-radius: 0.75rem;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "MarkPro";
+  font-size: 0.8rem;
 }
 
 @media (max-width: 768px) {
@@ -326,7 +338,6 @@ header div div button svg {
 
   .main-nav ul {
     flex-direction: row;
-    gap: 2rem;
   }
 
   .hamburger {
