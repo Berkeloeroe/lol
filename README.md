@@ -58,6 +58,8 @@ Champions | Aurelion Sol pagina
 
 Lijst met je bevindingen die in de test naar voren kwamen:
 
+- Geen Darkmode ondersteuning
+
 </details>
 
 ## Breakdownschets (week 1)
