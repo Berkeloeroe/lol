@@ -145,6 +145,12 @@ main section {
   padding: 0.5rem;
 }
 
+@media (max-width: 1300px) {
+  .header-inner {
+    padding: 1rem;
+  }
+}
+
 .header-left,
 .header-right {
   display: flex;
