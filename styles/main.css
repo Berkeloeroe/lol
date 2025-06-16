@@ -48,7 +48,7 @@
 
   --header-bg: #141212;
   --header-hover: #333333;
-  --header-border: 2px solid rgba(51, 51, 51, 0.25);
+  --header-border: rgba(51, 51, 51, 0.25);
 
   --mobile-header-bg: #201c1c;
 
@@ -132,7 +132,7 @@ main section {
 
 .site-header {
   background: var(--header-bg);
-  border-bottom: 2px var(--header-border);
+  border-bottom: 2px solid var(--header-border);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -150,6 +150,10 @@ main section {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.header-left {
+  gap: 1rem;
 }
 
 .logo-main img,
@@ -271,7 +275,7 @@ header div div button svg {
 .cta-btn {
   background: var(--licht-blauw);
   color: var(--donker-blauw) !important;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.75rem;
   text-decoration: none;
   text-transform: uppercase;
