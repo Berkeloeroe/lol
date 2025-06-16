@@ -174,7 +174,7 @@ section:nth-of-type(3) div span {
 }
 
 /* svg link naast view all */
-section:nth-of-type(3) svg {
+section:nth-of-type(3) > div svg {
   color: var(--goud);
   cursor: pointer;
   width: 1rem;
@@ -204,8 +204,8 @@ section:nth-of-type(3) .nieuws-foto {
   position: absolute;
   right: 0;
   bottom: 0;
+  margin: 0;
   height: 3rem;
-  border: 1px solid var(--lichte-tekst);
   z-index: 100;
 }
 
