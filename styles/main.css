@@ -343,6 +343,7 @@ header div div button svg:hover {
   color: white;
   padding: 0.8rem 0.9rem;
   border-radius: 1rem;
+  font-size: 1rem;
 }
 
 .lang-btn:hover {
