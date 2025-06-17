@@ -60,6 +60,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 - Geen Darkmode ondersteuning
 - Heel veel divs
+- Weinig semantische elementen
 - Input focus niet altijd duidelijk te zien
 
 </details>
@@ -71,11 +72,11 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 ### de hele pagina:
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/helePagina.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu):
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/news.png" width="375px" alt="news-items-sectie">
 
 ### wellicht nog een dynamisch deel (bijv filter):
 
