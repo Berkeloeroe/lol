@@ -404,6 +404,12 @@ section > figure:last-of-type > figcaption {
   margin-top: 1rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  section > figure:last-of-type > figcaption {
+    color: var(--lichte-tekst);
+  }
+}
+
 /* champion figure */
 @media (max-width: 900px) {
   section > figure:last-of-type > img {
