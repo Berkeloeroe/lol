@@ -73,8 +73,9 @@
 /****************/
 
 /* typografie */
+/* https://www.youtube.com/watch?v=erqRw3E-vn4 */
 h2 {
-  font-size: clamp(3rem, 5vw, 4rem);
+  font-size: clamp(3rem, 5vw, 4rem); 
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
@@ -625,8 +626,9 @@ footer p {
 /* container pegi logo's  */
 footer div {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 

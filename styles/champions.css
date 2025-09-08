@@ -6,7 +6,7 @@ h1 {
 
 /* eerste sectie */
 main section:nth-of-type(1) {
-  /* position: relative; */
+  position: relative;
   height: 100%;
   padding: 0; /* padding weg die ik overal gebruik */
   color: var(--lichte-tekst);
@@ -63,8 +63,9 @@ main section:nth-of-type(1) > div:nth-child(2) {
   }
 }
 
-/* the star forger tekst boven de h1*/
-main section:nth-of-type(1) > div > p:first-child {
+/* h1 woorden apart stylen */
+section:nth-of-type(1) h1 span:first-of-type {
+  display: block;
   font-size: clamp(1.3rem, 2vw, 4rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
