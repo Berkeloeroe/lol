@@ -117,9 +117,9 @@ body > a{
 }
 
 body > a:focus {
-  top: 100px; /* Wordt zichtbaar als gefocust */
-  left: 25px;
-    background-color: white;  
+  top: 7rem; 
+  left: 2rem;
+  background-color: white;  
 
 }
 

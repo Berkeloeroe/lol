@@ -59,9 +59,17 @@ Champions | Aurelion Sol pagina
 Lijst met je bevindingen die in de test naar voren kwamen:
 
 - Geen Darkmode ondersteuning
+- Geen Hoog contrast ondersteuning
 - Heel veel divs
 - Weinig semantische elementen
 - Input focus niet altijd duidelijk te zien
+- Errors & warnings in de W3AC checker
+- Geen goed gebruik van headings soms word een p daarvoor gebruikt
+- Missende headings
+- Geen alts voor IMG
+- Video's hebben autoplay
+- Video's geen audio
+- Video' s hebben geen pauze knop
 
 </details>
 
