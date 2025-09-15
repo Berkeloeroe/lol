@@ -224,9 +224,10 @@ Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 Nb. ChatGpT en andere AI horen er ook bij.
 Nb. Vermeld de bronnen ook in je code.
 
-1. https://dlo.mijnhva.nl/d2l/le/content/609314/Home
+1. https://dlo.mijnhva.nl/d2l/le/content/702741/Home
 2. https://codepen.io/Berkeloeroe/pen/MYwEJPv?editors=1010
 3. https://chatgpt.com/
 4. https://www.youtube.com/watch?v=wh1FKjZt_H8
+5. https://www.a11yproject.com/posts/how-to-hide-content/
 
 </details>
