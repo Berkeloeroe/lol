@@ -1,5 +1,6 @@
-console.log("Script geladen");
+console.log("Test Test");
 
+// popup
 document.addEventListener('DOMContentLoaded', () => {
   const modal = document.getElementById('modal');
   const openBtn = document.getElementById('openModal');
@@ -13,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.add('hidden');
   });
 
-  
 });
 
  const openBtn = document.querySelector('.open-menu');

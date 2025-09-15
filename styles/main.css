@@ -424,7 +424,7 @@ header div div button svg:hover {
   }
 }
 
-/* popup */
+/* modal popup */
 #modal {
   position: fixed;
   top: 0;
@@ -634,7 +634,7 @@ footer a {
   gap: 1rem;
 }
 
-/* kopieriht */
+/* copyright */
 footer p {
   font-size: 0.75rem;
   text-align: center;
