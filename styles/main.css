@@ -105,6 +105,25 @@ p {
   opacity: 90%;
 }
 
+/* skiplink verbergen */
+body > a{
+  position: absolute;
+  left: 9999;
+  font-family: "Spiegel", sans-serif;
+  color: var(--body-tekst);
+  padding: 1rem;
+  z-index: 100;
+  text-decoration: none;
+}
+
+body > a:focus {
+  top: 100px; /* Wordt zichtbaar als gefocust */
+  left: 25px;
+    background-color: white;  
+
+}
+
+
 main section {
   padding: clamp(1.2rem, 10vw, 12rem);
 }
@@ -659,7 +678,6 @@ textarea:focus-visible,
 select:focus-visible,
 button:focus-visible,
 a:focus-visible {
-  outline: 5px solid red;
+  outline: 5px solid var(--goud);
   outline-offset: 3px;
-  background-color: rgba(255, 0, 0, 0.068);
 }
