@@ -184,40 +184,6 @@ section:nth-of-type(3) h3 {
   text-transform: none;
 }
 
-/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
-
-/* view all link */
-section:nth-of-type(3) div a {
-  text-transform: uppercase;
-  text-decoration: none;
-
-  color: var(--donkere-tekst);
-  font-size: clamp(1rem, 2vw, 1.125rem);
-
-  font-family: "Spiegel";
-
-  transition: 0.2s;
-}
-
-/* hover view all */
-section:nth-of-type(3) div a:hover {
-  color: grey;
-}
-
-section:nth-of-type(3) div span {
-  display: flex;
-  gap: 0.75rem;
-}
-
-/* svg link naast view all */
-section:nth-of-type(3) > div svg {
-  color: var(--goud);
-  cursor: pointer;
-  width: 1rem;
-}
-
-/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
-
 /* view all link */
 section:nth-of-type(3) > a {
   justify-self: end; /* tegen de rechterkant */
@@ -233,8 +199,13 @@ section:nth-of-type(3) > a {
   transition: 0.2s;
 }
 
-/* view all link */
 section:nth-of-type(3) > a span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+section:nth-of-type(3) > a p {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -251,7 +222,7 @@ section:nth-of-type(3) > span {
 }
 
 /* svg link naast view all */
-section:nth-of-type(3) span svg {
+section:nth-of-type(3) p svg {
   color: var(--goud);
   cursor: pointer;
   width: 1rem;
@@ -291,7 +262,7 @@ section:nth-of-type(3) .nieuws-foto:hover {
 }
 
 /* categorie */
-section:nth-of-type(3) article span {
+section:nth-of-type(3) article p:first-of-type {
   font-family: "MarkPro";
   font-size: 0.8rem;
   text-transform: uppercase;
