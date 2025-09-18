@@ -7,6 +7,8 @@ h1 {
 /* eerste sectie */
 main section:nth-of-type(1) {
   /* position: relative; */
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 0; /* padding weg die ik overal gebruik */
   color: var(--lichte-tekst);
@@ -14,7 +16,8 @@ main section:nth-of-type(1) {
 }
 
 /* achtergrond afbeelding */
-main section:nth-of-type(1) div:first-child {
+main section:nth-of-type(1) div:nth-of-type(2) {
+  order: -1;
   width: 100%;
   z-index: 10;
   background-image: url("../images/AurelionSol_0.jpg");
@@ -25,7 +28,7 @@ main section:nth-of-type(1) div:first-child {
 
 /* bij groter scherm komt de afbeelding achter de tekst */
 @media (min-width: 1000px) {
-  main section:nth-of-type(1) div:first-child {
+  main section:nth-of-type(1) div:nth-of-type(2) {
     position: absolute;
     top: 0;
     height: 100%;
@@ -40,7 +43,7 @@ main section:nth-of-type(1) div:first-child {
 }
 
 /* content */
-main section:nth-of-type(1) > div:nth-child(2) {
+main section:nth-of-type(1) > div:nth-of-type(1) {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -51,14 +54,14 @@ main section:nth-of-type(1) > div:nth-child(2) {
 
 /* niet hele breedte innemen bij gotere devices */
 @media (min-width: 1300px) {
-  main section:nth-of-type(1) > div:nth-child(2) {
+  main section:nth-of-type(1) > div:nth-of-type(1) {
     width: 50%;
     padding-right: 0;
   }
 }
 
 @media (max-width: 900px) {
-  main section:nth-of-type(1) > div:nth-child(2) {
+  main section:nth-of-type(1) > div:nth-child(1) {
     padding: 1.5rem;
   }
 }
@@ -78,10 +81,11 @@ main section:nth-of-type(1) svg {
 }
 
 /* figures container */
-main section:nth-of-type(1) div div {
+main section:nth-of-type(1) ul:first-of-type {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  padding: 0;
 }
 
 /* grotere schermen meer margin voor de container */
@@ -91,7 +95,7 @@ main section:nth-of-type(1) div div {
   }
 }
 
-main section:nth-of-type(1) ul {
+main section:nth-of-type(1) ul:nth-of-type(2) {
   display: flex;
   gap: 2rem;
   padding: 0.5rem 0;
@@ -102,7 +106,7 @@ main section:nth-of-type(1) ul {
   border-top: 1px solid var(--goud);
 }
 
-main section:nth-of-type(1) ul li:first-child {
+main section:nth-of-type(1) ul:nth-of-type li:first-child {
   color: grey;
 }
 
@@ -285,6 +289,7 @@ section:nth-of-type(2) > figure figcaption {
 }
 
 section:nth-of-type(2) video {
+  order: -1;
   width: 100%;
   object-fit: cover;
 
@@ -331,7 +336,6 @@ section:nth-of-type(3) h2 {
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
-
 
 section:nth-of-type(3) > img {
   width: 100%;
