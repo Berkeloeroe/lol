@@ -238,6 +238,7 @@ section:nth-of-type(3) article {
 section:nth-of-type(3) div {
   position: relative;
   overflow: hidden;
+  order: -2;
 }
 
 /* nieuws fotos */
@@ -269,6 +270,8 @@ section:nth-of-type(3) article p:first-of-type {
   color: var(--goud);
 
   margin-top: 1rem;
+
+  order: -1;
 }
 
 /* datum */
@@ -370,8 +373,13 @@ section:nth-of-type(6) h2 span:first-of-type {
   }
 }
 
-section:nth-of-type(4) img {
-  max-width: 100%;
+section:nth-of-type(4) > figure {
+  display: flex;
+  flex-direction: column;
+}
+
+section:nth-of-type(4) figure img {
+  order: -1;
 }
 
 /* tekst container */
@@ -513,9 +521,10 @@ section:nth-of-type(5) {
   }
 }
 
-/* akali skin img */
+/* slay with style img */
 section:nth-of-type(5) img {
   width: 40vw; /* schaalt mee met het scherm */
+  order: -1;
 }
 
 @media (max-width: 900px) {
@@ -688,6 +697,8 @@ section:nth-of-type(6) video {
   border-radius: 50%;
   overflow: hidden;
   display: block;
+
+  order: -1;
 
   outline: 1px solid var(--goud);
   outline-offset: 1.5rem;
