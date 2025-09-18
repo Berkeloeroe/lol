@@ -19,7 +19,6 @@ section:nth-of-type(1) h1 {
   font-size: clamp(1rem, 1.25vw, 2rem);
 }
 
-
 /* kleuren overlay */
 section:nth-of-type(1) > div {
   position: absolute;
@@ -46,16 +45,14 @@ section > video {
   z-index: -1;
 }
 
-
 /* logo  */
 main section:nth-of-type(1) img {
   height: 10em;
-  order: -1; 
-
+  order: -1;
 }
 
 @media (max-width: 900px) {
-    main section:nth-of-type(1) img {
+  main section:nth-of-type(1) img {
     height: 6em;
   }
 }
@@ -140,11 +137,11 @@ section:nth-of-type(2) a:hover {
   background-color: #eecc87;
 }
 
-/* nieuws sectie */
+/* https://cssgrid-generator.netlify.app/ */
 section:nth-of-type(3) {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
 
   gap: 1.5rem;
 
@@ -154,6 +151,10 @@ section:nth-of-type(3) {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+section:nth-of-type(3) h2 {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -171,17 +172,19 @@ section:nth-of-type(3) > div:first-of-type {
   width: 100%;
 }
 
-section:nth-of-type(3) h2{
+section:nth-of-type(3) h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
 }
 
-section:nth-of-type(3) h3{
+section:nth-of-type(3) h3 {
   font-size: clamp(1.2rem, 2.5vw, 1.375rem);
   font-family: "MarkPro";
   text-transform: none;
 }
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
 
 /* view all link */
 section:nth-of-type(3) div a {
@@ -208,6 +211,47 @@ section:nth-of-type(3) div span {
 
 /* svg link naast view all */
 section:nth-of-type(3) > div svg {
+  color: var(--goud);
+  cursor: pointer;
+  width: 1rem;
+}
+
+/* ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo */
+
+/* view all link */
+section:nth-of-type(3) > a {
+  justify-self: end; /* tegen de rechterkant */
+
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--donkere-tekst);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+
+  font-family: "Spiegel";
+
+  transition: 0.2s;
+}
+
+/* view all link */
+section:nth-of-type(3) > a span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* hover view all */
+section:nth-of-type(3) > a:hover {
+  color: grey;
+}
+
+section:nth-of-type(3) > span {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* svg link naast view all */
+section:nth-of-type(3) span svg {
   color: var(--goud);
   cursor: pointer;
   width: 1rem;
@@ -281,6 +325,7 @@ section ul {
   margin: 0;
 
   display: grid;
+  grid-column: 1 / span 2;
   gap: 1.75rem;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -311,33 +356,33 @@ section:nth-of-type(4) {
 }
 
 section:nth-of-type(4) h3 {
-    font-size: clamp(1.2rem, 2.5vw, 1.375rem);
-    font-family: "Beaufort", serif;
-    text-transform: uppercase;
+  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
 }
 
 /* h2 woorden apart stylen van meerdere secties */
 section:nth-of-type(2) h2 span:first-of-type {
   font-size: 1.25rem;
-    display: block;
+  display: block;
 }
 
 /* choose your champion sectie */
 section:nth-of-type(4) h2 span:first-of-type {
   font-size: 1.25rem;
-    display: block;
+  display: block;
 }
 
 /* slay wit style sectie */
 section:nth-of-type(5) h2 span:first-of-type {
   font-size: 1.25rem;
-    display: block;
+  display: block;
 }
 
 /* multiple ways to play sectie */
 section:nth-of-type(6) h2 span:first-of-type {
   font-size: 1.25rem;
-    display: block;
+  display: block;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -682,9 +727,9 @@ section:nth-of-type(6) video {
 
 /* video heading */
 section:nth-of-type(6) h3 {
-    font-size: clamp(1.2rem, 2.5vw, 1.375rem);
-    font-family: "Beaufort", serif;
-    text-transform: uppercase;
+  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
 }
 
 section:nth-of-type(6) > figure:last-of-type > figcaption {

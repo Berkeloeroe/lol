@@ -228,5 +228,6 @@ Nb. Vermeld de bronnen ook in je code.
 3. https://chatgpt.com/
 4. https://www.youtube.com/watch?v=wh1FKjZt_H8
 5. https://www.a11yproject.com/posts/how-to-hide-content/
+6. https://cssgrid-generator.netlify.app/
 
 </details>
