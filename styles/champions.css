@@ -298,12 +298,14 @@ section:nth-of-type(2) video {
 
   outline: 1px solid var(--goud);
   outline-offset: 0.5rem;
+
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 1000px) {
   section:nth-of-type(2) video {
     outline-offset: 1.5rem;
-    margin: 1rem;
+    margin-bottom: 2rem;
   }
 
   section:nth-of-type(2) > figure {
