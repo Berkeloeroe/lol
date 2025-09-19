@@ -331,7 +331,7 @@ section:nth-of-type(3) {
 
 @media (prefers-color-scheme: dark) {
   section:nth-of-type(3) {
-    background-color: var(--donker-blauw);
+    background-color: var(--donker-donker-blauw);
   }
 }
 
