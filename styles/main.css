@@ -123,9 +123,8 @@ body > a:focus {
 
 }
 
-
 main section {
-  padding: clamp(1.2rem, 10vw, 12rem);
+  padding: clamp(1.2rem, 5vw, 12rem);
 }
 
 @media (max-width: 1300px) {

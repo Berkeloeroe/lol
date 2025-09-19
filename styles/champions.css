@@ -1,3 +1,4 @@
+
 h1 {
   font-size: clamp(3rem, 5vw, 4rem);
   font-family: "Beaufort", serif;
@@ -6,7 +7,7 @@ h1 {
 
 /* eerste sectie */
 main section:nth-of-type(1) {
-  /* position: relative; */
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -88,13 +89,8 @@ main section:nth-of-type(1) ul:first-of-type {
   padding: 0;
 }
 
-/* grotere schermen meer margin voor de container */
-@media (min-width: 1300px) {
-  main section:nth-of-type(1) div div {
-    margin-top: 2rem;
-  }
-}
 
+/* onderste lijn met linkjes */
 main section:nth-of-type(1) ul:nth-of-type(2) {
   display: flex;
   gap: 2rem;
@@ -105,6 +101,13 @@ main section:nth-of-type(1) ul:nth-of-type(2) {
   text-transform: uppercase;
   border-top: 1px solid var(--goud);
 }
+
+@media (min-width: 1300px) {
+  main section:nth-of-type(1) ul:nth-of-type(2) {
+      margin-top: 5rem;
+  }
+}
+
 
 main section:nth-of-type(1) ul:nth-of-type li:first-child {
   color: grey;
@@ -293,13 +296,14 @@ section:nth-of-type(2) video {
   width: 100%;
   object-fit: cover;
 
-  outline: 1px solid var(--gele-button);
+  outline: 1px solid var(--goud);
   outline-offset: 0.5rem;
 }
 
 @media (min-width: 1000px) {
   section:nth-of-type(2) video {
     outline-offset: 1.5rem;
+    margin: 1rem;
   }
 
   section:nth-of-type(2) > figure {
@@ -335,6 +339,7 @@ section:nth-of-type(3) h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
+  color: var(--lichte-tekst);
 }
 
 section:nth-of-type(3) > img {
