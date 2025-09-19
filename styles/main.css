@@ -652,7 +652,6 @@ footer > ul:nth-of-type(2) {
 }
 
 footer > ul:nth-of-type(2) img {
-  margin-bottom: 2rem;
   border-radius: 1rem;
   border: 0.5rem solid var(--header-hover);
 }
