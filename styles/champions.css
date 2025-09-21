@@ -341,7 +341,12 @@ section:nth-of-type(3) h2 {
   font-size: clamp(1.5rem, 4vw, 2rem);
   font-family: "Beaufort", serif;
   text-transform: uppercase;
-  color: var(--lichte-tekst);
+}
+
+@media (prefers-color-scheme: dark) {
+ section:nth-of-type(3) h2 {
+    color: var(--lichte-tekst);
+  }
 }
 
 section:nth-of-type(3) > img {
