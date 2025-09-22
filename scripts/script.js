@@ -1,19 +1,15 @@
 console.log("Test Test");
 
-// popup
-document.addEventListener('DOMContentLoaded', () => {
-  const modal = document.getElementById('modal');
-  const openBtn = document.getElementById('openModal');
-  const closeBtn = document.getElementById('closeModal');
+const newJokeButton = document.querySelector("main button");
+const newJokeDialog = document.querySelector("main dialog");
 
-  openBtn.addEventListener('click', () => {
-    modal.classList.remove('hidden');
-  });
+newJokeButton.addEventListener("click", () => {
+	// STAP 1.
+	// JOUW CODE HIER
+	// 1.1 open de dialog met showModal()
+newJokeDialog.showModal();
 
-  closeBtn.addEventListener('click', () => {
-    modal.classList.add('hidden');
-  });
-
+	
 });
 
  const openBtn = document.querySelector('.open-menu');

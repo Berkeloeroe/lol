@@ -683,3 +683,64 @@ a:focus-visible {
   outline: 5px solid var(--goud);
   outline-offset: 3px;
 }
+
+/* dialog */
+dialog {
+  position: fixed;
+  top: 50%;            
+  left: 50%;            
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  padding: 6rem;
+  background-color: var(--donker-blauw);
+  color: var(--lichte-tekst);
+  border: none;
+}
+
+dialog::backdrop {
+	background-color:#1020488b;
+	backdrop-filter:blur(.5em);
+}
+
+dialog h2 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-family: "Beaufort", serif;
+  text-transform: uppercase;
+}
+
+/* close knop */
+dialog button {
+position: absolute;
+top: 0.5rem;
+right: 0.5rem;
+width: 3rem;
+aspect-ratio:1;
+background-color: var(--goud);
+border: transparent;
+border-radius: .25rem;
+cursor: pointer;
+font-size: 1.5rem;
+}
+
+dialog a {
+  display: inline-block;
+
+  padding: 1.25rem 1.5rem;
+  background-color: var(--licht-blauw);
+  color: var(--donker-blauw);
+
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-family: "Spiegel", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+dialog a:nth-of-type(2){
+  background-color: var(--goud);
+}

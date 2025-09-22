@@ -318,6 +318,7 @@ section ul {
 
 /* choose your champion sectie */
 section:nth-of-type(4) {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,24 +444,77 @@ section:nth-of-type(4) a:hover {
   filter: brightness(1.2);
 }
 
-section:nth-of-type(4) div figure {
+section:nth-of-type(4) form  {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+section:nth-of-type(4) form label {
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
-  transition: transform 0.3s ease; /* vloeiende overgang */
+  transition: 0.2s;
 }
 
-/* alles behalve de eerste figure muted maken */
-section:nth-of-type(4) ul li:not(:first-child) figure {
+label {
+  /* text-transform: uppercase; */
   filter: brightness(50%);
 }
 
-/* deze code laat het meer lijken op de originele maar ik vond mijn ding beter */
-/* section:nth-of-type(4) li:nth-of-type(n + 2) img {
-  filter: brightness(50%);
-} */
-
-section:nth-of-type(4) ul li:not(:first-child) figure:hover {
-  transform: scale(1.1);
+label:has(:checked) {
+  filter: brightness(100%);
 }
+
+section:nth-of-type(4) form label:hover {
+  transform: scale(1.2); 
+}
+
+/* radio button onzichtbaar maken */
+section:nth-of-type(4) input {  
+  opacity: 0;
+}
+
+/* de foto die gaat veranderen */
+section:nth-of-type(4) figure div{
+  order: -1;
+  width: 50rem;
+  height: 50rem;
+  background-image: url("../images/akali.avif");
+  background-size: cover;
+  }
+
+  /* lange button voor mobiel */
+@media (max-width: 900px) {
+  section:nth-of-type(4) figure div {
+    width:23rem;
+    height:23rem;
+
+  }
+}
+
+  /* als er iets gechecked word past de image aan */
+  section:has( [value="fighters"]:checked  ) figure div {
+  background-image: url("../images/fighter-man.avif");
+  }
+
+  section:has( [value="mages"]:checked  ) figure div {
+    background-image: url("../images/mages-man.avif");
+  }
+
+  section:has( [value="marksmen"]:checked  ) figure div {
+    background-image: url("../images/marksmen-man.avif");
+  }
+
+  section:has( [value="supports"]:checked  ) figure div {
+    background-image: url("../images/support-man.avif");
+  }
+
+  section:has( [value="tanks"]:checked  ) figure div {
+    background-image: url("../images/tank-man.avif");
+  }
 
 /* categorieen ikonen champs */
 section:nth-of-type(4) ul {
