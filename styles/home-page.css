@@ -459,12 +459,12 @@ section:nth-of-type(4) form label {
   transition: 0.2s;
 }
 
-label {
+section:nth-of-type(4) label {
   /* text-transform: uppercase; */
   filter: brightness(50%);
 }
 
-label:has(:checked) {
+section:nth-of-type(4) label:has(:checked) {
   filter: brightness(100%);
 }
 
