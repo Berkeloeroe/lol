@@ -789,7 +789,8 @@ section:nth-of-type(6) > figure:last-of-type > figcaption {
 /* gamemode video */
 @media (max-width: 900px) {
   section:nth-of-type(6) video {
-    width: 85%;
+    width: 95%;
+    outline-offset: .5rem;
   }
 }
 
