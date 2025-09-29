@@ -447,7 +447,7 @@ section:nth-of-type(4) a:hover {
 section:nth-of-type(4) form  {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-top: 1rem;
   justify-content: center;
 }
@@ -455,13 +455,24 @@ section:nth-of-type(4) form  {
 section:nth-of-type(4) form label {
   display: flex;
   flex-direction: column;
+  align-items: center;  
   cursor: pointer;
   transition: 0.2s;
+  width: 5rem;
+}
+
+section:nth-of-type(4) form label img {
+  width: 4rem;
 }
 
 section:nth-of-type(4) label {
-  /* text-transform: uppercase; */
   filter: brightness(50%);
+}
+
+section:nth-of-type(4) label span {
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-family: "Spiegel", sans-serif;
 }
 
 section:nth-of-type(4) label:has(:checked) {
