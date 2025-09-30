@@ -1,3 +1,4 @@
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -51,15 +52,17 @@ header div, search, nav, button:last-of-type {
     grid-column: 1 / -1; /* neemt hele breedte */
 }
 
-header div search form input {
-  width: 100%;
-}
-
-
-
 header > img:last-of-type {
 margin-right:auto;
 }
+
+@media (width < 40em) {
+
+header div search form input {
+  width: 100%;
+}
+}
+
 
 @media (width > 40em) {
   header div {
