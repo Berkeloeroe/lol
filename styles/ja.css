@@ -18,6 +18,16 @@ button:not(disabled) {
   cursor:pointer;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 
 /*********************/
 /* CUSTOM PROPERTIES */
@@ -291,8 +301,6 @@ nav {
 nav.is-open{
   /* JOUW CODE HIER - stap 4 */
      translate:0%;
-
-  
 }
 
 nav, form, ul, button:nth-of-type(2) {
