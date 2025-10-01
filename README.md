@@ -109,7 +109,7 @@ samen met je groepje opstellen
 | ----------------- | ---- | --- | ---------------- |
 |                   |      |     | Toegankelijke    |
 |                   |      |     | Achtergrondvideo |
-| responsive Header | ...  | ... | ...              |
+| responsive Header | Html checken  | Html checken| ...              |
 
 ### Verslag van meeting
 
@@ -134,11 +134,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| -------------- | ------------------ | ------------ | ---------------- |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Julia                               | Noa                                     | Randi                                | Randi                                | Melissa       |
+| ----------------------------------- | --------------------------------------- | ------------------------------------ | ------------------------------------ | ------------- |
+| dit bespreken                       | en dit                                  | en ik dit                            | en dan ik dat                        |               |
+| en dat ook nog                      | dit als er tijd is                      | nog een punt - achtergrond video toegankelijk<br>- vraag over de header<br>- text aanpassen met css | dit wil ik zeker                      |               |
+| Mijn YouTube filmpje werkt nog niet.<br>Mag mijn span? | hoe maak ik mijn 3e sectie scrollende text<br>hoe doe ik de img animatie 1e sectie | ...                                  | ...                                  |               |
 
 ### Verslag van meeting
 
