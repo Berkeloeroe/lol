@@ -328,8 +328,12 @@ header > div button:first-of-type {
     border-radius: 1rem;
     padding: .9rem;
     justify-self: end; 
-
 }
+
+header > div button:first-of-type {
+    color: var(--lichte-tekst)!important;
+}
+
 
 /* Mobiel menu gedrag (hamburger) */
 header div { 
@@ -402,7 +406,8 @@ header div ul li a {
   
     
 
-header div.is-open{
+
+header div.is-open {
   /* JOUW CODE HIER - stap 4 */
      translate:0%;
 }
@@ -559,6 +564,13 @@ header div > button:nth-of-type(2){
     width: 1rem;
     height: auto;
   }
+
+  @media (width < 90em) {
+  header div > button:nth-of-type(2) {
+  display:none;
+}
+  }
+  
 
 @media (width > 90em) {
   header > img {
