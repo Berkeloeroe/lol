@@ -349,6 +349,8 @@ header div {
 @media (width < 90em) {
   header div {
     gap: 1rem;
+         padding: 1.1rem 2rem;
+
   }
 
 }
@@ -403,7 +405,6 @@ header div ul li a {
 header div.is-open{
   /* JOUW CODE HIER - stap 4 */
      translate:0%;
-     padding: 1.1rem 2rem;
 }
 
 header div, search, nav, button:last-of-type {
