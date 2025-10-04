@@ -418,7 +418,7 @@ margin-right:auto;
 @media (width < 90em) {
 
    header div ul {
-    gap: .5rem;
+    gap: .25rem;
   }
 
   header div ul li {
