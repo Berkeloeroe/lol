@@ -4,33 +4,54 @@ const newJokeButton = document.querySelector("main button");
 const newJokeDialog = document.querySelector("main dialog");
 
 newJokeButton.addEventListener("click", () => {
-	// STAP 1.
-	// JOUW CODE HIER
-	// 1.1 open de dialog met showModal()
-newJokeDialog.showModal();
+    // STAP 1.
+    // JOUW CODE HIER
+    // 1.1 open de dialog met showModal()
+    newJokeDialog.showModal();
 
-	
+
 });
 
- const openBtn = document.querySelector('.open-menu');
-        const closeBtn = document.querySelector('.close-menu');
-        const nav = document.querySelector('.main-nav');
-        const overlay = document.querySelector('.overlay');
+/******************************/
+/* menu openen de MENU button */
+/******************************/
 
-        openBtn.addEventListener('click', () => {
-            nav.classList.add('open');
-            overlay.classList.add('show');
-            nav.setAttribute('aria-hidden', 'false');
-        });
+/* JOUW CODE HIER - stap 4 */
 
-        closeBtn.addEventListener('click', () => {
-            nav.classList.remove('open');
-            overlay.classList.remove('show');
-            nav.setAttribute('aria-hidden', 'true');
-        });
+// stap 1: zoek de menu-button op en sla die op in een variabele
+let menuOpenButton = document.querySelector("header > button:last-of-type");
 
-        overlay.addEventListener('click', () => {
-            nav.classList.remove('open');
-            overlay.classList.remove('show');
-            nav.setAttribute('aria-hidden', 'true');
-        });
+// stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
+menuOpenButton.addEventListener("click", openMenu);
+
+// stap 3: voeg in de functie een class toe aan de nav
+
+function openMenu() {
+    let deNav = document.querySelector("header > div");
+    deNav.classList.add("is-open");
+
+}
+
+
+
+
+/************************************/
+/* menu sluiten met de sluit button */
+/************************************/
+
+/* JOUW CODE HIER - stap 5 */
+
+// stap 1 - zoek sluiten button op
+let menuSluitButton = document.querySelector("header div button");
+
+
+// stap 2 - laat die button luisteren naar kliks
+menuSluitButton.addEventListener("click", sluitMenu);
+
+// stap 3 - in de functie verwijder de class van de nav
+function sluitMenu() {
+    let deNav = document.querySelector("header > div");
+    deNav.classList.remove("is-open");
+
+}
+

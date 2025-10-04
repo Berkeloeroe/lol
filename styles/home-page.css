@@ -838,3 +838,33 @@ section:nth-of-type(7) button {
 section:nth-of-type(7) button:hover {
   background-color: #eecc87;
 }
+
+.carousel {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  anchor-name: --carousel;
+
+  > .carousel__slide {
+    scroll-snap-align: center;
+  }
+}
+
+.carousel--scroll-buttons {
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --carousel;
+    position-visibility: always;
+    font-family: "Material Symbols Outlined";
+  }
+
+  &::scroll-button(right) {
+    position-area: inline-end center;
+    content: 'arrow_forward' / 'Next';
+  }
+
+  &::scroll-button(left) {
+    position-area: inline-start center;
+    content: 'arrow_back' / 'Previous';
+  }
+}
