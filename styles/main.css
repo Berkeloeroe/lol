@@ -339,7 +339,7 @@ header div {
   left: 0;
   right: 0;
   translate: 100%;   /* menu buiten beeld */
-  transition: 1s;
+  transition: .5s;
   display: grid;
   align-content: start;
   grid-template-columns: 1fr 1fr;  
@@ -540,11 +540,11 @@ button {
   }  
 }
 
+/* taal kiezen knop */
 header div > button:nth-of-type(2){
     background: none;
     border: none;
     cursor: pointer;
-    /* color: white; */
     padding: 0.6rem 0.6rem;
     border-radius: .4rem;
   }
