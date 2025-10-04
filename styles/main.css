@@ -322,7 +322,7 @@ header > div button:first-of-type {
     background-color: var(--header-hover);
     border: none;
     cursor: pointer;
-    color: var(--lichte-tekst);
+    color: var(--lichte-tekst)!important;
     font-size: 1.2rem;
     padding: .7rem;
     border-radius: 1rem;
