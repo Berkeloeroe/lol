@@ -797,7 +797,7 @@ section:nth-of-type(6) > figure:last-of-type > figcaption {
 /* laatste sectie */
 section:nth-of-type(7) {
   position: relative;
-  min-height: 640px;
+  min-height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
