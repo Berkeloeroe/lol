@@ -323,6 +323,10 @@ header > button:last-of-type {
     border-radius: 1rem;
 }
 
+header div > svg {
+  align-self: center; /* centreert alleen dit item verticaal */
+}
+
 /* sluit menu knop */
 header > div button:first-of-type {
     background-color: var(--header-hover);
