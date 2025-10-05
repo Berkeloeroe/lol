@@ -288,7 +288,7 @@ header {
 
 @media (width < 90em) {
 header {
-  padding: .75rem;
+  padding: 1rem;
 }
 }
 
@@ -363,7 +363,7 @@ header div {
 @media (width < 90em) {
   header div {
     gap: 1rem;
-    padding: .75rem;
+    padding: 1rem;
 
   }
 
