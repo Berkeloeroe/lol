@@ -1,877 +1,882 @@
 /* hero sectie */
 main section:nth-of-type(1) {
-  position: relative;
-  min-height: 40rem;
+	position: relative;
+	min-height: 40rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 
-  gap: 2rem;
+	gap: 2rem;
 }
 
 section:nth-of-type(1) h1 {
-  font-family: "Beaufort", serif;
-  color: var(--lichte-tekst);
-  text-transform: uppercase;
-  font-size: clamp(1rem, 1.25vw, 2rem);
+	font-family: "Beaufort", serif;
+	color: var(--lichte-tekst);
+	text-transform: uppercase;
+	font-size: clamp(1rem, 1.25vw, 2rem);
 }
 
 /* kleuren overlay */
-section:nth-of-type(1) > div {
-  position: absolute;
+section:nth-of-type(1)>div {
+	position: absolute;
 
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
 
-  background: #121824;
-  background: linear-gradient(
-    359deg,
-    rgba(18, 24, 36, 1) 20%,
-    rgba(15, 18, 31, 0.15) 100%
-  );
+	background: #121824;
+	background: linear-gradient(359deg,
+			rgba(18, 24, 36, 1) 20%,
+			rgba(15, 18, 31, 0.15) 100%);
 }
 
 /* hero video */
-section > video {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+section>video {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 
-  object-fit: cover;
-  z-index: -1;
+	object-fit: cover;
+	z-index: -1;
 }
 
 /* logo  */
 main section:nth-of-type(1) img {
-  height: 10em;
-  order: -1;
+	height: 10em;
+	order: -1;
 }
 
 @media (max-width: 900px) {
-  main section:nth-of-type(1) img {
-    height: 6em;
-  }
+	main section:nth-of-type(1) img {
+		height: 6em;
+	}
 }
 
 /* button hero */
 main section:nth-of-type(1) button {
-  padding: 1.25rem 1.5rem;
-  /* margin zodat de outline binnen spacing past */
-  margin: 3px;
+	padding: 1.25rem 1.5rem;
+	/* margin zodat de outline binnen spacing past */
+	margin: 3px;
 
-  background-color: var(--goud);
-  color: var(--donker-blauw);
+	background-color: var(--goud);
+	color: var(--donker-blauw);
 
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1rem;
 
-  border: 1px solid transparent;
-  outline: 1px solid white;
-  outline-offset: 3px;
+	border: 1px solid transparent;
+	outline: 1px solid white;
+	outline-offset: 3px;
 
-  cursor: pointer;
-  transition: all 0.4s ease;
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
 /* Hover-effect */
 section button:first-of-type:hover {
-  background-color: #eecc87;
+	background-color: #eecc87;
 }
 
 /* spirit sectie */
 section:nth-of-type(2) {
-  min-height: 640px;
+	min-height: 640px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	justify-content: center;
 
-  background-image: url("../images/paarsebloemen.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background-image: url("../images/paarsebloemen.avif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
-  gap: 0.75rem;
+	gap: 0.75rem;
 
-  color: var(--lichte-tekst);
+	color: var(--lichte-tekst);
 }
 
 section:nth-of-type(2) h2 {
-  font-size: clamp(3rem, 5vw, 3rem);
+	font-size: clamp(3rem, 5vw, 3rem);
 }
 
 /* mobiel langere button */
 @media (max-width: 600px) {
-  section:nth-of-type(2) {
-    align-items: stretch;
-  }
+	section:nth-of-type(2) {
+		align-items: stretch;
+	}
 }
 
 /* link button seizoenen sectie */
 section:nth-of-type(2) a {
-  margin-top: 2rem;
-  padding: 1.25rem 1.5rem;
+	margin-top: 2rem;
+	padding: 1.25rem 1.5rem;
 
-  background-color: var(--goud);
-  color: var(--donker-blauw);
+	background-color: var(--goud);
+	color: var(--donker-blauw);
 
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
 
-  font-family: "Spiegel", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+	font-family: "Spiegel", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
 
-  cursor: pointer;
-  transition: all 0.4s ease;
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
 section:nth-of-type(2) a:hover {
-  background-color: #eecc87;
+	background-color: #eecc87;
 }
 
 /* https://cssgrid-generator.netlify.app/ */
 section:nth-of-type(3) {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
 
-  gap: 1.5rem;
+	gap: 1.5rem;
 
-  color: var(--donkere-tekst);
+	color: var(--donkere-tekst);
 
-  background-image: url("../images/wit-patroon.avif");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+	background-image: url("../images/wit-patroon.avif");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 section:nth-of-type(3) h2 {
-  grid-area: 1 / 1 / 2 / 2;
+	grid-area: 1 / 1 / 2 / 2;
 }
 
 @media (prefers-color-scheme: dark) {
-  section:nth-of-type(3) {
-    background-image: url("../images/donker-patroon.avif");
-    background-color: var(--donker-blauw);
-  }
+	section:nth-of-type(3) {
+		background-image: url("../images/donker-patroon.avif");
+		background-color: var(--donker-blauw);
+	}
 }
 
 /* h2 & view all container */
-section:nth-of-type(3) > div:first-of-type {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+section:nth-of-type(3)>div:first-of-type {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
 
 section:nth-of-type(3) h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-family: "Beaufort", serif;
-  text-transform: uppercase;
+	font-size: clamp(1.5rem, 4vw, 2rem);
+	font-family: "Beaufort", serif;
+	text-transform: uppercase;
 }
 
 section:nth-of-type(3) h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
-  font-family: "MarkPro";
-  text-transform: none;
+	font-size: clamp(1.2rem, 2.5vw, 1.375rem);
+	font-family: "MarkPro";
+	text-transform: none;
 }
 
 /* view all link */
-section:nth-of-type(3) > a {
-  justify-self: end; /* tegen de rechterkant */
+section:nth-of-type(3)>a {
+	justify-self: end;
 
-  text-transform: uppercase;
-  text-decoration: none;
+	text-transform: uppercase;
+	text-decoration: none;
 
-  color: var(--donkere-tekst);
-  font-size: clamp(1rem, 2vw, 1.125rem);
+	color: var(--donkere-tekst);
+	font-size: clamp(1rem, 2vw, 1.125rem);
 
-  font-family: "Spiegel";
+	font-family: "Spiegel";
 
-  transition: 0.2s;
+	transition: 0.2s;
 }
 
-section:nth-of-type(3) > a span {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+section:nth-of-type(3)>a span {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
-section:nth-of-type(3) > a p {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+section:nth-of-type(3)>a p {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 /* hover view all */
-section:nth-of-type(3) > a:hover {
-  color: grey;
+section:nth-of-type(3)>a:hover {
+	color: grey;
 }
 
-section:nth-of-type(3) > span {
-  display: flex;
-  gap: 0.75rem;
+section:nth-of-type(3)>span {
+	display: flex;
+	gap: 0.75rem;
 }
 
 /* svg link naast view all */
 section:nth-of-type(3) p svg {
-  color: var(--goud);
-  cursor: pointer;
-  width: 1rem;
+	color: var(--goud);
+	cursor: pointer;
+	width: 1rem;
 }
 
 section:nth-of-type(3) article {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.35rem;
 }
 
 /* nieuws foto img container */
 section:nth-of-type(3) div {
-  position: relative;
-  overflow: hidden;
-  order: -2;
+	position: relative;
+	overflow: hidden;
+	order: -2;
 }
 
 /* nieuws fotos */
 section:nth-of-type(3) .nieuws-foto {
-  display: block;
+	display: block;
 
-  width: 100%;
-  transition: transform 0.3s ease;
+	width: 100%;
+	transition: transform 0.3s ease;
 }
 
 .yolo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  height: 3rem;
-  z-index: 100;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	height: 3rem;
+	z-index: 100;
 }
 
 section:nth-of-type(3) .nieuws-foto:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 /* categorie */
 section:nth-of-type(3) article p:first-of-type {
-  font-family: "MarkPro";
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: var(--goud);
+	font-family: "MarkPro";
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: var(--goud);
 
-  margin-top: 1rem;
+	margin-top: 1rem;
 
-  order: -1;
+	order: -1;
 }
 
 /* datum */
 time {
-  font-family: "Spiegel", sans-serif;
-  margin-left: 0.75rem;
-  color: var(--donkere-tekst);
+	font-family: "Spiegel", sans-serif;
+	margin-left: 0.75rem;
+	color: var(--donkere-tekst);
 }
 
 /* artikel body tekst */
 section:nth-of-type(3) p {
-  font-size: clamp(0.9rem, 2vw, 1rem);
+	font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 /* artikel body dat eig een link is */
 section:nth-of-type(3) li a {
-  text-decoration: none;
-  color: var(--donkere-tekst);
+	text-decoration: none;
+	color: var(--donkere-tekst);
 }
 
 /* nieuws ul */
 section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 
-  display: grid;
-  grid-column: 1 / span 2;
-  gap: 1.75rem;
-  grid-template-columns: repeat(3, 1fr);
+	display: grid;
+	grid-column: 1 / span 2;
+	gap: 1.75rem;
+	grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 900px) {
-  section ul {
-    grid-template-columns: repeat(2, 1fr);
-  }
+	section ul {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media (max-width: 600px) {
-  section ul {
-    grid-template-columns: repeat(1, 1fr);
-  }
+	section ul {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 /* choose your champion sectie */
 section:nth-of-type(4) {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  text-align: center;
+	text-align: center;
 
-  background-image: url(../images/assasin-bg-grijs.png);
-  background-size: cover;
-  background-position: center;
+	background-image: url(../images/assasin-bg-grijs.png);
+	background-size: cover;
+	background-position: center;
 }
 
 section:nth-of-type(4) h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
-  font-family: "Beaufort", serif;
-  text-transform: uppercase;
+	font-size: clamp(1.2rem, 2.5vw, 1.375rem);
+	font-family: "Beaufort", serif;
+	text-transform: uppercase;
 }
 
 /* h2 woorden apart stylen van meerdere secties */
 section:nth-of-type(2) h2 span:first-of-type {
-  font-size: 1.25rem;
-  display: block;
+	font-size: 1.25rem;
+	display: block;
 }
 
 /* choose your champion sectie */
 section:nth-of-type(4) h2 span:first-of-type {
-  font-size: 1.25rem;
-  display: block;
+	font-size: 1.25rem;
+	display: block;
 }
 
 /* slay wit style sectie */
 section:nth-of-type(5) h2 span:first-of-type {
-  font-size: 1.25rem;
-  display: block;
+	font-size: 1.25rem;
+	display: block;
 }
 
 /* multiple ways to play sectie */
 section:nth-of-type(6) h2 span:first-of-type {
-  font-size: 1.25rem;
-  display: block;
+	font-size: 1.25rem;
+	display: block;
 }
 
 @media (prefers-color-scheme: dark) {
-  section:nth-of-type(4) {
-    color: white;
-    background-image: url(../images/assasin-bg-donker.png);
-    background-color: var(--donker-blauw);
-  }
+	section:nth-of-type(4) {
+		color: white;
+		background-image: url(../images/assasin-bg-donker.png);
+		background-color: var(--donker-blauw);
+	}
 }
 
 @media (max-width: 1300px) {
-  section:nth-of-type(4) {
-    flex-direction: column;
-  }
+	section:nth-of-type(4) {
+		flex-direction: column;
+	}
 }
 
-section:nth-of-type(4) > figure {
-  display: flex;
-  flex-direction: column;
+section:nth-of-type(4)>figure {
+	display: flex;
+	flex-direction: column;
 }
 
 section:nth-of-type(4) figure img {
-  order: -1;
+	order: -1;
 }
 
 /* tekst container */
-section:nth-of-type(4) > div:first-of-type {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  max-width: 100%; /* nooit breder dan de viewport/sectie */
+section:nth-of-type(4)>div:first-of-type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	max-width: 100%;
+	/* nooit breder dan de viewport/sectie */
 }
 
 @media (max-width: 1300px) {
-  section:nth-of-type(4) > div:first-of-type {
-    align-items: stretch;
-  }
+	section:nth-of-type(4)>div:first-of-type {
+		align-items: stretch;
+	}
 }
 
 /* link buttons container */
 section:nth-of-type(4) nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 
-  margin-top: 2rem;
-  width: 100%;
+	margin-top: 2rem;
+	width: 100%;
 }
 
 /* 2 a link buttons  */
 section:nth-of-type(4) a {
-  display: inline-block;
+	display: inline-block;
 
-  padding: 1.25rem 1.5rem;
-  background-color: var(--goud);
-  color: var(--donker-blauw);
+	padding: 1.25rem 1.5rem;
+	background-color: var(--goud);
+	color: var(--donker-blauw);
 
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
 
-  font-family: "Spiegel", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+	font-family: "Spiegel", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
 
-  cursor: pointer;
-  transition: all 0.4s ease;
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
 /* knoppen onderelkaar bij klein scherm */
 @media (max-width: 900px) {
-  section:nth-of-type(4) nav {
-    flex-direction: column;
-  }
+	section:nth-of-type(4) nav {
+		flex-direction: column;
+	}
 }
 
 /* tweede blauwe button */
 section:nth-of-type(4) a:last-of-type {
-  background-color: var(--licht-blauw);
+	background-color: var(--licht-blauw);
 }
 
 section:nth-of-type(4) a:hover {
-  filter: brightness(1.2);
+	filter: brightness(1.2);
 }
 
-section:nth-of-type(4) form  {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2.5rem;
-  margin-top: 1rem;
-  justify-content: center;
+section:nth-of-type(4) form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+	margin-top: 1rem;
+	justify-content: center;
 }
 
 section:nth-of-type(4) form label {
-  display: flex;
-  flex-direction: column;
-  align-items: center;  
-  cursor: pointer;
-  transition: 0.2s;
-  width: 5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.2s;
+	width: 5rem;
 }
 
 section:nth-of-type(4) form label img {
-  width: 4rem;
+	width: 4rem;
 }
 
 section:nth-of-type(4) label {
-  filter: brightness(50%);
+	filter: brightness(50%);
 }
 
 section:nth-of-type(4) label span {
-  text-transform: uppercase;
-  font-size: .85rem;
-  font-family: "Spiegel", sans-serif;
+	text-transform: uppercase;
+	font-size: .85rem;
+	font-family: "Spiegel", sans-serif;
 }
 
 section:nth-of-type(4) label:has(:checked) {
-  filter: brightness(100%);
+	filter: brightness(100%);
 }
 
 section:nth-of-type(4) form label:hover {
-  transform: scale(1.2); 
+	transform: scale(1.2);
 }
 
 /* radio button onzichtbaar maken */
-section:nth-of-type(4) input {  
-  opacity: 0;
+section:nth-of-type(4) input {
+	opacity: 0;
 }
 
 /* de foto die gaat veranderen */
-section:nth-of-type(4) figure div{
-  order: -1;
-  width: 50rem;
-  height: 50rem;
-  background-image: url("../images/akali.avif");
-  background-size: cover;
-  }
+section:nth-of-type(4) figure div {
+	order: -1;
+	width: 50rem;
+	height: 50rem;
+	background-image: url("../images/akali.avif");
+	background-size: cover;
 
-  /* lange button voor mobiel */
-@media (max-width: 900px) {
-  section:nth-of-type(4) figure div {
-    width:23rem;
-    height:23rem;
-
-  }
-}
-
-  /* als er iets gechecked word past de image aan */
-  section:has( [value="fighters"]:checked  ) figure div {
-  background-image: url("../images/fighter-man.avif");
-  }
-
-  section:has( [value="mages"]:checked  ) figure div {
-    background-image: url("../images/mages-man.avif");
-  }
-
-  section:has( [value="marksmen"]:checked  ) figure div {
-    background-image: url("../images/marksmen-man.avif");
-  }
-
-  section:has( [value="supports"]:checked  ) figure div {
-    background-image: url("../images/support-man.avif");
-  }
-
-  section:has( [value="tanks"]:checked  ) figure div {
-    background-image: url("../images/tank-man.avif");
-  }
-
-/* categorieen ikonen champs */
-section:nth-of-type(4) ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  text-align: center;
-  max-width: 100%;
-  margin-top: 2rem;
-}
-
-/* categorie tekst */
-li figure figcaption {
-  font-family: "Spiegel";
-  font-size: clamp(0.8rem, 2vw, 0.8rem);
-  text-transform: uppercase;
-}
-
-section > figure:last-of-type > figcaption {
-  font-family: "Spiegel";
-  font-size: clamp(0.9rem, 2vw, 1.1rem);
-  color: rgb(82, 82, 82);
-  margin-top: 1rem;
-}
-
-@media (prefers-color-scheme: dark) {
-  section > figure:last-of-type > figcaption {
-    color: var(--lichte-tekst);
-  }
-}
-
-/* champion figure */
-@media (max-width: 900px) {
-  section > figure:last-of-type > img {
-    width: 100%;
-  }
-}
-
-/* slay with style sectie */
-section:nth-of-type(5) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 3rem;
-
-  background-image: url("../images/bos.avif");
-  background-size: cover;
-  background-position: center;
-
-  color: var(--lichte-tekst);
-}
-
-@media (max-width: 900px) {
-  section:nth-of-type(5) {
-    flex-direction: column-reverse;
-  }
-}
-
-/* slay with style img */
-section:nth-of-type(5) img {
-  width: 40vw; /* schaalt mee met het scherm */
-  order: -1;
-}
-
-@media (max-width: 900px) {
-  section:nth-of-type(5) img {
-    width: 90vw; /* schaalt mee met het scherm */
-  }
-}
-
-/* tekst blok */
-section:nth-of-type(5) div {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 0.6rem;
 }
 
 /* lange button voor mobiel */
 @media (max-width: 900px) {
-  section:nth-of-type(5) a {
-    align-self: stretch;
-  }
+	section:nth-of-type(4) figure div {
+		width: 23rem;
+		height: 23rem;
+
+	}
+}
+
+/* als er iets gechecked word past de image aan */
+section:has([value="fighters"]:checked) figure div {
+	background-image: url("../images/fighter-man.avif");
+}
+
+section:has([value="mages"]:checked) figure div {
+	background-image: url("../images/mages-man.avif");
+}
+
+section:has([value="marksmen"]:checked) figure div {
+	background-image: url("../images/marksmen-man.avif");
+}
+
+section:has([value="supports"]:checked) figure div {
+	background-image: url("../images/support-man.avif");
+}
+
+section:has([value="tanks"]:checked) figure div {
+	background-image: url("../images/tank-man.avif");
+}
+
+/* categorieen ikonen champs */
+section:nth-of-type(4) ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 3rem;
+	text-align: center;
+	max-width: 100%;
+	margin-top: 2rem;
+}
+
+/* categorie tekst */
+li figure figcaption {
+	font-family: "Spiegel";
+	font-size: clamp(0.8rem, 2vw, 0.8rem);
+	text-transform: uppercase;
+}
+
+section>figure:last-of-type>figcaption {
+	font-family: "Spiegel";
+	font-size: clamp(0.9rem, 2vw, 1.1rem);
+	color: rgb(82, 82, 82);
+	margin-top: 1rem;
+}
+
+@media (prefers-color-scheme: dark) {
+	section>figure:last-of-type>figcaption {
+		color: var(--lichte-tekst);
+	}
+}
+
+/* champion figure */
+@media (max-width: 900px) {
+	section>figure:last-of-type>img {
+		width: 100%;
+	}
+}
+
+/* slay with style sectie */
+section:nth-of-type(5) {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	gap: 3rem;
+
+	background-image: url("../images/bos.avif");
+	background-size: cover;
+	background-position: center;
+
+	color: var(--lichte-tekst);
+}
+
+@media (max-width: 900px) {
+	section:nth-of-type(5) {
+		flex-direction: column-reverse;
+	}
+}
+
+/* slay with style img */
+section:nth-of-type(5) img {
+	width: 40vw;
+	/* schaalt mee met het scherm */
+	order: -1;
+}
+
+@media (max-width: 900px) {
+	section:nth-of-type(5) img {
+		width: 90vw;
+		/* schaalt mee met het scherm */
+	}
+}
+
+/* tekst blok */
+section:nth-of-type(5) div {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 0.6rem;
+}
+
+/* lange button voor mobiel */
+@media (max-width: 900px) {
+	section:nth-of-type(5) a {
+		align-self: stretch;
+	}
 }
 
 /* link button  */
 section:nth-of-type(5) a {
-  display: inline-block;
-  padding: 1.25rem 1.5rem;
-  background-color: var(--goud);
-  color: var(--donker-blauw);
+	display: inline-block;
+	padding: 1.25rem 1.5rem;
+	background-color: var(--goud);
+	color: var(--donker-blauw);
 
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
 
-  font-family: "Spiegel", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+	font-family: "Spiegel", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
 
-  margin-top: 1rem;
+	margin-top: 1rem;
 
-  cursor: pointer;
-  transition: all 0.4s ease;
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
 section:nth-of-type(5) a:hover {
-  background-color: #eecc87;
+	background-color: #eecc87;
 }
 
 /* multiple ways to play*/
 section:nth-of-type(6) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  color: var(--lichte-tekst);
-  text-align: center;
+	color: var(--lichte-tekst);
+	text-align: center;
 
-  background-image: url(../images/onduidelijke-bg.avif);
-  background-size: cover;
-  background-position: center;
+	background-image: url(../images/onduidelijke-bg.avif);
+	background-size: cover;
+	background-position: center;
 }
 
 @media (max-width: 1300px) {
-  section:nth-of-type(6) {
-    flex-direction: column;
-  }
+	section:nth-of-type(6) {
+		flex-direction: column;
+	}
 }
 
 /* tekst container */
-section:nth-of-type(6) > div:first-of-type {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  max-width: 100%; /* nooit breder dan de viewport/sectie */
+section:nth-of-type(6)>div:first-of-type {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	max-width: 100%;
+	/* nooit breder dan de viewport/sectie */
 }
 
 /* link buttons container */
-section:nth-of-type(6) > div:first-of-type > div {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+section:nth-of-type(6)>div:first-of-type>div {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
 
-  width: 100%;
+	width: 100%;
 }
 
 /* link button  */
 section:nth-of-type(6) a {
-  display: inline-block;
+	display: inline-block;
 
-  padding: 1.25rem 1.5rem;
-  background-color: var(--goud);
-  color: var(--donker-blauw);
+	padding: 1.25rem 1.5rem;
+	background-color: var(--goud);
+	color: var(--donker-blauw);
 
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
 
-  font-family: "Spiegel", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+	font-family: "Spiegel", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
 
-  cursor: pointer;
-  transition: all 0.4s ease;
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
 @media (max-width: 900px) {
-  section:nth-of-type(6) > div:first-of-type > div {
-    flex-direction: column;
-  }
+	section:nth-of-type(6)>div:first-of-type>div {
+		flex-direction: column;
+	}
 }
 
 section:nth-of-type(6) a:hover {
-  background-color: #eecc87;
+	background-color: #eecc87;
 }
 
 /* container lijst */
 section:nth-of-type(6) ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  max-width: 100%;
-  margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	text-align: center;
+	max-width: 100%;
+	margin-top: 2rem;
 }
 
 /* 3 gamemode ikonen */
 section:nth-of-type(6) li {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
 }
 
 /* inactive */
 section:nth-of-type(6) li:not(:first-child) {
-  opacity: 50%;
+	opacity: 50%;
 }
 
 /* alle figures */
 section:nth-of-type(6) figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  gap: 1rem;
-  transition: transform 0.3s ease; /* vloeiende overgang */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	gap: 1rem;
+	transition: transform 0.3s ease;
+	/* vloeiende overgang */
 }
 
 /* video figure */
-section:nth-of-type(6) > figure {
-  gap: 0;
+section:nth-of-type(6)>figure {
+	gap: 0;
 }
 
 /* hover effect */
 section:nth-of-type(6) li:not(:first-child) figure:hover {
-  transform: scale(1.1); /* vergroot het element met 5% */
+	transform: scale(1.1);
+	/* vergroot het element met 5% */
 }
 
 @media (max-width: 900px) {
-  section:nth-of-type(6) figure {
-    width: 100%;
-  }
+	section:nth-of-type(6) figure {
+		width: 100%;
+	}
 }
 
 /* ronde video */
 section:nth-of-type(6) video {
-  width: 90%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 50%;
-  overflow: hidden;
-  display: block;
+	width: 90%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	border-radius: 50%;
+	overflow: hidden;
+	display: block;
 
-  order: -1;
+	order: -1;
 
-  outline: 1px solid var(--goud);
-  outline-offset: 1.5rem;
+	outline: 1px solid var(--goud);
+	outline-offset: 1.5rem;
 
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
 }
 
 /* video heading */
 section:nth-of-type(6) h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
-  font-family: "Beaufort", serif;
-  text-transform: uppercase;
+	font-size: clamp(1.2rem, 2.5vw, 1.375rem);
+	font-family: "Beaufort", serif;
+	text-transform: uppercase;
 }
 
-section:nth-of-type(6) > figure:last-of-type > figcaption {
-  font-family: "Spiegel";
-  color: var(--lichte-tekst);
-  margin-top: 1rem;
-  opacity: 90%;
+section:nth-of-type(6)>figure:last-of-type>figcaption {
+	font-family: "Spiegel";
+	color: var(--lichte-tekst);
+	margin-top: 1rem;
+	opacity: 90%;
 }
 
 /* gamemode video */
 @media (max-width: 900px) {
-  section:nth-of-type(6) video {
-    width: 95%;
-    outline-offset: .5rem;
-  }
+	section:nth-of-type(6) video {
+		width: 95%;
+		outline-offset: .5rem;
+	}
 }
 
 /* laatste sectie */
 section:nth-of-type(7) {
-  position: relative;
-  min-height: 30rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+	position: relative;
+	min-height: 30rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 @media (width > 50rem) {
-  section:nth-of-type(7) {
-    min-height: 40rem;
-  }
+	section:nth-of-type(7) {
+		min-height: 40rem;
+	}
 }
 
 
 /* laatste sectie video */
-section:nth-of-type(7) > video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
+section:nth-of-type(7)>video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
 /* button */
 section:nth-of-type(7) button {
-  padding: 1.25rem 1.5rem;
-  background-color: var(--goud);
-  color: var(--donker-blauw);
-  border: none;
+	padding: 1.25rem 1.5rem;
+	background-color: var(--goud);
+	color: var(--donker-blauw);
+	border: none;
 
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
 
-  font-family: "Spiegel", sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
+	font-family: "Spiegel", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
 
-  cursor: pointer;
-  transition: all 0.4s ease;
+	cursor: pointer;
+	transition: all 0.4s ease;
 }
 
 /* Hover-effect */
 section:nth-of-type(7) button:hover {
-  background-color: #eecc87;
+	background-color: #eecc87;
 }
 
 .carousel {
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scroll-snap-type: x mandatory;
-  anchor-name: --carousel;
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	anchor-name: --carousel;
 
-  > .carousel__slide {
-    scroll-snap-align: center;
-  }
+	>.carousel__slide {
+		scroll-snap-align: center;
+	}
 }
 
 .carousel--scroll-buttons {
-  &::scroll-button(*) {
-    position: fixed;
-    position-anchor: --carousel;
-    position-visibility: always;
-    font-family: "Material Symbols Outlined";
-  }
+	&::scroll-button(*) {
+		position: fixed;
+		position-anchor: --carousel;
+		position-visibility: always;
+		font-family: "Material Symbols Outlined";
+	}
 
-  &::scroll-button(right) {
-    position-area: inline-end center;
-    content: 'arrow_forward' / 'Next';
-  }
+	&::scroll-button(right) {
+		position-area: inline-end center;
+		content: 'arrow_forward' / 'Next';
+	}
 
-  &::scroll-button(left) {
-    position-area: inline-start center;
-    content: 'arrow_back' / 'Previous';
-  }
+	&::scroll-button(left) {
+		position-area: inline-start center;
+		content: 'arrow_back' / 'Previous';
+	}
 }
