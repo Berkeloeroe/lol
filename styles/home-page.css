@@ -804,6 +804,13 @@ section:nth-of-type(7) {
   overflow: hidden;
 }
 
+@media (width > 50rem) {
+  section:nth-of-type(7) {
+    min-height: 40rem;
+  }
+}
+
+
 /* laatste sectie video */
 section:nth-of-type(7) > video {
   position: absolute;
