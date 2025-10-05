@@ -452,7 +452,11 @@ header div search form input {
     font-family: "MarkPro";
     background-color: var(--header-hover);
     border: none;
-    border-radius: 0.85rem;
+    border-radius: 0.85rem;   
+}
+
+header div search form:focus{
+    outline: none!important;  
 }
 }
 
