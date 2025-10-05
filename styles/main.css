@@ -415,8 +415,6 @@ header div ul li a {
   }
   
     
-
-
 header div.is-open {
   /* JOUW CODE HIER - stap 4 */
      translate:0%;
@@ -488,7 +486,9 @@ button {
   cursor: pointer;
 }
 
-
+header div input {
+  color: var(--lichte-tekst);
+}
 
 
 @media (width > 90em) {
