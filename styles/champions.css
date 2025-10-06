@@ -244,9 +244,19 @@ main section:nth-of-type(2) ol figure img {
 	}
 }
 
+ol figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center	;
+	font-size: clamp(0.6rem, 0.5vw + 0.2rem, 1rem);
+	text-align: center;
+	gap: 1rem;
+}
+
 ol figure figcaption {
 	font-size: clamp(0.6rem, 0.5vw + 0.2rem, 1rem);
-	margin-top: 0.5rem;
+	max-width: 6rem;
+
 }
 
 /* container */
