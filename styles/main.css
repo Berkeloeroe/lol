@@ -863,7 +863,10 @@ dialog div:nth-of-type(2) a {
 
 .carousel {
 	display: flex;
+	align-items: center;
 	gap: 2rem;
+
+	height: 7rem;
 
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
