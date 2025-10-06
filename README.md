@@ -144,8 +144,8 @@ samen met je groepje opstellen
 
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
+- Achtergrond video toegankelijk maken door eigen controls toe te voegen.
+- Carrousel kan je met css only maken.
 - nog een punt
 - ...
 

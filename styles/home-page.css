@@ -72,7 +72,7 @@ main section:nth-of-type(1) button:first-of-type {
 	outline: 1px solid white;
 	outline-offset: 3px;
 
-	cursor: pointer;
+	/* cursor: pointer; */
 	transition: all 0.4s ease;
 }
 
@@ -87,10 +87,6 @@ main section:nth-of-type(1) button:last-of-type {
 	border: none;
 	/* opacity: 50%;
 	transition: .2s; */
-}
-
-main section:nth-of-type(1) button:last-of-type:hover {
-	/* opacity: 100%; */
 }
 
 main section:nth-of-type(1) button img {
@@ -440,7 +436,6 @@ section:nth-of-type(4) a {
 	font-weight: 400;
 	font-size: 1rem;
 
-	cursor: pointer;
 	transition: all 0.4s ease;
 }
 
@@ -868,7 +863,7 @@ section:nth-of-type(7) button:hover {
 	background-color: #eecc87;
 }
 
-/* .carousel {
+.carousel {
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x mandatory;
@@ -896,5 +891,5 @@ section:nth-of-type(7) button:hover {
 		position-area: inline-start center;
 		content: 'arrow_back' / 'Previous';
 	}
-} */
+}
 

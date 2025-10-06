@@ -1,408 +1,408 @@
-
 h1 {
-  font-size: clamp(3rem, 5vw, 4rem);
-  font-family: "Beaufort", serif;
-  text-transform: uppercase;
+	font-size: clamp(3rem, 5vw, 4rem);
+	font-family: "Beaufort", serif;
+	text-transform: uppercase;
 }
 
 /* eerste sectie */
 main section:nth-of-type(1) {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding: 0; /* padding weg die ik overal gebruik */
-  color: var(--lichte-tekst);
-  background-color: var(--donker-blauw);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 0;
+	/* padding weg die ik overal gebruik */
+	color: var(--lichte-tekst);
+	background-color: var(--donker-blauw);
 }
 
 /* achtergrond afbeelding */
 main section:nth-of-type(1) div:nth-of-type(2) {
-  order: -1;
-  width: 100%;
-  z-index: 10;
-  background-image: url("../images/AurelionSol_0.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 30vh;
+	order: -1;
+	width: 100%;
+	z-index: 10;
+	background-image: url("../images/AurelionSol_0.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 30vh;
 }
 
 /* bij groter scherm komt de afbeelding achter de tekst */
 @media (min-width: 1000px) {
-  main section:nth-of-type(1) div:nth-of-type(2) {
-    position: absolute;
-    top: 0;
-    height: 100%;
-    /* voor grote schermen komt een gradient voor styling en leesbaarheid */
-    background-image: linear-gradient(
-        to bottom,
-        rgba(49, 36, 36, 0.5),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url("../images/AurelionSol_0.jpg");
-  }
+	main section:nth-of-type(1) div:nth-of-type(2) {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		/* voor grote schermen komt een gradient voor styling en leesbaarheid */
+		background-image: linear-gradient(to bottom,
+				rgba(49, 36, 36, 0.5),
+				rgba(0, 0, 0, 0.5)),
+			url("../images/AurelionSol_0.jpg");
+	}
 }
 
 /* content */
-main section:nth-of-type(1) > div:nth-of-type(1) {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.7rem;
-  padding: clamp(1.2rem, 10vw, 12rem);
-  z-index: 100;
+main section:nth-of-type(1)>div:nth-of-type(1) {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.7rem;
+	padding: clamp(1.2rem, 10vw, 12rem);
+	z-index: 100;
 }
 
 /* niet hele breedte innemen bij gotere devices */
 @media (min-width: 1300px) {
-  main section:nth-of-type(1) > div:nth-of-type(1) {
-    width: 50%;
-    padding-right: 0;
-  }
+	main section:nth-of-type(1)>div:nth-of-type(1) {
+		width: 50%;
+		padding-right: 0;
+	}
 }
 
 @media (max-width: 900px) {
-  main section:nth-of-type(1) > div:nth-child(1) {
-    padding: 1.5rem;
-  }
+	main section:nth-of-type(1)>div:nth-child(1) {
+		padding: 1.5rem;
+	}
 }
 
 /* h1 woorden apart stylen */
 section:nth-of-type(1) h1 span:first-of-type {
-  display: block;
-  font-size: clamp(1.3rem, 2vw, 4rem);
-  font-family: "Beaufort", serif;
-  text-transform: uppercase;
+	display: block;
+	font-size: clamp(1.3rem, 2vw, 4rem);
+	font-family: "Beaufort", serif;
+	text-transform: uppercase;
 
-  color: var(--goud);
+	color: var(--goud);
 }
 
 main section:nth-of-type(1) svg {
-  fill: var(--goud);
+	fill: var(--goud);
 }
 
 /* figures container */
 main section:nth-of-type(1) ul:first-of-type {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  padding: 0;
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+	padding: 0;
 }
 
 
 /* onderste lijn met linkjes */
 main section:nth-of-type(1) ul:nth-of-type(2) {
-  display: flex;
-  gap: 2rem;
-  padding: 0.5rem 0;
-  margin-top: 2rem;
-  font-family: "Spiegel", sans-serif;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  border-top: 1px solid var(--goud);
+	display: flex;
+	gap: 2rem;
+	padding: 0.5rem 0;
+	margin-top: 2rem;
+	font-family: "Spiegel", sans-serif;
+	font-size: 0.7rem;
+	text-transform: uppercase;
+	border-top: 1px solid var(--goud);
 }
 
 @media (min-width: 1300px) {
-  main section:nth-of-type(1) ul:nth-of-type(2) {
-      margin-top: 5rem;
-  }
+	main section:nth-of-type(1) ul:nth-of-type(2) {
+		margin-top: 5rem;
+	}
 }
 
 
 main section:nth-of-type(1) ul:nth-of-type li:first-child {
-  color: grey;
+	color: grey;
 }
 
 main section:nth-of-type(1) ul li {
-  list-style: none;
+	list-style: none;
 }
 
 main section:nth-of-type(1) ul li a {
-  color: var(--lichte-tekst);
-  text-decoration: none;
+	color: var(--lichte-tekst);
+	text-decoration: none;
 }
 
 main section:nth-of-type(1) ul li a:hover {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 main section:nth-of-type(1) figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 
-  width: 7rem;
-  height: 7rem;
+	width: 7rem;
+	height: 7rem;
 
-  background-color: rgba(10, 20, 40, 0.6);
-  text-align: center;
+	background-color: rgba(10, 20, 40, 0.6);
+	text-align: center;
 
-  outline-offset: 10px;
-  outline: 1px solid var(--goud);
-  margin: 0.6rem;
+	outline-offset: 10px;
+	outline: 1px solid var(--goud);
+	margin: 0.6rem;
 }
 
 main section:nth-of-type(1) figcaption {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
 }
 
 main section:nth-of-type(1) figure figcaption span {
-  font-family: "Spiegel", sans-serif;
-  font-size: 0.75rem;
-  text-transform: uppercase;
+	font-family: "Spiegel", sans-serif;
+	font-size: 0.75rem;
+	text-transform: uppercase;
 }
 
 main section:nth-of-type(1) figure figcaption span:nth-last-of-type(1) {
-  color: var(--goud);
+	color: var(--goud);
 }
 
 /* tweede sectie */
 main section:nth-of-type(2) {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background-color: var(--donker-blauw);
-  color: var(--lichte-tekst);
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	background-color: var(--donker-blauw);
+	color: var(--lichte-tekst);
+	text-align: center;
 }
 
 @media (min-width: 1000px) {
-  main section:nth-of-type(2) {
-    flex-direction: row;
-  }
+	main section:nth-of-type(2) {
+		flex-direction: row;
+	}
 }
 
 main section:nth-of-type(2) h3 {
-  font-size: clamp(1.2rem, 2.5vw, 1.375rem);
-  font-family: "Beaufort", serif;
-  text-transform: uppercase;
+	font-size: clamp(1.2rem, 2.5vw, 1.375rem);
+	font-family: "Beaufort", serif;
+	text-transform: uppercase;
 }
 
 /* text container */
-main section:nth-of-type(2) > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
+main section:nth-of-type(2)>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
 }
 
 @media (min-width: 1000px) {
-  main section:nth-of-type(2) > div,
-  main section:nth-of-type(2) > figure {
-    width: 50%;
-  }
+
+	main section:nth-of-type(2)>div,
+	main section:nth-of-type(2)>figure {
+		width: 50%;
+	}
 }
 
 /* lijst */
 ol {
-  display: flex;
-  justify-content: space-between;
-  padding: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
 }
 
 @media (min-width: 1000px) {
-  ol {
-    justify-content: center;
-    gap: 3rem;
-  }
-  main section:nth-of-type(2) > div div {
-    display: none;
-  }
+	ol {
+		justify-content: center;
+		gap: 3rem;
+	}
+
+	main section:nth-of-type(2)>div div {
+		display: none;
+	}
 }
 
 ol li {
-  list-style: none;
-  font-family: "Spiegel";
-  text-transform: uppercase;
-  cursor: pointer;
+	list-style: none;
+	font-family: "Spiegel";
+	text-transform: uppercase;
+	cursor: pointer;
 }
 
 /* alles behalve de eerste list item */
 main section:nth-of-type(2) ol li:not(:first-child) {
-  opacity: 50%;
-  transition: 0.2s;
+	opacity: 50%;
+	transition: 0.2s;
 }
 
 /* alles behalve de eerste list item */
 main section:nth-of-type(2) ol li:not(:first-child):hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 main section:nth-of-type(2) ol figure img {
-  height: 3rem;
-  width: 3rem;
+	height: 3rem;
+	width: 3rem;
 }
 
 @media (min-width: 1000px) {
-  main section:nth-of-type(2) ol figure img {
-    height: 4rem;
-    width: 4rem;
-  }
+	main section:nth-of-type(2) ol figure img {
+		height: 4rem;
+		width: 4rem;
+	}
 }
 
 ol figure figcaption {
-  font-size: clamp(0.6rem, 0.5vw + 0.2rem, 1rem);
-  margin-top: 0.5rem;
+	font-size: clamp(0.6rem, 0.5vw + 0.2rem, 1rem);
+	margin-top: 0.5rem;
 }
 
 /* container */
-main section:nth-of-type(2) > div div {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+main section:nth-of-type(2)>div div {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 @media (min-width: 1000px) {
-  main section:nth-of-type(2) > div div {
-    display: none;
-  }
+	main section:nth-of-type(2)>div div {
+		display: none;
+	}
 }
 
 /* progress bar */
-main section:nth-of-type(2) > div div div {
-  height: 2px;
-  width: 100%;
-  background-color: var(--lichte-tekst);
+main section:nth-of-type(2)>div div div {
+	height: 2px;
+	width: 100%;
+	background-color: var(--lichte-tekst);
 }
 
-main section:nth-of-type(2) > div div span {
-  display: flex;
+main section:nth-of-type(2)>div div span {
+	display: flex;
 }
 
 span svg {
-  fill: var(--goud);
+	fill: var(--goud);
 }
 
-section:nth-of-type(2) > figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 0.5rem;
+section:nth-of-type(2)>figure {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin: 0.5rem;
 }
 
-section:nth-of-type(2) > figure figcaption {
-  font-family: "Spiegel";
-  font-size: clamp(1rem, 2vw, 1rem);
-  color: var(--lichte-tekst);
+section:nth-of-type(2)>figure figcaption {
+	font-family: "Spiegel";
+	font-size: clamp(1rem, 2vw, 1rem);
+	color: var(--lichte-tekst);
 }
 
 section:nth-of-type(2) video {
-  order: -1;
-  width: 100%;
-  object-fit: cover;
+	order: -1;
+	width: 100%;
+	object-fit: cover;
 
-  outline: 1px solid var(--goud);
-  outline-offset: 0.5rem;
+	outline: 1px solid var(--goud);
+	outline-offset: 0.5rem;
 
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
 }
 
 @media (min-width: 1000px) {
-  section:nth-of-type(2) video {
-    outline-offset: 1.5rem;
-    margin-bottom: 2rem;
-  }
+	section:nth-of-type(2) video {
+		outline-offset: 1.5rem;
+		margin-bottom: 2rem;
+	}
 
-  section:nth-of-type(2) > figure {
-    margin: 1.5rem;
-  }
+	section:nth-of-type(2)>figure {
+		margin: 1.5rem;
+	}
 }
 
 h5 {
-  color: var(--lichte-tekst);
-  margin-top: 2rem;
+	color: var(--lichte-tekst);
+	margin-top: 2rem;
 }
 
 section:nth-of-type(2) p {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: grey;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	color: grey;
 }
 
 section:nth-of-type(3) {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  color: var(--donker-blauw);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	color: var(--donker-blauw);
 }
 
 @media (prefers-color-scheme: dark) {
-  section:nth-of-type(3) {
-    background-color: var(--donker-donker-blauw);
-  }
+	section:nth-of-type(3) {
+		background-color: var(--donker-donker-blauw);
+	}
 }
 
 section:nth-of-type(3) h2 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  font-family: "Beaufort", serif;
-  text-transform: uppercase;
+	font-size: clamp(1.5rem, 4vw, 2rem);
+	font-family: "Beaufort", serif;
+	text-transform: uppercase;
 }
 
 @media (prefers-color-scheme: dark) {
- section:nth-of-type(3) h2 {
-    color: var(--lichte-tekst);
-  }
+	section:nth-of-type(3) h2 {
+		color: var(--lichte-tekst);
+	}
 }
 
-section:nth-of-type(3) > img {
-  width: 100%;
-  object-fit: cover;
+section:nth-of-type(3)>img {
+	width: 100%;
+	object-fit: cover;
 }
 
 /* container */
-section:nth-of-type(3) > div {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+section:nth-of-type(3)>div {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
 }
 
 /* progress balk */
-section:nth-of-type(3) > div div {
-  height: 2px;
-  width: 100%;
-  background-color: gray;
+section:nth-of-type(3)>div div {
+	height: 2px;
+	width: 100%;
+	background-color: gray;
 }
 
 /* pijlen knoppen */
-section:nth-of-type(3) > div span {
-  display: flex;
-  gap: 0.8rem;
+section:nth-of-type(3)>div span {
+	display: flex;
+	gap: 0.8rem;
 }
 
 main section:nth-of-type(3) ol figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 main section:nth-of-type(3) ol figure img {
-  height: 2.5rem;
-  width: 4.5rem;
+	height: 2.5rem;
+	width: 4.5rem;
 }
 
 @media (min-width: 1000px) {
-  main section:nth-of-type(3) ol figure img {
-    height: 7rem;
-    width: 13rem;
-  }
+	main section:nth-of-type(3) ol figure img {
+		height: 7rem;
+		width: 13rem;
+	}
 }
 
 main section:nth-of-type(3) figcaption {
-  text-align: center;
-  color: grey;
+	text-align: center;
+	color: grey;
 }
 
 main section:nth-of-type(3) ol li:first-of-type figcaption {
-  color: var(--goud);
+	color: var(--goud);
 }
 
 main section:nth-of-type(3) ol li:first-of-type figure img {
-  outline: 1px solid var(--goud);
-  outline-offset: 4px;
-  margin: 4px;
+	outline: 1px solid var(--goud);
+	outline-offset: 4px;
+	margin: 4px;
 }
