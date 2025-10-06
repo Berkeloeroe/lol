@@ -868,8 +868,10 @@ dialog div:nth-of-type(2) a {
 
 	height: 7rem;
 
+	overflow-y: hidden; /* voorkomt verticale scroll */
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
+	
 	scroll-snap-type: x mandatory;
 	anchor-name: --carousel;
 
