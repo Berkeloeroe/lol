@@ -866,7 +866,7 @@ dialog div:nth-of-type(2) a {
 	align-items: center;
 	gap: 2rem;
 
-	height: 9rem;
+	/* height: 9rem; */
 
 	overflow-y: hidden; /* voorkomt verticale scroll */
 	overflow-x: auto;
