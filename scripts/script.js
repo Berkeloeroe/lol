@@ -53,6 +53,7 @@ function sluitMenu() {
 }
 
 // video pauze knop
+// https://codepen.io/shooft/pen/MYKjaXd
 let videoButton = document.querySelector("video + button");
 let videoButtonImg = document.querySelector("button img");
 
@@ -66,14 +67,14 @@ function toggleVideo() {
 	if( deVideo.paused == true ) {
 		deVideo.play();
 		// videoButton.textContent = "pauze";
-		videoButtonImg.src = "https://assets.codepen.io/274456/jp-icon-sakura.svg";
+		videoButtonImg.src = "images/pause.png";
 		videoButtonImg.alt = "pauze";
 		
 	} else {
 		deVideo.pause();
 		// videoButton.textContent = "play";
 		
-		videoButtonImg.src = "https://assets.codepen.io/274456/jp-icon-bonsai.svg";
+		videoButtonImg.src = "images/play.png";
 		videoButtonImg.alt = "play";
 	}
 	
