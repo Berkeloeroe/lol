@@ -78,7 +78,7 @@ main section:nth-of-type(1) button:first-of-type {
 
 /* Hover-effect */
 section button:first-of-type:hover {
-	background-color: #eecc87;
+	filter: brightness(120%);
 }
 
 /* button pauze video */
