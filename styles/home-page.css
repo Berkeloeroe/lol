@@ -27,9 +27,9 @@ section:nth-of-type(1)>div {
 	height: 100%;
 	z-index: -1;
 
-	background: #121824;
+	/* background: #121824; */
 	background: linear-gradient(359deg,
-			rgba(18, 24, 36, 1) 20%,
+			rgba(18, 24, 36, 1) 0%,
 			rgba(15, 18, 31, 0.15) 100%);
 }
 
