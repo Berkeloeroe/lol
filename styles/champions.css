@@ -239,6 +239,15 @@ main section:nth-of-type(2) ol figure img {
 	width: 3rem;
 }
 
+@media (width > 30em) {
+	main section:nth-of-type(2) ol figure img {
+		width: 4rem;
+		height: auto;
+
+	}
+
+}
+
 ol figure {
 	display: flex;
 	flex-direction: column;
@@ -260,11 +269,11 @@ main section:nth-of-type(2)>div div {
 	gap: 1rem;
 }
 
-@media (min-width: 30em) { 
+/* @media (min-width: 30em) { 
 	main section:nth-of-type(2)>div div {
 		display: none;
 	}
-}
+} */
 
 main section:nth-of-type(2)>div div div {
 	height: 2px;
