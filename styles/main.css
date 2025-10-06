@@ -888,7 +888,7 @@ dialog div:nth-of-type(2) a {
 	}
 }
 
-carousel--scroll-buttons {
+.carousel--scroll-buttons {
   &::scroll-button(*) {
     position: fixed;
     position-anchor: --carousel;
