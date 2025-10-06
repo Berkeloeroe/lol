@@ -56,7 +56,7 @@ main section:nth-of-type(1) img {
 }
 
 /* button hero */
-main section:nth-of-type(1) button {
+main section:nth-of-type(1) button:first-of-type {
 	padding: 1.25rem 1.5rem;
 	/* margin zodat de outline binnen spacing past */
 	margin: 3px;
@@ -79,6 +79,22 @@ main section:nth-of-type(1) button {
 /* Hover-effect */
 section button:first-of-type:hover {
 	background-color: #eecc87;
+}
+
+/* button pauze video */
+main section:nth-of-type(1) button:last-of-type {
+	background:none;
+	border: none;
+	opacity: 50%;
+	transition: .2s;
+}
+
+main section:nth-of-type(1) button:last-of-type:hover {
+	opacity: 100%;
+}
+
+main section:nth-of-type(1) button img {
+	width: 3rem;
 }
 
 /* spirit sectie */
@@ -851,7 +867,7 @@ section:nth-of-type(7) button:hover {
 	background-color: #eecc87;
 }
 
-.carousel {
+/* .carousel {
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x mandatory;
@@ -879,4 +895,5 @@ section:nth-of-type(7) button:hover {
 		position-area: inline-start center;
 		content: 'arrow_back' / 'Previous';
 	}
-}
+} */
+

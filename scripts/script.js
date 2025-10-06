@@ -8,8 +8,6 @@ newJokeButton.addEventListener("click", () => {
     // JOUW CODE HIER
     // 1.1 open de dialog met showModal()
     newJokeDialog.showModal();
-
-
 });
 
 /******************************/
@@ -29,7 +27,6 @@ menuOpenButton.addEventListener("click", openMenu);
 function openMenu() {
     let deNav = document.querySelector("header > div");
     deNav.classList.add("is-open");
-
 }
 
 
@@ -55,3 +52,30 @@ function sluitMenu() {
 
 }
 
+// video pauze knop
+let videoButton = document.querySelector("video + button");
+let videoButtonImg = document.querySelector("button img");
+
+let deVideo = document.querySelector("video");
+
+
+videoButton.addEventListener("click", toggleVideo);
+
+function toggleVideo() {
+	
+	if( deVideo.paused == true ) {
+		deVideo.play();
+		// videoButton.textContent = "pauze";
+		videoButtonImg.src = "https://assets.codepen.io/274456/jp-icon-sakura.svg";
+		videoButtonImg.alt = "pauze";
+		
+	} else {
+		deVideo.pause();
+		// videoButton.textContent = "play";
+		
+		videoButtonImg.src = "https://assets.codepen.io/274456/jp-icon-bonsai.svg";
+		videoButtonImg.alt = "play";
+	}
+	
+
+}
