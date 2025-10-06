@@ -860,3 +860,43 @@ dialog a:hover {
 dialog div:nth-of-type(2) a {
 	background-color: var(--goud);
 }
+
+.carousel {
+	display: flex;
+	gap: 2rem;
+
+	overflow-x: auto;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	anchor-name: --carousel;
+
+	scroll-behavior:smooth;
+
+	margin:0;
+	padding:0;
+
+
+	> .carousel__slide {
+		scroll-snap-align: center; 
+		flex-shrink: 0;
+	}
+}
+
+carousel--scroll-buttons {
+  &::scroll-button(*) {
+    position: fixed;
+    position-anchor: --carousel;
+    position-visibility: always;
+    font-family: "Material Symbols Outlined";
+  }
+
+  &::scroll-button(right) {
+    position-area: inline-end center;
+    content: 'arrow_forward' / 'Next';
+  }
+
+  &::scroll-button(left) {
+    position-area: inline-start center;
+    content: 'arrow_back' / 'Previous';
+  }
+}
