@@ -150,24 +150,20 @@ section:nth-of-type(2) a:hover {
 
 /* https://cssgrid-generator.netlify.app/ */
 section:nth-of-type(3) {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	align-items: center;
+	gap: 1.5rem;
+
+	color: var(--donkere-tekst);
+
 	--bg: url("../images/wit-patroon.avif");
 
 	@media (prefers-color-scheme: dark) {
 		--bg: url("../images/donker-patroon.avif");
 	}
 
-	display: grid;
-	grid-template-columns: 1fr auto;
-	align-items: center;
-
-	gap: 1.5rem;
-
-	color: var(--donkere-tekst);
-
-	/* background-image: url("../images/wit-patroon.avif"); */
-
 	background-image: var(--bg);
-
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -176,13 +172,6 @@ section:nth-of-type(3) {
 section:nth-of-type(3) h2 {
 	grid-area: 1 / 1 / 2 / 2;
 }
-
-/* @media (prefers-color-scheme: dark) { */
-	/* section:nth-of-type(3) { */
-		/* background-image: url("../images/donker-patroon.avif"); */
-		/* background-color: var(--donker-blauw); */
-	/* } */
-/* } */
 
 /* h2 & view all container */
 section:nth-of-type(3)>div:first-of-type {
@@ -345,7 +334,15 @@ section:nth-of-type(4) {
 
 	text-align: center;
 
-	background-image: url(../images/assasin-bg-grijs.png);
+	--bg: url("../images/assasin-bg-grijs.png");
+
+	@media (prefers-color-scheme: dark) {
+		--bg: url("../images/assasin-bg-donker.png");
+		background-color: var(--donker-blauw);
+		color: var(--lichte-tekst);
+	}
+
+	background-image: var(--bg);
 	background-size: cover;
 	background-position: center;
 }
@@ -380,13 +377,13 @@ section:nth-of-type(6) h2 span:first-of-type {
 	display: block;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 	section:nth-of-type(4) {
-		color: white;
+		color: var(--lichte-tekst);
 		background-image: url(../images/assasin-bg-donker.png);
 		background-color: var(--donker-blauw);
 	}
-}
+} */
 
 @media (max-width: 1300px) {
 	section:nth-of-type(4) {
@@ -410,7 +407,6 @@ section:nth-of-type(4)>div:first-of-type {
 	align-items: center;
 	gap: 1rem;
 	max-width: 100%;
-	/* nooit breder dan de viewport/sectie */
 }
 
 @media (max-width: 1300px) {
@@ -465,9 +461,6 @@ section:nth-of-type(4) a:hover {
 }
 
 section:nth-of-type(4) form {
-	/* display: flex;
-	flex-wrap: wrap; */
-	/* gap: 2.5rem; */
 	margin-top: 1rem;
 	justify-content: center;
 }
