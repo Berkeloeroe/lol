@@ -867,8 +867,6 @@ dialog div:nth-of-type(2) a {
 	align-items: center;
 	gap: 2rem;
 
-	/* height: 9rem; */
-
 	overflow-y: hidden; /* voorkomt verticale scroll */
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
@@ -890,19 +888,34 @@ dialog div:nth-of-type(2) a {
 
 .carousel--scroll-buttons {
   &::scroll-button(*) {
-    position: fixed;
+	
     position-anchor: --carousel;
     position-visibility: always;
-    font-family: "Material Symbols Outlined";
   }
 
   &::scroll-button(right) {
-    position-area: inline-end center;
-    content: 'arrow_forward' / 'Next';
-  }
+ 	display: inline-block; /* pseudo-elementen hebben display nodig */
+    width: 2rem;           /* pas grootte aan */
+    height: 2rem;
+    background-image: url('https://www.leagueoflegends.com/_next/static/node_modules/@riotgames/blades-ui/dist/skins/rg-product-pages/assets/carousel-right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: ''; /* pseudo-element moet content hebben */  
+}
 
   &::scroll-button(left) {
-    position-area: inline-start center;
-    content: 'arrow_back' / 'Previous';
+    display: inline-block; /* pseudo-elementen hebben display nodig */
+        width: 2rem;           /* pas grootte aan */
+    height: 2rem;
+    background-image: url('https://www.leagueoflegends.com/_next/static/node_modules/@riotgames/blades-ui/dist/skins/rg-product-pages/assets/carousel-left.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: ''; /* pseudo-element moet content hebben */  
   }
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
