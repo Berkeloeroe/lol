@@ -882,9 +882,7 @@ dialog div:nth-of-type(2) a {
 	margin:0;
 	padding:0;
 
-		scroll-timeline: --carousel-timeline inline; /* timeline definieerbaar */
-
-
+	scroll-timeline: --carousel-timeline inline; /* timeline definieerbaar */
 
 	> .carousel__slide {
 		scroll-snap-align: center; 
@@ -892,12 +890,10 @@ dialog div:nth-of-type(2) a {
 	}
 }
 
-
 .carousel--scroll-buttons {
 
   scroll-timeline: --carousel inline;
   &::scroll-button(*) {
-	/* display: inline-block;  */
 	color: var(--goud);
 	font-size: 2rem;
     height: 2rem;
@@ -929,6 +925,7 @@ dialog div:nth-of-type(2) a {
 	scroll-timeline: --gallery__scrollcontainer inline;
 }
 
+
 .yoyo {
 	top: 0;
 	left: 0;
@@ -938,9 +935,9 @@ dialog div:nth-of-type(2) a {
 	border-radius: 1em;
 	background-color: var(--footer-hover);
 }
+
 /* Progressbar styling */
 .progressBar {
-	/* position: absolute; */
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -955,8 +952,6 @@ dialog div:nth-of-type(2) a {
 
 	transform-origin: left;
 }
-
-
 
 @keyframes grow-progress {
 	to { transform: scaleX(1); }

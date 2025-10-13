@@ -545,7 +545,7 @@ section:has([value="tanks"]:checked) figure div {
 }
 
 /* categorieen ikonen champs */
-section:nth-of-type(4) ul {
+/* section:nth-of-type(4) ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -553,7 +553,7 @@ section:nth-of-type(4) ul {
 	text-align: center;
 	max-width: 100%;
 	margin-top: 2rem;
-}
+} */
 
 /* categorie tekst */
 li figure figcaption {
