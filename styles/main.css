@@ -862,7 +862,10 @@ dialog div:nth-of-type(2) a {
 	background-color: var(--goud);
 }
 
+
 .carousel {
+	position: relative;
+
 	display: flex;
 	align-items: center;
 	gap: 2rem;
@@ -879,6 +882,9 @@ dialog div:nth-of-type(2) a {
 	margin:0;
 	padding:0;
 
+		scroll-timeline: --carousel-timeline inline; /* timeline definieerbaar */
+
+
 
 	> .carousel__slide {
 		scroll-snap-align: center; 
@@ -886,36 +892,65 @@ dialog div:nth-of-type(2) a {
 	}
 }
 
+
 .carousel--scroll-buttons {
+
+  scroll-timeline: --carousel inline;
   &::scroll-button(*) {
-	
-    position-anchor: --carousel;
-    position-visibility: always;
+	/* display: inline-block;  */
+	color: var(--goud);
+	font-size: 2rem;
+    height: 2rem;
+	background: none;
+	border: none;
+	cursor: pointer;
   }
 
   &::scroll-button(right) {
- 	display: inline-block; /* pseudo-elementen hebben display nodig */
-    width: 2rem;           /* pas grootte aan */
-    height: 2rem;
-    background-image: url('https://www.leagueoflegends.com/_next/static/node_modules/@riotgames/blades-ui/dist/skins/rg-product-pages/assets/carousel-right.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: ''; /* pseudo-element moet content hebben */  
+    content: '→'; /* pseudo-element moet content hebben */  
 }
 
   &::scroll-button(left) {
-    display: inline-block; /* pseudo-elementen hebben display nodig */
-        width: 2rem;           /* pas grootte aan */
-    height: 2rem;
-    background-image: url('https://www.leagueoflegends.com/_next/static/node_modules/@riotgames/blades-ui/dist/skins/rg-product-pages/assets/carousel-left.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    content: ''; /* pseudo-element moet content hebben */  
+    content: '←'; /* pseudo-element moet content hebben */ 
+ 
   }
+
 }
 
 .carousel::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+.champ-categories {
+	timeline-scope: --gallery__scrollcontainer;
+}
+
+.carousel {
+	scroll-timeline: --gallery__scrollcontainer inline;
+}
+
+
+/* Progressbar styling */
+.progressBar {
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: .25em;
+	border: none;
+	border-radius: 1em;
+	background-color: var(--goud);
+	transform: scaleX(.1);
+
+	animation: auto grow-progress linear forwards;
+	animation-timeline: --gallery__scrollcontainer;
+
+	transform-origin: left;
+}
+
+
+
+@keyframes grow-progress {
+	to { transform: scaleX(1); }
+}
+

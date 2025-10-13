@@ -461,6 +461,7 @@ section:nth-of-type(4) a:hover {
 }
 
 section:nth-of-type(4) form {
+	position: relative;
 	margin-top: 1rem;
 	justify-content: center;
 }
