@@ -929,7 +929,15 @@ dialog div:nth-of-type(2) a {
 	scroll-timeline: --gallery__scrollcontainer inline;
 }
 
-
+.yoyo {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: .25em;
+	border: none;
+	border-radius: 1em;
+	background-color: var(--footer-hover);
+}
 /* Progressbar styling */
 .progressBar {
 	/* position: absolute; */
