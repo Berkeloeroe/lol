@@ -213,7 +213,6 @@ body>a:focus {
 
 #modal a:hover {
 	filter: brightness(1.15);
-	/* maakt hem 15% lichter */
 }
 
 /* 2e button andere kleur */
@@ -257,7 +256,6 @@ main section {
 	}
 }
 
-
 .visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
@@ -270,7 +268,6 @@ main section {
 
 
 /* header */
-
 header {
 	display: flex;
 	justify-content: space-between;
@@ -355,8 +352,7 @@ header div {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	translate: 100%;
-	/* menu buiten beeld */
+	translate: 100%; /* menu buiten beeld */
 	transition: .5s;
 	display: grid;
 	align-content: start;
@@ -368,9 +364,7 @@ header div {
 	header div {
 		gap: 1rem;
 		padding: 1rem;
-
 	}
-
 }
 
 
@@ -378,10 +372,8 @@ header div {
 	header div {
 		width: 50%;
 		/* menu neemt de helft van het scherm */
-		right: 0;
-		/* menu schuift van rechts in */
-		left: auto;
-		/* niet over hele breedte */
+		right: 0; /* menu schuift van rechts in */
+		left: auto; /* niet over hele breedte */
 	}
 }
 
@@ -417,6 +409,12 @@ header div ul li a {
 }
 
 header div ul li a:hover {
+	color: var(--goud);
+	background-color: var(--header-hover);
+}
+
+/* 🔸 De huidige pagina */
+nav a[aria-current="page"] {
 	color: var(--goud);
 	background-color: var(--header-hover);
 }
