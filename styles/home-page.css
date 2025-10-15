@@ -478,6 +478,7 @@ section:nth-of-type(4) form label {
 
 section:nth-of-type(4) form label img {
 	width: 4rem;
+	/* width: 40px; */
 }
 
 section:nth-of-type(4) label {
