@@ -174,7 +174,8 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 hier dit ging goed & dit was lastig
 - Carrousel maken was lastig maar is gelukt met hulp van de docent
-- Progress bar maken  was lastig is gelukt met hulp van de docent
+- Progress bar maken was lastig is gelukt met hulp van de docent
+- Progress bar kan beter maar moet ik nog naar kijken
 
 
 ### Agenda voor meeting
