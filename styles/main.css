@@ -355,7 +355,7 @@ header div {
 	left: 0;
 	right: 0;
 	translate: 100%; /* menu buiten beeld */
-	transition: .5s;
+	transition: .3s;
 	display: grid;
 	align-content: start;
 	grid-template-columns: 1fr 1fr;
