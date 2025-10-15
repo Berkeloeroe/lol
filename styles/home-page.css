@@ -237,7 +237,7 @@ section:nth-of-type(3) p svg {
 	width: 1rem;
 }
 
-section:nth-of-type(3) article {
+section:nth-of-type(3) article a {
 	display: flex;
 	flex-direction: column;
 	gap: 0.35rem;
@@ -253,7 +253,6 @@ section:nth-of-type(3) div {
 /* nieuws fotos */
 section:nth-of-type(3) .nieuws-foto {
 	display: block;
-
 	width: 100%;
 	transition: transform 0.3s ease;
 }

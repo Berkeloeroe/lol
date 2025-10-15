@@ -1,5 +1,6 @@
 console.log("Test Test");
 
+// dialog
 const newJokeButton = document.querySelector("main button");
 const newJokeDialog = document.querySelector("main dialog");
 
@@ -28,9 +29,6 @@ function openMenu() {
     let deNav = document.querySelector("header > div");
     deNav.classList.add("is-open");
 }
-
-
-
 
 /************************************/
 /* menu sluiten met de sluit button */
