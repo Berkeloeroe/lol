@@ -55,6 +55,8 @@
 	--footer-hover: #444444;
 	--footer-border: #363636;
 
+	--disabled:rgb(204, 204, 204);
+
 	--goud: #c8aa6e;
 	--licht-blauw: #59c1de;
 	--rood: red;
@@ -923,19 +925,19 @@ dialog div:nth-of-type(2) a {
 	scroll-timeline: --gallery__scrollcontainer inline;
 }
 
-
+/* progress achtergrond */
 .yoyo {
 	width: 100%;
-	height: .25em;
+	height: .20em;
 	border: none;
 	border-radius: 1em;
-	background-color: var(--footer-hover);
+	background-color: var(--disabled);
 }
 
 /* Progressbar styling */
 .progressBar {
 	width: 100%;
-	height: .25em;
+	height: .20em;
 	border: none;
 	border-radius: 1em;
 	background-color: var(--goud);
