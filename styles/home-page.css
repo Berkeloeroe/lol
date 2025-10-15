@@ -511,10 +511,9 @@ section:nth-of-type(4) figure div {
 	height: 50rem;
 	background-image: url("../images/akali.avif");
 	background-size: cover;
-
+	background-position: center;
 }
 
-/* lange button voor mobiel */
 @media (max-width: 900px) {
 	section:nth-of-type(4) figure div {
 		width: 23rem;
@@ -543,17 +542,6 @@ section:has([value="supports"]:checked) figure div {
 section:has([value="tanks"]:checked) figure div {
 	background-image: url("../images/tank-man.avif");
 }
-
-/* categorieen ikonen champs */
-/* section:nth-of-type(4) ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 3rem;
-	text-align: center;
-	max-width: 100%;
-	margin-top: 2rem;
-} */
 
 /* categorie tekst */
 li figure figcaption {
