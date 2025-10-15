@@ -4,12 +4,14 @@ console.log("Test Test");
 const newJokeButton = document.querySelector("main button");
 const newJokeDialog = document.querySelector("main dialog");
 
-newJokeButton.addEventListener("click", () => {
+if(newJokeButton){
+ newJokeButton.addEventListener("click", () => {
     // STAP 1.
     // JOUW CODE HIER
     // 1.1 open de dialog met showModal()
     newJokeDialog.showModal();
 });
+}
 
 /******************************/
 /* menu openen de MENU button */
@@ -22,6 +24,7 @@ let menuOpenButton = document.querySelector("header > button:last-of-type");
 
 // stap 2: laat de menu-button luisteren naar kliks en voer dan een functie uit
 menuOpenButton.addEventListener("click", openMenu);
+console.log(menuOpenButton);
 
 // stap 3: voeg in de functie een class toe aan de nav
 
@@ -49,6 +52,8 @@ function sluitMenu() {
     deNav.classList.remove("is-open");
 
 }
+
+
 
 // video pauze knop
 // https://codepen.io/shooft/pen/MYKjaXd
