@@ -101,6 +101,7 @@ Lijst met je bevindingen die in de test naar voren kwamen:
 
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+
 ### Agenda voor meeting
 
 samen met je groepje opstellen
@@ -128,17 +129,21 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+hier dit ging goed & dit was lastig
+- Header was lastig maar is gelukt en hoef niet alles na te maken daarvan.
+- Foto aanpassen met een input was lastig maar werkt nu
+
+
+
 
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| Julia                               | Noa                                     | Randi                                | Randi                                | Melissa       |
-| ----------------------------------- | --------------------------------------- | ------------------------------------ | ------------------------------------ | ------------- |
-| dit bespreken                       | en dit                                  | en ik dit                            | en dan ik dat                        |               |
-| en dat ook nog                      | dit als er tijd is                      | nog een punt - achtergrond video toegankelijk<br>- vraag over de header<br>- text aanpassen met css | dit wil ik zeker                      |               |
-| Mijn YouTube filmpje werkt nog niet.<br>Mag mijn span? | hoe maak ik mijn 3e sectie scrollende text<br>hoe doe ik de img animatie 1e sectie | ...                                  | ...                                  |               |
+Julia: Mijn YouTube filmpje werkt nog niet. Mag mijn span?
+Noa: hoe maak ik mijn 3e sectie scrollende text? hoe doe ik de img animatie 1e sectie?
+Melissa:
+Randi: achtergrond video toegankelijk, vraag over de header, text aanpassen met css
 
 ### Verslag van meeting
 
@@ -146,8 +151,6 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 - Achtergrond video toegankelijk maken door eigen controls toe te voegen.
 - Carrousel kan je met css only maken.
-- nog een punt
-- ...
 
 </details>
 
@@ -169,17 +172,25 @@ Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er v
 
 ### Stand van zaken
 
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+hier dit ging goed & dit was lastig
+- Carrousel maken was lastig maar is gelukt met hulp van de docent
+- Progress bar maken  was lastig is gelukt met hulp van de docent
+
 
 ### Agenda voor meeting
 
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
+<!-- | student 1      | student 2          | student 3    | student 4        |
 | -------------- | ------------------ | ------------ | ---------------- |
 | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
 | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| ...            | ...                | ...          | ...              | -->
+
+Noa 
+Melissa
+Julia
+Randi:
 
 ### Verslag van meeting
 
