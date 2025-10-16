@@ -478,11 +478,10 @@ section:nth-of-type(4) form label {
 
 section:nth-of-type(4) form label img {
 	width: 4rem;
-	/* width: 40px; */
 }
 
 section:nth-of-type(4) label {
-	filter: brightness(50%);
+	filter: brightness(40%);
 }
 
 section:nth-of-type(4) label span {
@@ -496,7 +495,7 @@ section:nth-of-type(4) label:has(:checked) {
 }
 
 section:nth-of-type(4) form label:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 /* radio button onzichtbaar maken */
