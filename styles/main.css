@@ -882,7 +882,7 @@ dialog div:nth-of-type(2) a {
 	scroll-timeline: --carousel-timeline inline; /* timeline definieerbaar */
 
 	> .carousel__slide {
-		scroll-snap-align: center; 
+		scroll-snap-align: start; 
 		flex-shrink: 0;
 	}
 }
@@ -909,7 +909,7 @@ dialog div:nth-of-type(2) a {
   &::scroll-button(left) {
     content: '←'; 
 	position-area: right center;
-	    translate: -3rem 0; /* verschuif naar links zodat hij naast de andere staat */
+	translate: -3rem 0; 
 
  
   }
