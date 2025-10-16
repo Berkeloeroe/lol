@@ -874,8 +874,6 @@ dialog div:nth-of-type(2) a {
 	overscroll-behavior-x: contain;
 	
 	scroll-snap-type: x mandatory;
-	anchor-name: --carousel;
-
 	scroll-behavior:smooth;
 
 	margin:0;
@@ -899,14 +897,20 @@ dialog div:nth-of-type(2) a {
 	background: none;
 	border: none;
 	cursor: pointer;
+	position: fixed;
+	position-anchor: --carousel;
   }
 
   &::scroll-button(right) {
     content: '→'; 
+	position-area: right center;
 }
 
   &::scroll-button(left) {
     content: '←'; 
+	position-area: right center;
+	    translate: -3rem 0; /* verschuif naar links zodat hij naast de andere staat */
+
  
   }
 
@@ -932,16 +936,17 @@ dialog div:nth-of-type(2) a {
 
 /* progress achtergrond */
 .yoyo {
-	width: 100%;
+	width: 80%;
 	height: .20em;
 	border: none;
 	border-radius: 1em;
 	background-color: var(--disabled);
+	anchor-name: --carousel;
 }
 
 /* Progressbar styling */
 .progressBar {
-	width: 100%;
+	width: 80%;
 	height: .20em;
 	border: none;
 	border-radius: 1em;
