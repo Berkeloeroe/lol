@@ -124,7 +124,6 @@ body>a:focus {
 	top: 7rem;
 	left: 2rem;
 	background-color: white;
-
 }
 
 /* dingen verbergen voor toegankelijk */
@@ -903,13 +902,19 @@ dialog div:nth-of-type(2) a {
   }
 
   &::scroll-button(right) {
-    content: '→'; /* pseudo-element moet content hebben */  
+    content: '→'; 
 }
 
   &::scroll-button(left) {
-    content: '←'; /* pseudo-element moet content hebben */ 
+    content: '←'; 
  
   }
+
+   &::scroll-button(right):disabled, &::scroll-button(left):disabled {
+    opacity: 0.5;
+	color: var(--disabled);
+	cursor: auto;
+}
 
 }
 
