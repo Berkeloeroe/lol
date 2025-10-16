@@ -551,6 +551,12 @@ header div input {
 		border-radius: 0.5rem;
 	}
 
+	header nav a[aria-current="page"] {
+		background-color: var(--header-hover);
+		color: var(--goud);
+  
+	}
+
 	header div search {
 		flex-grow: 1;
 	}
