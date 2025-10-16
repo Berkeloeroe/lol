@@ -867,6 +867,7 @@ dialog div:nth-of-type(2) a {
 
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	gap: 2rem;
 
 	overflow-y: hidden; /* voorkomt verticale scroll */
@@ -936,7 +937,7 @@ dialog div:nth-of-type(2) a {
 
 /* progress achtergrond */
 .yoyo {
-	width: 80%;
+	width: 100%;
 	height: .20em;
 	border: none;
 	border-radius: 1em;
@@ -946,7 +947,7 @@ dialog div:nth-of-type(2) a {
 
 /* Progressbar styling */
 .progressBar {
-	width: 80%;
+	width: 100%;
 	height: .20em;
 	border: none;
 	border-radius: 1em;
