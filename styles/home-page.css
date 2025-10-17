@@ -194,7 +194,9 @@ section:nth-of-type(3) h3 {
 }
 
 /* view all link */
-section:nth-of-type(3)>a {
+section:nth-of-type(3) > a {
+	display: flex;
+	gap: 1rem;
 	justify-self: end;
 
 	text-transform: uppercase;
@@ -203,37 +205,18 @@ section:nth-of-type(3)>a {
 	color: var(--donkere-tekst);
 	font-size: clamp(1rem, 2vw, 1.125rem);
 
-	font-family: "Spiegel";
+	font-family: "Beaufort", serif;
 
 	transition: 0.2s;
 }
 
-section:nth-of-type(3)>a span {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-}
-
-section:nth-of-type(3)>a p {
-	display: flex;
-	align-items: center;
-	gap: 1rem;
-}
-
-/* hover view all */
 section:nth-of-type(3)>a:hover {
 	color: grey;
 }
 
-section:nth-of-type(3)>span {
-	display: flex;
-	gap: 0.75rem;
-}
-
-/* svg link naast view all */
-section:nth-of-type(3) p svg {
+/* svg view all */
+section:nth-of-type(3) a svg {
 	color: var(--goud);
-	cursor: pointer;
 	width: 1rem;
 }
 
