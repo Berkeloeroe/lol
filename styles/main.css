@@ -397,7 +397,6 @@ header div ul {
 header div ul li {
 	position: relative;
 	padding: 1rem 0 1rem 0;
-	border-radius: 0.5rem;
 }
 
 header div ul li a {
@@ -414,7 +413,6 @@ header div ul li a:hover {
 	background-color: var(--header-hover);
 }
 
-/* 🔸 De huidige pagina */
 nav a[aria-current="page"] {
 	color: var(--goud);
 	background-color: var(--header-hover);
@@ -525,20 +523,38 @@ header div input {
 
 	header div ul {
 		display: flex;
-		flex-direction: row;
-		/* HORIZONTAAL maken */
+		flex-direction: row;/* HORIZONTAAL maken */
 		gap: .75rem;
 		margin: 0;
 		padding: 0;
-		align-items: flex-start;
-		/* i.p.v. self-start */
-		justify-content: flex-start;
-		/* zet echt links */
+		align-items: flex-start;/* i.p.v. self-start */
+		justify-content: flex-start;/* zet echt links */
 	}
 
 	header div ul li {
 		list-style: none;
 		text-decoration: none;
+	}
+
+	@media (width > 90em){
+		header div ul li::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 0.25rem;
+			border-radius: 5rem;
+		}
+
+		header div ul li:hover::after {
+			background-color: var(--licht-blauw);
+		}
+
+		header div ul li:has(a[aria-current="page"])::after {
+		background-color: var(--licht-blauw);
+	}
+
 	}
 
 	header div ul li a {
@@ -554,9 +570,9 @@ header div input {
 	header nav a[aria-current="page"] {
 		background-color: var(--header-hover);
 		color: var(--goud);
-  
 	}
 
+	
 	header div search {
 		flex-grow: 1;
 	}
