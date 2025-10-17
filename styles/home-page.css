@@ -72,7 +72,6 @@ main section:nth-of-type(1) button:first-of-type {
 	outline: 1px solid white;
 	outline-offset: 3px;
 
-	/* cursor: pointer; */
 	transition: all 0.4s ease;
 }
 
@@ -85,8 +84,6 @@ section button:first-of-type:hover {
 main section:nth-of-type(1) button:last-of-type {
 	background:none;
 	border: none;
-	/* opacity: 50%;
-	transition: .2s; */
 }
 
 main section:nth-of-type(1) button img {
@@ -117,14 +114,7 @@ section:nth-of-type(2) h2 {
 	font-size: clamp(3rem, 5vw, 3rem);
 }
 
-/* mobiel langere button */
-@media (max-width: 600px) {
-	section:nth-of-type(2) {
-		align-items: stretch;
-	}
-}
-
-/* link button seizoenen sectie */
+/* link seizoenen sectie */
 section:nth-of-type(2) a {
 	margin-top: 2rem;
 	padding: 1.25rem 1.5rem;
@@ -148,6 +138,14 @@ section:nth-of-type(2) a:hover {
 	background-color: #eecc87;
 }
 
+/* mobiel langere button */
+@media (max-width: 600px) {
+	section:nth-of-type(2) {
+		align-items: stretch;
+	}
+}
+
+/* nieuws sectie */
 /* https://cssgrid-generator.netlify.app/ */
 section:nth-of-type(3) {
 	display: grid;
@@ -170,27 +168,10 @@ section:nth-of-type(3) {
 }
 
 section:nth-of-type(3) h2 {
-	grid-area: 1 / 1 / 2 / 2;
-}
-
-/* h2 & view all container */
-section:nth-of-type(3)>div:first-of-type {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-}
-
-section:nth-of-type(3) h2 {
 	font-size: clamp(1.5rem, 4vw, 2rem);
 	font-family: "Beaufort", serif;
 	text-transform: uppercase;
-}
-
-section:nth-of-type(3) h3 {
-	font-size: clamp(1.2rem, 2.5vw, 1.375rem);
-	font-family: "MarkPro";
-	text-transform: none;
+	grid-area: 1 / 1 / 2 / 2;
 }
 
 /* view all link */
@@ -226,6 +207,12 @@ section:nth-of-type(3) article a {
 	gap: 0.35rem;
 }
 
+section:nth-of-type(3) h3 {
+	font-size: clamp(1.2rem, 2.5vw, 1.375rem);
+	font-family: "MarkPro";
+	text-transform: none;
+}
+
 /* nieuws foto img container */
 section:nth-of-type(3) div {
 	position: relative;
@@ -233,14 +220,8 @@ section:nth-of-type(3) div {
 	order: -2;
 }
 
-/* nieuws fotos */
-section:nth-of-type(3) .nieuws-foto {
-	display: block;
-	width: 100%;
-	transition: transform 0.3s ease;
-}
-
-.yolo {
+/* svg icon in de foto */
+section:nth-of-type(3) div svg{
 	position: absolute;
 	right: 0;
 	bottom: 0;
@@ -249,11 +230,18 @@ section:nth-of-type(3) .nieuws-foto {
 	z-index: 100;
 }
 
-section:nth-of-type(3) .nieuws-foto:hover {
+/* nieuws fotos */
+section:nth-of-type(3) img {
+	display: block;
+	width: 100%;
+	transition: transform 0.3s ease;
+}
+
+section:nth-of-type(3) img:hover {
 	transform: scale(1.1);
 }
 
-/* categorie */
+/* categorie nieuws bericht */
 section:nth-of-type(3) article p:first-of-type {
 	font-family: "MarkPro";
 	font-size: 0.8rem;
@@ -265,7 +253,7 @@ section:nth-of-type(3) article p:first-of-type {
 	order: -1;
 }
 
-/* datum */
+/* datum nieuwsbericht */
 time {
 	font-family: "Spiegel", sans-serif;
 	margin-left: 0.75rem;
@@ -329,48 +317,22 @@ section:nth-of-type(4) {
 	background-position: center;
 }
 
+@media (max-width: 1300px) {
+	section:nth-of-type(4) {
+		flex-direction: column;
+	}
+}
+
 section:nth-of-type(4) h3 {
 	font-size: clamp(1.2rem, 2.5vw, 1.375rem);
 	font-family: "Beaufort", serif;
 	text-transform: uppercase;
 }
 
-/* h2 woorden apart stylen van meerdere secties */
-section:nth-of-type(2) h2 span:first-of-type {
+/* h2 woorden apart stylen */
+section h2 span:first-of-type {
 	font-size: 1.25rem;
 	display: block;
-}
-
-/* choose your champion sectie */
-section:nth-of-type(4) h2 span:first-of-type {
-	font-size: 1.25rem;
-	display: block;
-}
-
-/* slay wit style sectie */
-section:nth-of-type(5) h2 span:first-of-type {
-	font-size: 1.25rem;
-	display: block;
-}
-
-/* multiple ways to play sectie */
-section:nth-of-type(6) h2 span:first-of-type {
-	font-size: 1.25rem;
-	display: block;
-}
-
-/* @media (prefers-color-scheme: dark) {
-	section:nth-of-type(4) {
-		color: var(--lichte-tekst);
-		background-image: url(../images/assasin-bg-donker.png);
-		background-color: var(--donker-blauw);
-	}
-} */
-
-@media (max-width: 1300px) {
-	section:nth-of-type(4) {
-		flex-direction: column;
-	}
 }
 
 section:nth-of-type(4)>figure {
@@ -426,6 +388,10 @@ section:nth-of-type(4) a {
 	transition: all 0.4s ease;
 }
 
+section:nth-of-type(4) a:hover {
+	filter: brightness(1.2);
+}
+
 /* knoppen onderelkaar bij klein scherm */
 @media (max-width: 900px) {
 	section:nth-of-type(4) nav {
@@ -436,10 +402,6 @@ section:nth-of-type(4) a {
 /* tweede blauwe button */
 section:nth-of-type(4) a:last-of-type {
 	background-color: var(--licht-blauw);
-}
-
-section:nth-of-type(4) a:hover {
-	filter: brightness(1.2);
 }
 
 section:nth-of-type(4) form {
@@ -650,7 +612,6 @@ section:nth-of-type(6)>div:first-of-type {
 	align-items: center;
 	gap: 1rem;
 	max-width: 100%;
-	/* nooit breder dan de viewport/sectie */
 }
 
 /* link button  */
@@ -675,7 +636,8 @@ section:nth-of-type(6) a {
 
 @media (max-width: 900px) {
 	section:nth-of-type(6) a{
-	width: 100%;	}
+	width: 100%;	
+	}
 }
 
 section:nth-of-type(6) a:hover {
@@ -723,7 +685,6 @@ section:nth-of-type(6)>figure {
 /* hover effect */
 section:nth-of-type(6) li:not(:first-child) figure:hover {
 	transform: scale(1.1);
-	/* vergroot het element met 5% */
 }
 
 @media (max-width: 900px) {
