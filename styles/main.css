@@ -499,7 +499,7 @@ header div input {
 		background-size: 1.5em;
 
 		border: none;
-		border-radius: rem;
+		border-radius: .9rem;
 		padding: .5 1rem;
 		cursor: pointer;
 	}
