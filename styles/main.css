@@ -490,13 +490,15 @@ header div input {
 	header div input {
 		width: 2.5rem;
 		height: 2.5rem;
-		padding-left: 3.25em; 
+		padding-left: 2.75em; 
+		font-size: 1rem;
+		font-family: "MarkPro";
 		transition: 1s;
 		background-color: var(--header-hover);
 		background-image: url("../images/magnifier-icon-white.svg");
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 1.5em;
+		background-size: 1.25em;
 
 		border: none;
 		border-radius: .9rem;
