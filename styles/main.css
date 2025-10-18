@@ -64,6 +64,7 @@ html {
 
 	--goud: #c8aa6e;
 	--licht-blauw: #59c1de;
+	--tussenin-blauw: #00B2CF;
 	--rood: red;
 	--donker-blauw: rgb(10, 20, 40);
 	--donker-donker-blauw: rgb(7, 15, 31);
@@ -375,7 +376,7 @@ header>a {
 }
 
 header div>button:last-of-type {
-	background: var(--licht-blauw);
+	background: var(--tussenin-blauw);
 	color: var(--donker-blauw);
 	padding: 0.5rem 1rem;
 	border-radius: 0.75rem;
