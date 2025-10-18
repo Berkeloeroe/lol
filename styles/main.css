@@ -141,111 +141,6 @@ body>a:focus {
 	overflow: hidden;
 }
 
-/* modal popup */
-#modal {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 100%;
-
-	background: rgba(255, 255, 255, 0.5);
-	z-index: 1000000;
-}
-
-.modal-content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 3rem;
-
-	text-align: center;
-
-	height: 25rem;
-	width: 50rem;
-
-	background: var(--donker-blauw);
-	color: var(--lichte-tekst);
-}
-
-.t h3 {
-	flex-grow: 1;
-	width: 100%;
-}
-
-@media (max-width: 900px) {
-	.modal-content {
-		width: 20em;
-	}
-
-	/* container */
-	.t {
-		flex-direction: column;
-	}
-}
-
-/* container */
-.t {
-	display: flex;
-	gap: 2rem;
-}
-
-/* buttons */
-#modal a {
-	display: block;
-	background-color: var(--licht-blauw);
-	color: var(--donkere-tekst);
-	margin-top: 1rem;
-	padding: 1.25rem 1.5rem;
-
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-
-	font-family: "Spiegel", sans-serif;
-	font-weight: 400;
-	font-size: 1rem;
-
-	color: var(--donker-blauw);
-
-	cursor: pointer;
-	transition: all 0.4s ease;
-}
-
-#modal a:hover {
-	filter: brightness(1.15);
-}
-
-/* 2e button andere kleur */
-.t div:last-of-type a {
-	background-color: var(--goud) !important;
-}
-
-/* close knop */
-#closeModal {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 0.5rem 0.75rem;
-
-	border: none;
-
-	background-color: var(--goud);
-
-	margin: 1rem 1rem 0 0;
-	cursor: pointer;
-}
-
-/* class om te verbergen en showen voor js */
-.hidden {
-	display: none;
-}
-
 main section {
 	padding: clamp(1.2rem, 5vw, 12rem);
 }
@@ -330,7 +225,6 @@ header>button:last-of-type {
 
 header div>svg {
 	align-self: center;
-	/* centreert alleen dit item verticaal */
 }
 
 /* sluit menu knop */
@@ -813,36 +707,14 @@ dialog {
 	border: none;
 }
 
-dialog form {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 2rem;
-	margin-top: 5rem;
-
-	color: var(--lichte-tekst);
-	font-family: "Spiegel", sans-serif;
-
-}
-
-dialog form div {
-	gap: 1rem;
-}
-
-dialog::backdrop {
-	background-color: #1020488b;
-	backdrop-filter: blur(.5em);
-}
-
 dialog h2 {
 	font-size: clamp(1.5rem, 4vw, 2rem);
 	font-family: "Beaufort", serif;
 	text-transform: uppercase;
 }
 
-
 /* close knop */
-dialog button {
+dialog > button {
 	position: absolute;
 	top: 0.5rem;
 	right: 0.5rem;
@@ -854,16 +726,33 @@ dialog button {
 	font-size: 1.5rem;
 }
 
-/* button container */
-dialog div {
+dialog ul {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 5rem;
+	padding: 0;
+    color: var(--lichte-tekst);
+    font-family: "Spiegel", sans-serif;
+}
+
+dialog ul li {
 	display: flex;
 	flex-direction: column;
+	gap: 1rem;
+	list-style: none;
 	flex-grow: 1;
-	/* dit vult alle resterende ruimte */
+
+}
+
+dialog::backdrop {
+	background-color: #1020488b;
+	backdrop-filter: blur(.5em);
 }
 
 /* buttons */
-dialog a {
+dialog ul li a {
 	display: inline-block;
 	padding: 1.25rem 1.5rem;
 	background-color: var(--licht-blauw);
@@ -880,12 +769,12 @@ dialog a {
 	transition: all 0.2s ease;
 }
 
-dialog a:hover {
-	filter: brightness(80%);
+dialog ul li:nth-of-type(2) a{
+	background-color: var(--goud);
 }
 
-dialog div:nth-of-type(2) a {
-	background-color: var(--goud);
+dialog a:hover {
+	filter: brightness(80%);
 }
 
 
