@@ -3,21 +3,29 @@ console.log("Test Test");
 // dialog
 const newJokeButton = document.querySelector("main button");
 const newJokeDialog = document.querySelector("main dialog");
+const closeButton = document.querySelector('dialog button');
 
-if(newJokeButton){
- newJokeButton.addEventListener("click", () => {
-    // STAP 1.
-    // JOUW CODE HIER
-    // 1.1 open de dialog met showModal()
-    newJokeDialog.showModal();
-});
+if (newJokeButton) {
+	newJokeButton.addEventListener("click", () => {
+		// STAP 1.
+		// JOUW CODE HIER
+		// 1.1 open de dialog met showModal()
+		newJokeDialog.showModal();
+	});
+}
+
+if (closeButton) {
+	closeButton.addEventListener("click", () => {
+		// STAP 1.
+		// JOUW CODE HIER
+		// 1.1 open de dialog met showModal()
+		newJokeDialog.close();
+	});
 }
 
 /******************************/
 /* menu openen de MENU button */
 /******************************/
-
-/* JOUW CODE HIER - stap 4 */
 
 // stap 1: zoek de menu-button op en sla die op in een variabele
 let menuOpenButton = document.querySelector("header > button:last-of-type");
@@ -27,17 +35,14 @@ menuOpenButton.addEventListener("click", openMenu);
 console.log(menuOpenButton);
 
 // stap 3: voeg in de functie een class toe aan de nav
-
 function openMenu() {
-    let deNav = document.querySelector("header > div");
-    deNav.classList.add("is-open");
+	let deNav = document.querySelector("header > div");
+	deNav.classList.add("is-open");
 }
 
 /************************************/
 /* menu sluiten met de sluit button */
 /************************************/
-
-/* JOUW CODE HIER - stap 5 */
 
 // stap 1 - zoek sluiten button op
 let menuSluitButton = document.querySelector("header div button");
@@ -48,8 +53,8 @@ menuSluitButton.addEventListener("click", sluitMenu);
 
 // stap 3 - in de functie verwijder de class van de nav
 function sluitMenu() {
-    let deNav = document.querySelector("header > div");
-    deNav.classList.remove("is-open");
+	let deNav = document.querySelector("header > div");
+	deNav.classList.remove("is-open");
 
 }
 
@@ -66,20 +71,20 @@ let deVideo = document.querySelector("video");
 videoButton.addEventListener("click", toggleVideo);
 
 function toggleVideo() {
-	
-	if( deVideo.paused == true ) {
+
+	if (deVideo.paused == true) {
 		deVideo.play();
 		// videoButton.textContent = "pauze";
 		videoButtonImg.src = "images/pause.png";
 		videoButtonImg.alt = "pauze";
-		
+
 	} else {
 		deVideo.pause();
 		// videoButton.textContent = "play";
-		
+
 		videoButtonImg.src = "images/play.png";
 		videoButtonImg.alt = "play";
 	}
-	
+
 
 }
