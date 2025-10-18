@@ -355,11 +355,18 @@ header>a {
 	header div search form input {
 		width: 100%;
 		padding: 0.8rem;
+		padding-left: 3.25rem;
 		font-size: 1rem;
 		font-family: "MarkPro";
 		background-color: var(--header-hover);
 		border: none;
 		border-radius: 0.85rem;
+
+		
+		background-image: url("../images/magnifier-icon-white.svg");
+		background-position: 1em center;
+		background-repeat: no-repeat;
+		background-size: 1.5em;
 	}
 
 	header div search form:focus {
@@ -492,7 +499,7 @@ header div input {
 		background-size: 1.5em;
 
 		border: none;
-		border-radius: 1rem;
+		border-radius: rem;
 		padding: .5 1rem;
 		cursor: pointer;
 	}
