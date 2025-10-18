@@ -404,10 +404,8 @@ header div input {
 
 @media (width > 90em) {
 	header div {
-		position: static;
-		/* niet fixed */
-		translate: 0;
-		/* altijd zichtbaar */
+		position: static;/* niet fixed */
+		translate: 0;/* altijd zichtbaar */
 		background: none;
 
 		display: flex;
@@ -481,18 +479,29 @@ header div input {
 		justify-content: end;
 	}
 
+	/* chatgpt hoe doe ik met css een svg in een input */
 	header div input {
-		width: 2rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		padding-left: 3.25em; 
 		transition: 1s;
 		background-color: var(--header-hover);
-		border: none;
-		border-radius: .7rem;
-		padding: .5rem;
+		background-image: url("../images/magnifier-icon-white.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 1.5em;
 
+		border: none;
+		border-radius: 1rem;
+		padding: .5 1rem;
+		cursor: pointer;
 	}
 
 	header div input:focus-visible {
 		flex-grow: 1;
+		background-position: .75rem center;
+		cursor: auto;
+
 	}
 }
 
@@ -684,7 +693,6 @@ footer>a svg:last-of-type:hover {
 }
 
 /* toegankelijk */
-input:focus-visible,
 textarea:focus-visible,
 select:focus-visible,
 button:focus-visible,
