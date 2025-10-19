@@ -733,8 +733,7 @@ dialog h2 {
 /* close knop */
 dialog > button {
 	position: absolute;
-	top: 0.5rem;
-	right: 0.5rem;
+	inset: 0.5rem 0.5rem auto auto;
 	width: 3rem;
 	aspect-ratio: 1;
 	background-color: var(--goud);
