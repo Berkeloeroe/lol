@@ -380,7 +380,7 @@ header div>button:last-of-type {
 	color: var(--donker-blauw);
 	padding: 0.5rem 1rem;
 	border-radius: 0.75rem;
-	border: none;
+	border: transparent;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "MarkPro";
@@ -517,7 +517,7 @@ header div input {
 /* taal kiezen knop */
 header div>button:nth-of-type(2) {
 	background: none;
-	border: none;
+	border: transparent;
 	cursor: pointer;
 	padding: 0.6rem 0.6rem;
 	border-radius: .4rem;
