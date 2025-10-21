@@ -500,7 +500,7 @@ header div input {
 		background-repeat: no-repeat;
 		background-size: 1.25em;
 
-		border: none;
+		border: transparent;
 		border-radius: .9rem;
 		padding: .5 1rem;
 		cursor: pointer;
@@ -706,8 +706,8 @@ textarea:focus-visible,
 select:focus-visible,
 button:focus-visible,
 a:focus-visible {
-	outline: 5px solid var(--goud);
-	outline-offset: 3px;
+	outline: .2em solid var(--goud);
+	outline-offset: .25em;
 }
 
 /* dialog */
