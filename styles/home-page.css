@@ -90,6 +90,16 @@ section button:first-of-type:hover {
 main section:nth-of-type(1) button:last-of-type {
 	background:none;
 	border: none;
+	border-radius: 1rem;
+	padding: 1rem;
+	opacity: 50%;
+	transition: .2s;
+}
+
+/* button pauze video */
+main section:nth-of-type(1) button:last-of-type:hover {
+	border: none;
+	opacity: 100%;
 }
 
 main section:nth-of-type(1) button img {
