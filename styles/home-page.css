@@ -426,7 +426,7 @@ section:nth-of-type(4) form label {
 section:nth-of-type(4) form label img {
 	width: 4rem;
 
-	@media (max-width: 62.5rem)   {
+	@media (width < 62.5rem)   {
 		width: 3rem;
 
 	}
@@ -440,7 +440,7 @@ section:nth-of-type(4) label span {
 	text-transform: uppercase;
 	font-size: .85rem;
 	font-family: "Spiegel", sans-serif;
-	
+
 	@media (max-width: 62.5rem)   {
 			font-size: .7rem;
 
