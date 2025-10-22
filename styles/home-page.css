@@ -321,7 +321,7 @@ section:nth-of-type(4) {
 	background-position: center;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81.25em) {
 	section:nth-of-type(4) {
 		flex-direction: column;
 	}
@@ -357,7 +357,7 @@ section:nth-of-type(4)>div:first-of-type {
 	max-width: 100%;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81.25em) {
 	section:nth-of-type(4)>div:first-of-type {
 		align-items: stretch;
 	}
@@ -610,7 +610,7 @@ section:nth-of-type(6) {
 	background-position: center;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 81.25em) {
 	section:nth-of-type(6) {
 		flex-direction: column;
 	}
