@@ -854,7 +854,7 @@ dialog a:hover {
 	cursor: pointer;
 	position: fixed;
 	position-anchor: --carousel;
-		translate: 3rem; 
+	translate: 3rem -.185rem; 
 
   }
 
@@ -866,9 +866,7 @@ dialog a:hover {
   &::scroll-button(left) {
     content: '←'; 
 	position-area: right center;
-	translate: .5rem; 
-
- 
+	translate: .5rem -.185rem; 
   }
 
    &::scroll-button(right):disabled, &::scroll-button(left):disabled {
