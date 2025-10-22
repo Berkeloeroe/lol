@@ -815,10 +815,7 @@ dialog a:hover {
 
 	display: flex;
 	align-items: center;
-	/* justify-content: center; */
 	justify-content: space-between;
-
-	gap: 2rem;
 
 	overflow-y: hidden; /* voorkomt verticale scroll */
 	overflow-x: auto;
@@ -834,7 +831,6 @@ dialog a:hover {
 
 	> .carousel__slide {
 		scroll-snap-align: start; 
-		flex-shrink: 0;
 		display: grid;
 		justify-content: center;
 		  @media (max-width: 1000px) {
