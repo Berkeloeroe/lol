@@ -213,6 +213,22 @@ header>button svg:hover {
 	fill: var(--rood);
 }
 
+/* kleine logo groot scherm */
+header > a svg:nth-of-type(2) {
+	width: 1.5rem;
+
+	@media (width < 90em) {
+		display: none;
+	}
+}
+
+/* grote logo mobiel scherm*/
+header > a svg:nth-of-type(1) {
+	@media (width > 90em) {
+		display: none;
+	}
+}
+
 /* hamburger button */
 header>button:last-of-type {
 	background-color: var(--header-hover);
