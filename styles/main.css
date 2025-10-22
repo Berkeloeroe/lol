@@ -834,10 +834,12 @@ dialog a:hover {
 
 	> .carousel__slide {
 		scroll-snap-align: start; 
-		/* flex-shrink: 0; */
-
-		  @media (max-width: 900px) {
+		flex-shrink: 0;
+		display: grid;
+		justify-content: center;
+		  @media (max-width: 1000px) {
 				flex: 0 0 calc((100% - 3rem) / 4); 
+				/* bron:chatgpt */
 		  }
 
 	}
