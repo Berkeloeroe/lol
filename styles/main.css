@@ -834,7 +834,12 @@ dialog a:hover {
 
 	> .carousel__slide {
 		scroll-snap-align: start; 
-		flex-shrink: 0;
+		/* flex-shrink: 0; */
+
+		  @media (max-width: 900px) {
+				flex: 0 0 calc((100% - 3rem) / 4); 
+		  }
+
 	}
 }
 
