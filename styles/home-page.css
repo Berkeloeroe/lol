@@ -321,7 +321,7 @@ section:nth-of-type(4) {
 	background-position: center;
 }
 
-@media (max-width: 81.25em) {
+@media (width < 92em) {
 	section:nth-of-type(4) {
 		flex-direction: column;
 	}

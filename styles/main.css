@@ -856,6 +856,8 @@ dialog a:hover {
 	position-anchor: --carousel;
 	translate: 3rem -.185rem; 
 
+	
+
   }
 
   &::scroll-button(right) {
@@ -897,6 +899,10 @@ dialog a:hover {
 	border-radius: 1em;
 	background-color: var(--disabled);
 	anchor-name: --carousel;
+
+	@media (width > 62.5rem) {
+				display: none;
+		  }
 }
 
 /* Progressbar styling */
