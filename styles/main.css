@@ -833,6 +833,7 @@ dialog a:hover {
 		scroll-snap-align: start; 
 		display: grid;
 		justify-content: center;
+
 		  @media (max-width: 62.5rem) {
 				flex: 0 0 calc((100% - 6rem) / 4); 
 				/* bron:chatgpt */
@@ -853,6 +854,8 @@ dialog a:hover {
 	cursor: pointer;
 	position: fixed;
 	position-anchor: --carousel;
+		translate: 3rem; 
+
   }
 
   &::scroll-button(right) {
@@ -863,7 +866,7 @@ dialog a:hover {
   &::scroll-button(left) {
     content: '←'; 
 	position-area: right center;
-	translate: -3rem 0; 
+	translate: .5rem; 
 
  
   }
@@ -890,7 +893,7 @@ dialog a:hover {
 
 /* progress achtergrond */
 .yoyo {
-	width: 100%;
+	width: 80%;
 	height: .20em;
 	border: none;
 	border-radius: 1em;
@@ -900,7 +903,7 @@ dialog a:hover {
 
 /* Progressbar styling */
 .progressBar {
-	width: 100%;
+	width: 80%;
 	height: .20em;
 	border: none;
 	border-radius: 1em;
