@@ -833,7 +833,7 @@ dialog a:hover {
 		scroll-snap-align: start; 
 		display: grid;
 		justify-content: center;
-		  @media (max-width: 1000px) {
+		  @media (max-width: 62.5rem) {
 				flex: 0 0 calc((100% - 3rem) / 4); 
 				/* bron:chatgpt */
 		  }
