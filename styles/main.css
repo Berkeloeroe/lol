@@ -126,6 +126,7 @@ body>a {
 	text-decoration: none;
 }
 
+/* skiplink showen */
 body>a:focus {
 	top: 7rem;
 	left: 2rem;
@@ -134,31 +135,6 @@ body>a:focus {
 
 /* dingen verbergen voor toegankelijk */
 .visually-hidden {
-	position: absolute;
-	left: -10000px;
-	top: auto;
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-}
-
-main section {
-	padding: clamp(1.2rem, 5vw, 12rem);
-}
-
-@media (max-width: 1300px) {
-	main section {
-		padding: 4vw;
-	}
-}
-
-@media (max-width: 900px) {
-	main section {
-		padding: 1.5rem;
-	}
-}
-
-.visually-hidden {
 	clip: rect(0 0 0 0);
 	clip-path: inset(50%);
 	height: 1px;
@@ -166,8 +142,22 @@ main section {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+	}
+
+/* secties */
+main section {
+	padding: clamp(1.2rem, 5vw, 12rem);
 }
 
+/* buttons*/
+section button, section > a, section div a{
+	transition: all 0.3s ease;
+}
+
+/* button hover-effecten */
+section button:hover, section > a:hover, section div a:hover {
+	filter: brightness(125%);
+}
 
 /* header */
 header {

@@ -71,19 +71,11 @@ main section:nth-of-type(1) button:first-of-type {
 	border: 1px solid transparent;
 	outline: 1px solid white;
 	outline-offset: 3px;
-
-	transition: all 0.4s ease;
 }
 
 main section:nth-of-type(1) button:first-of-type:focus-visible {
 	outline: .2em solid var(--goud);	
 	outline-offset: .3em;
-}
-
-
-/* Hover-effect */
-section button:first-of-type:hover {
-	filter: brightness(120%);
 }
 
 /* button pauze video */
@@ -113,15 +105,19 @@ section:nth-of-type(2) {
 
 	display: flex;
 	flex-direction: column;
-	align-items: start;
 	justify-content: center;
+	gap: 0.75rem;
+	align-items: stretch;
+
+
+	@media (width > 600px) {
+			align-items: start;
+	}
 
 	background-image: url("../images/paarsebloemen.avif");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-
-	gap: 0.75rem;
 
 	color: var(--lichte-tekst);
 }
@@ -147,18 +143,6 @@ section:nth-of-type(2) a {
 	font-size: 1rem;
 
 	cursor: pointer;
-	transition: all 0.4s ease;
-}
-
-section:nth-of-type(2) a:hover {
-	background-color: #eecc87;
-}
-
-/* mobiel langere button */
-@media (max-width: 600px) {
-	section:nth-of-type(2) {
-		align-items: stretch;
-	}
 }
 
 /* nieuws sectie */
@@ -201,7 +185,6 @@ section:nth-of-type(3) > a {
 
 	color: var(--donkere-tekst);
 	font-size: clamp(1rem, 2vw, 1.125rem);
-
 	font-family: "Beaufort", serif;
 
 	transition: 0.2s;
@@ -398,12 +381,6 @@ section:nth-of-type(4) a {
 	font-family: "Spiegel", sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
-
-	transition: all 0.4s ease;
-}
-
-section:nth-of-type(4) a:hover {
-	filter: brightness(1.2);
 }
 
 /* knoppen onderelkaar bij klein scherm */
@@ -618,11 +595,6 @@ section:nth-of-type(5) a {
 	margin-top: 1rem;
 
 	cursor: pointer;
-	transition: all 0.4s ease;
-}
-
-section:nth-of-type(5) a:hover {
-	background-color: #eecc87;
 }
 
 /* multiple ways to play*/
@@ -671,17 +643,12 @@ section:nth-of-type(6) a {
 	font-size: 1rem;
 
 	cursor: pointer;
-	transition: all 0.4s ease;
 }
 
 @media (max-width: 900px) {
 	section:nth-of-type(6) a{
 	width: 100%;	
 	}
-}
-
-section:nth-of-type(6) a:hover {
-	background-color: #eecc87;
 }
 
 /* container lijst */
@@ -714,7 +681,6 @@ section:nth-of-type(6) figure {
 	width: 50%;
 	gap: 1rem;
 	transition: transform 0.3s ease;
-	/* vloeiende overgang */
 }
 
 /* video figure */
@@ -816,10 +782,4 @@ section:nth-of-type(7) button {
 	font-size: 1rem;
 
 	cursor: pointer;
-	transition: all 0.4s ease;
-}
-
-/* Hover-effect */
-section:nth-of-type(7) button:hover {
-	background-color: #eecc87;
 }
