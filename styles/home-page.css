@@ -222,6 +222,14 @@ section:nth-of-type(3) div {
 /* svg icon in de foto */
 section:nth-of-type(3) div svg{
 	position: absolute;
+  	inset: 0;
+  	margin: auto;
+	height: 3rem;
+	z-index: 100;
+}
+
+section:nth-of-type(3) ul li:nth-of-type(3) div svg{
+	position: absolute;
 	inset: auto 0 0 auto;
 	height: 3rem;
 	z-index: 100;
