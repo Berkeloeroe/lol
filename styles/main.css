@@ -492,6 +492,7 @@ header div input {
 		justify-content: end;
 	}
 
+	/* zoekveld */
 	header div input {
 		width: 2.5rem;
 		height: 2.5rem;
@@ -516,8 +517,6 @@ header div input {
 		background-position: .75rem center;
 		cursor: auto;
 		max-width: 17.5rem;
-
-
 	}
 }
 
