@@ -357,48 +357,39 @@ header>a {
 }
 
 header div search form input {
-		width: 100%;
-		padding: 0.8rem;
-		padding-left: 3.25rem;
-		font-size: 1rem;
-		font-family: "MarkPro";
-		background-color: var(--header-hover);
-		border: none;
-		border-radius: 0.85rem;
+	padding: 0.8rem;
+	padding-left: 3.25rem;
+	font-size: 1rem;
+	font-family: "MarkPro";
+	background-color: var(--header-hover);
+	border: none;
+	border-radius: 0.85rem;
+	box-sizing: border-box;
 
-		background-image: url("../images/magnifier-icon-white.svg");
-		background-position: 1em center;
-		background-repeat: no-repeat;
-		background-size: 1.5em;
+	background-image: url("../images/magnifier-icon-white.svg");
+	background-position: 1em center;
+	background-repeat: no-repeat;
+	background-size: 1.5em;
+
+	width: 100%; /* mobiel standaard volledig */
+	transition: max-width 1s ease, padding 1s ease;
 }
 
 @media (width > 90rem) {
-	header div input {
-		width: 2.5rem;
+	header div search form input {
+		width: auto; /* laat flex of max-width bepalen */
+		max-width: 2.5rem; /* kleine knopvorm */
 		height: 2.5rem;
 		padding-left: 2.5em; 
 		font-size: 1rem;
-		font-family: "MarkPro";
-		
-		transition: 3s;
-
-		background-color: var(--header-hover);
-
-		background-image: url("../images/magnifier-icon-white.svg");/* chatgpt hoe doe ik met css een svg in een input? (ik koos met mijn kennis deze optie zonder divs) */
-		background-position: .625rem center;
-		background-repeat: no-repeat;
+		/* background-position: .625rem center; */
 		background-size: 1.25em;
-
-		border: transparent;
-		border-radius: .9rem;
-		padding: .5 1rem;
 		cursor: pointer;
-
-		max-width: 17.5rem;
 	}
 
-	header div input:focus-visible {
-		flex-grow: 1;
+	header div search form input:focus {
+		max-width: 17.5rem; /* groeit uit */
+		padding-left: 2.5rem;
 		cursor: auto;
 	}
 		
