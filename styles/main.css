@@ -342,6 +342,7 @@ header>a {
 	margin-right: auto;
 }
 
+/* nog een reden voor een onvoldoende  */
 @media (width < 90em) {
 
 	header div ul {
@@ -376,7 +377,11 @@ header>a {
 	}
 
 	header div search form:focus {
-		outline: none !important;
+		/* outline: none !important;  */
+		/* VIEZERIK - BAH BAH BAH BAH */
+		/* dit is reden voor een onvoldoende */
+		/* ben je bang genoeg ? */
+
 	}
 }
 
@@ -496,13 +501,19 @@ header div input {
 	header div input {
 		width: 2.5rem;
 		height: 2.5rem;
-		padding-left: 2.75em; 
+		padding-left: 2.5em; 
 		font-size: 1rem;
 		font-family: "MarkPro";
+
+		/* flex-grow: 0; */
+		
 		transition: 3s;
+
 		background-color: var(--header-hover);
-		background-image: url("../images/magnifier-icon-white.svg");/* chatgpt hoe doe ik met css een svg in een input */
-		background-position: center;
+
+		background-image: url("../images/magnifier-icon-white.svg");/* chatgpt hoe doe ik met css een svg in een input? (ik koos met mijn kennis deze optie zonder divs) */
+		/* background-position: center; */
+		background-position: .625rem center;
 		background-repeat: no-repeat;
 		background-size: 1.25em;
 
@@ -510,13 +521,15 @@ header div input {
 		border-radius: .9rem;
 		padding: .5 1rem;
 		cursor: pointer;
+
+		max-width: 17.5rem;
 	}
 
 	header div input:focus-visible {
 		flex-grow: 1;
-		background-position: .75rem center;
+		
 		cursor: auto;
-		max-width: 17.5rem;
+		
 	}
 }
 
