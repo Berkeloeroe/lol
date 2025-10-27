@@ -444,6 +444,8 @@ header div search form input {
 	background-repeat: no-repeat;
 	background-size: 1.5em;
 
+	cursor: pointer;
+
 	width: 100%;
 	/* mobiel standaard volledig */
 	transition: max-width 1s ease, padding 1s ease;
@@ -454,15 +456,15 @@ header div search form input {
 		width: auto;
 		max-width: 2.5rem;
 		height: 2.5rem;
-		padding-left: 2.5em;
+		padding-left: 2.5rem;
+
 		font-size: 1rem;
+		background-position: 1em center;
 		background-size: 1.25em;
-		cursor: pointer;
 	}
 
 	header div search form input:focus {
-		max-width: 17.5rem;
-		padding-left: 3rem;
+		max-width: 17rem;
 		cursor: auto;
 	}
 
