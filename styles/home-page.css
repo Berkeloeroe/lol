@@ -538,11 +538,16 @@ section>figure:last-of-type>figcaption {
 }
 
 /* champion figure */
-@media (max-width: 900px) {
+/* @media (max-width: 56.25rem) {
 	section>figure:last-of-type>img {
 		width: 100%;
 	}
+} */
+
+section>figure:last-of-type>img {
+	width: 100%;
 }
+
 
 /* slay with style sectie */
 section:nth-of-type(5) {
