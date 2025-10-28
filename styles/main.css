@@ -327,7 +327,7 @@ header div ul {
 
 	display: flex;
 	flex-direction: column;
-	gap: .5rem;
+	gap: .25rem;
 }
 
 @media (width > 90em) {
@@ -429,7 +429,7 @@ header>a {
 
 /* search form */
 header div search form input {
-	padding: 1rem;
+	padding: .8rem;
 	padding-left: 3.25rem;
 	color: var(--lichte-tekst);
 	font-size: 1rem;
