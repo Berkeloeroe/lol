@@ -509,7 +509,7 @@ header div form {
 /* taal kiezen knop */
 header div>button:nth-of-type(2) {
 	background: none;
-	background-color: var(--header-hover);	
+	background-color: var(--header-hover);
 	border: transparent;
 	border-radius: .75rem;
 
@@ -839,9 +839,6 @@ dialog a:hover {
 		position: fixed;
 		position-anchor: --carousel;
 		translate: 3rem -.185rem;
-
-
-
 	}
 
 	&::scroll-button(right) {
