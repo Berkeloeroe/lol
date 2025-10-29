@@ -797,9 +797,9 @@ dialog a:hover {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	flex: 0 0 calc((100% - 6rem) / 4);
 
 	overflow-y: hidden;
-	/* voorkomt verticale scroll */
 	overflow-x: auto;
 	overscroll-behavior-x: contain;
 
@@ -818,7 +818,7 @@ dialog a:hover {
 		justify-content: center;
 
 		@media (max-width: 62.5rem) {
-			flex: 0 0 calc((100% - 6rem) / 4);
+			flex: 1 0 auto;
 			/* bron:chatgpt */
 		}
 
