@@ -554,6 +554,7 @@ section:nth-of-type(5) {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: column-reverse;
 
 	gap: 3rem;
 
@@ -564,22 +565,21 @@ section:nth-of-type(5) {
 	color: var(--lichte-tekst);
 }
 
-@media (max-width: 900px) {
+@media (width > 56.25rem) {
 	section:nth-of-type(5) {
-		flex-direction: column-reverse;
+		flex-direction: row;
 	}
 }
 
 /* slay with style img */
 section:nth-of-type(5) img {
-	width: 40vw;
-	/* schaalt mee met het scherm */
+	width: 90vw;
 	order: -1;
 }
 
-@media (max-width: 900px) {
+@media (width > 56.25rem) {
 	section:nth-of-type(5) img {
-		width: 90vw;
+		width: 40vw;
 	}
 }
 
@@ -591,10 +591,13 @@ section:nth-of-type(5) div {
 	gap: 0.6rem;
 }
 
-/* lange button voor mobiel */
-@media (max-width: 900px) {
-	section:nth-of-type(5) a {
+section:nth-of-type(5) a {
 		align-self: stretch;
+	}
+
+@media (width > 56.25rem) {
+	section:nth-of-type(5) a {
+		align-self: start;
 	}
 }
 
@@ -666,7 +669,7 @@ section:nth-of-type(6) a {
 	cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
 	section:nth-of-type(6) a {
 		width: 100%;
 	}
@@ -714,7 +717,7 @@ section:nth-of-type(6) li:not(:first-child) figure:hover {
 	transform: scale(1.1);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
 	section:nth-of-type(6) figure {
 		width: 100%;
 	}
@@ -753,7 +756,7 @@ section:nth-of-type(6)>figure:last-of-type>figcaption {
 }
 
 /* gamemode video */
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
 	section:nth-of-type(6) video {
 		width: 95%;
 		outline-offset: .5rem;
