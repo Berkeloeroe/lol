@@ -874,13 +874,22 @@ dialog a:hover {
 	scroll-timeline: --gallery__scrollcontainer inline;
 }
 
-/* progress grijze achtergrond */
-.yoyo {
+/* chatgpt */
+.bars {
 	width: 80%;
-	height: .20em;
-	border: none;
+	height: 0.2em;
 	border-radius: 1em;
-	background-color: var(--disabled);
+	background:
+		linear-gradient(to right, var(--goud) 0%, var(--goud) 100%) no-repeat,
+		var(--disabled);
+	background-size: 0% 100%;
+
+	@media (prefers-reduced-motion:no-preference) {
+		animation: grow-bg linear forwards;
+		animation-timeline: --gallery__scrollcontainer;
+	}
+
+	transform-origin: left;
 	anchor-name: --carousel;
 
 	@media (width > 62.5rem) {
@@ -888,25 +897,8 @@ dialog a:hover {
 	}
 }
 
-/* Progressbar styling */
-.progressBar {
-	width: 100%;
-	height: .20em;
-	border: none;
-	border-radius: 1em;
-	background-color: var(--goud);
-	transform: scaleX(0);
-	/* transform: scaleX(calc(1 / var(--num-images))); */
-
-
-	animation: auto grow-progress linear forwards;
-	animation-timeline: --gallery__scrollcontainer;
-
-	transform-origin: left;
-}
-
-@keyframes grow-progress {
+@keyframes grow-bg {
 	to {
-		transform: scaleX(1);
+		background-size: 100% 100%;
 	}
 }
