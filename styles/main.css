@@ -825,6 +825,7 @@ dialog a:hover {
 	}
 }
 
+/* https://scroll-driven-animations.style/ */
 .carousel--scroll-buttons {
 
 	scroll-timeline: --carousel inline;
