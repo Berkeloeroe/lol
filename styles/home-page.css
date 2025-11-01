@@ -293,7 +293,7 @@ section ul {
 
 }
 
-@media (width > 56.25rem) {
+@media (width > 40rem) {
 	section ul {
 		grid-template-columns: repeat(2, 1fr);
 	}
