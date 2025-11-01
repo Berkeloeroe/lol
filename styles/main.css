@@ -154,7 +154,11 @@ main section {
 button,
 section>a,
 section div a {
-	transition: all 0.3s ease;
+
+	@media (prefers-reduced-motion:no-preference) {
+		transition: all 0.3s ease;
+	}
+
 	cursor: pointer;
 }
 
@@ -447,8 +451,12 @@ header div search form input {
 	cursor: pointer;
 
 	width: 100%;
+
 	/* mobiel standaard volledig */
-	transition: max-width 1s ease, padding 1s ease;
+	@media (prefers-reduced-motion:no-preference) {
+		transition: max-width 1s ease, padding 1s ease;
+	}
+
 }
 
 @media (width > 90rem) {
