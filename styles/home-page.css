@@ -243,9 +243,12 @@ section:nth-of-type(3) img {
 	transition: transform 0.3s ease;
 }
 
-section:nth-of-type(3) img:hover {
-	transform: scale(1.1);
+@media (prefers-reduced-motion:no-preference) {
+		section:nth-of-type(3) img:hover {
+		transform: scale(1.1);
+	}	
 }
+
 
 /* categorie nieuws bericht */
 section:nth-of-type(3) article p:first-of-type {
