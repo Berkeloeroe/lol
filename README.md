@@ -247,7 +247,10 @@ Een zoekbalk stylen met zoek ikoontje en een transitie effect om de zoekbalk gro
 
 Korte omschrijving met plaatjes
 
-                                  <img src="readme-images/focus.png width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/focus.png width="375px" alt="uitomst opdracht 1">
+
+de focus gaat alleen op 1 option de eerste en de rest word niet meegepaakt en de outline is niet helemaal goed
+
 </details>
 
 ## Bronnenlijst
