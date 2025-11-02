@@ -269,5 +269,6 @@ Nb. Vermeld de bronnen ook in je code.
 5. https://www.a11yproject.com/posts/how-to-hide-content/
 6. https://cssgrid-generator.netlify.app/
 7. https://www.freeformatter.com/css-beautifier.html#before-output
+8. Student asistenten
 
 </details>
