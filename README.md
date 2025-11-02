@@ -201,19 +201,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
-  <img src="readme-images/model.png" width="375px" alt="uitomst opdracht 1">
-
-    <img src="readme-images/hamburger.png" width="375px" alt="uitomst opdracht 1">
-
-        <img src="readme-images/carousel.png width="375px" alt="uitomst opdracht 1">
-
-                <img src="readme-images/pauze.png width="375px" alt="uitomst opdracht 1">
-
-                 <img src="readme-images/grid.png width="375px" alt="uitomst opdracht 1">
-
-                                  <img src="readme-images/skiplink.png width="375px" alt="uitomst opdracht 1">
-
-                                                   <img src="readme-images/zoekbalk.png width="375px" alt="uitomst opdracht 1">
+ 
 
 
 
@@ -223,6 +211,20 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Dit ging goed/Heb ik geleerd:
 
 Korte omschrijving met plaatjes
+
+<img src="readme-images/model.png" width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/hamburger.png" width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/carousel.png width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/pauze.png width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/grid.png width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/skiplink.png width="375px" alt="uitomst opdracht 1">
+
+<img src="readme-images/zoekbalk.png width="375px" alt="uitomst opdracht 1">
 
 
 
