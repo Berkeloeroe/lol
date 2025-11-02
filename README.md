@@ -211,6 +211,9 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 <img src="readme-images/result-2.png" width="375px" alt="uitomst opdracht 1">
 
+<img src="readme-images/result-2-desktop.png" width="375px" alt="uitomst opdracht 1">
+
+
 
 ### Dit ging goed/Heb ik geleerd:
 
