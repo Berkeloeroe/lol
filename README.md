@@ -238,6 +238,8 @@ Een skiplink toe voegen om naar de main content te gaan
 
 <img src="readme-images/zoekbalk.png width="375px" alt="uitomst opdracht 1">
 
+Een zoekbalk stylen met zoek ikoontje en een transitie effect om de zoekbalk groter te maken
+
 
 
 
