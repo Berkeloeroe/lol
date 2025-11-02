@@ -201,11 +201,15 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 ### Je uitkomst - karakteristiek screenshots:
 
- 
+<img src="readme-images/result-1.png" width="375px" alt="uitomst opdracht 1">
 
+<img src="readme-images/result-1-desktop.png.png" width="375px" alt="uitomst opdracht 1">
 
+<img src="readme-images/grid.png" width="375px" alt="uitomst opdracht 1">
 
+<img src="readme-images/sectie-mooi.png" width="375px" alt="uitomst opdracht 1">
 
+<img src="readme-images/result-2.png" width="375px" alt="uitomst opdracht 1">
 
 
 ### Dit ging goed/Heb ik geleerd:
