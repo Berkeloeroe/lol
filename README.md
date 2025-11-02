@@ -232,9 +232,9 @@ Een achtergrond video toegankelijk maken door eigen video controls toe te voegen
 
 Ik weet nu hoe je grid layouts kan maken.
 
-
-
 <img src="readme-images/skiplink.png width="375px" alt="uitomst opdracht 1">
+
+Een skiplink toe voegen om naar de main content te gaan
 
 <img src="readme-images/zoekbalk.png width="375px" alt="uitomst opdracht 1">
 
