@@ -46,7 +46,7 @@ html {
 /*********************/
 :root {
 	--headings-tekst: white;
-	--body-tekst: rgba(10, 20, 40, 0.9);
+	--body-tekst: #0a1428e6;
 
 	--lichte-tekst: white;
 	--donkere-tekst: rgb(10, 20, 40);

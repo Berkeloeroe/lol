@@ -163,6 +163,12 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+<img src="readme-images/1.JPG" width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/2.JPG" width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/3.JPG" width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/4.JPG" width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/5.JPG" width="375px" alt="uitomst opdracht 1">
+
 </details>
 
 ## Voortgang 3 (week 4)
@@ -227,23 +233,23 @@ Een modal maken was best makkelijk
 
 De header / het hamburger menu was denk ik wel het meest uitdagende maar met beetje hulp is het gelukt.
 
-<img src="readme-images/carousel.png width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/carousel.png" width=" 375px" alt="uitomst opdracht 1">
 
 Een css only carrousel maken was nieuw voor mij en heb ik geleerd met anchor positioning
 
-<img src="readme-images/pauze.png width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/pauze.png" width="375px" alt="uitomst opdracht 1">
 
 Een achtergrond video toegankelijk maken door eigen video controls toe te voegen
 
-<img src="readme-images/grid.png width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/grid.png"  width="375px" alt="uitomst opdracht 1">
 
 Ik weet nu hoe je grid layouts kan maken.
 
-<img src="readme-images/skiplink.png width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/skiplink.png" width="375px" alt="uitomst opdracht 1">
 
 Een skiplink toe voegen om naar de main content te gaan
 
-<img src="readme-images/zoekbalk.png width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/zoekbalk.png" width="375px" alt="uitomst opdracht 1">
 
 Een zoekbalk stylen met zoek ikoontje en een transitie effect om de zoekbalk groter te maken
 
