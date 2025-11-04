@@ -210,7 +210,7 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 
 <img src="readme-images/result-1.png" width="375px" alt="uitomst opdracht 1">
 
-<img src="readme-images/result-1-desktop.png.png" width="375px" alt="uitomst opdracht 1">
+<img src="readme-images/result-1-desktop.png" width="375px" alt="uitomst opdracht 1">
 
 <img src="readme-images/grid.png" width="375px" alt="uitomst opdracht 1">
 
