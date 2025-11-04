@@ -187,10 +187,11 @@ hier dit ging goed & dit was lastig
 ### Agenda voor meeting
 
 samen met je groepje opstellen
-Noa 
-Melissa
-Julia: 
+Noa: zelfde als julia
+Melissa: Video vergroten op mobile first en button states.
+Julia: Hoe kan je een image naast tekst positioneren in een list.
 Randi: Hamburger menu werkt niet op mijn tweede pagina
+Joaquim: ....
 
 ### Verslag van meeting
 
@@ -226,31 +227,24 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 Korte omschrijving met plaatjes
 
 <img src="readme-images/model.png" width="375px" alt="uitomst opdracht 1">
-
 Een modal maken was best makkelijk
 
 <img src="readme-images/hamburger.png" width="375px" alt="uitomst opdracht 1">
-
 De header / het hamburger menu was denk ik wel het meest uitdagende maar met beetje hulp is het gelukt.
 
 <img src="readme-images/carousel.png" width=" 375px" alt="uitomst opdracht 1">
-
 Een css only carrousel maken was nieuw voor mij en heb ik geleerd met anchor positioning
 
 <img src="readme-images/pauze.png" width="375px" alt="uitomst opdracht 1">
-
 Een achtergrond video toegankelijk maken door eigen video controls toe te voegen
 
 <img src="readme-images/grid.png"  width="375px" alt="uitomst opdracht 1">
-
 Ik weet nu hoe je grid layouts kan maken.
 
 <img src="readme-images/skiplink.png" width="375px" alt="uitomst opdracht 1">
-
 Een skiplink toe voegen om naar de main content te gaan
 
 <img src="readme-images/zoekbalk.png" width="375px" alt="uitomst opdracht 1">
-
 Een zoekbalk stylen met zoek ikoontje en een transitie effect om de zoekbalk groter te maken
 
 
